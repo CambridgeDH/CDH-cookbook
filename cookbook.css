@@ -1,0 +1,9 @@
+/* 
+test site-wide CSS file
+*/
+
+ul{list-style-type:none;}
+
+.previous-next-lesson {text-align:center;padding:2em}
+.course-toc {text-align:center;padding:1em;}
+.credits {text-align:center;font-size: .8rem;padding:1em;}
