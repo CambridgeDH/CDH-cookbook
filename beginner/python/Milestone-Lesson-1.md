@@ -50,6 +50,7 @@ However, nothing is as powerful as a concrete application. In fact, learning the
 - How to have Python read files on your computer
 - What a variable is
 - And how to write a 'for loop'
+
 enables you to do something very powerful. At the heart of almost any Humanities research involving code is reading and analysing multiple files. If you were doing this manually, what is the process if you have 30 texts to study? You would open the file, perform the analysis, record your notes somewhere, and close the file. You would repeat this 30 times. It would probably take you quite a while.
 
 This, however, is actually a loop! You are iterating through your files and performing the same (or similar) things for each file. This can be translated into code, and then achieved at a much faster rate than if you were doing it by hand. For example, say you have 100 essays, and you want to find data in each essay and copy-paste that data into a spreadsheet. You have now learned the skills to write a loop of code that will do this:
