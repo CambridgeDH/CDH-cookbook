@@ -53,13 +53,14 @@ However, nothing is as powerful as a concrete application. In fact, learning the
 
 enables you to do something very powerful. At the heart of almost any Humanities research involving code is reading and analysing multiple files. If you were doing this manually, what is the process if you have 30 texts to study? You would open the file, perform the analysis, record your notes somewhere, and close the file. You would repeat this 30 times. It would probably take you quite a while.
 
-This, however, is actually a loop! You are iterating through your files and performing the same (or similar) things for each file. This can be translated into code, and then achieved at a much faster rate than if you were doing it by hand. For example, say you have 100 essays, and you want to find data in each essay and copy-paste that data into a spreadsheet. You have now learned the skills to write a loop of code that will do this:
+This, however, is actually a loop! You are iterating through your files and performing the same (or similar) things for each file. This can be translated into code, and then achieved at a much faster rate than if you were doing it by hand. For example, say you have 30 essays, and you want to find data in each essay and copy-paste that data into a spreadsheet. You have now learned the skills to write a loop of code that will do this:
 1. Open a file.
 2. Find the specific data.
 3. Copy that data.
 4. Paste that data into a spreadsheet.
 5. Close the file.
-6. Repeat for each of your 100 essays.
+6. Repeat for each of your 30 essays.
+
 Once you have written such a program, it will accomplish this far faster than if you were to do this manually. This convenience puts you ahead of many others who opt to do this the hard way by hand. The homework for this lesson is a tutorial in how to write a loop that will iterate through many files and peform a simple task. You are encouraged to engage with this in order to understand how impactful a few simple coding concepts can be for your research.
 
 In short, almost nothing one learns about coding is actually disconnected from real-world objectives, but it is easy to get lost in the details and lose sight of the bigger picture. Reminding yourself that there are concrete applications for everything you learn about code is the way to help keep your perspective and keep up your motivation to learn.
