@@ -19,8 +19,8 @@ Since we are writing a program from beginning to end, it is important to have a 
 
 For each function, we list out the actions that that function will take. Then, we put the functions together. Our program is simple, though, so we only have one function to design:
 
-<li>1. Identify the  with our documents</li>
-<li>2. Open that folder and identify the documents inside</li>
+<li>1. Identify and open the folder with our documents</li>
+<li>2. Identify the documents inside the folder</li>
 <li>3. Open a document</li>
 <li>4. Insert a sentence inside the document</li>
 <li>5. Save and close the document</li>
@@ -61,7 +61,7 @@ Now we have:
 ## Phase 2: Writing the Function
 We will now write the code for the function by moving along the steps of our program that we designed. In more complex programs we would not necessarily proceed in the same order as that listed in the program steps, but our program is very simple.
 
-### Identifying Our Folder
+### Identifying and Opening Our Folder
 Our first aim is to tell our program which folder in our Home directory to open and read. The 'os' module has a function called 'os.getcwd()'. Have a look in the Python documentation for this function. What does it do? 
 
 We can see from the documentation that its function is to 'return a string representing the current working directory'. If we type it under our import command, it should return our Home directory (unless you have set Jupyter Notebooks to have a different default working directory):
@@ -105,9 +105,57 @@ with os.scandir(targetdirectory) as currentfiles:
     for file in currentfiles:
         print(file.name)
 ```
-Notice the first line here, with the 'with...as' statement. This is a way to create an object, which we call 'currentfiles', that is scanned by os.scandir(). Then we create the first level of the loop with our colon (':') after the end of the first line. This tells Python to open targetdirectory, scan the currentfiles, and then do a specific task. The next level of our loop, 'for file in currentfiles:' tells Python to iterate over every file in our folder, and then the final line tells Python to print the file name for us. Run this code, and if you get a list of the files we named earlier, then the program is working!
+Notice the first line here, with the 'with...as' statement. This is a way to create an object, which we call 'currentfiles', that is scanned by os.scandir(). Then we create the first level of the loop with our colon (':') after the end of the first line. This tells Python to open targetdirectory, scan the currentfiles, and then do a specific task. The next level of our loop, 'for file in currentfiles:' tells Python to iterate over every file in our folder, and then the final line tells Python to print the file name for us. Run this code, and if you get a list of the files we named earlier, then the program is working! Note that it will print the filesnames in a random order unless we sort them, which we won't bother with for now.
 
- 
+## Writing the File Modification Loop
+Currently, our code can identify the folder that we want and can identify the names of the files within that folder. We now want to write a loop that will open a file, insert a sentence, save the file and then close the file. Because it is a loop, it will perform this task on all files within the folder.  
+
+### Opening Each File
+Our current code is:
+
+```python
+with os.scandir(targetdirectory) as currentfiles:
+    for file in currentfiles:
+        print(file.name)
+```
+Some operating systems, such as Mac or Linux, often have hidden files as a normal part of the system. When writing code, we often have to exclude these files from being read by our code. There are multiple ways to do this, but since we only have two text (.txt) files in our folder, we can simply tell Python to only deal with files that have names ending in .txt:
+
+```python
+with os.scandir(targetdirectory) as currentfiles:
+    for file in files:
+        if file.name.endswith(".txt"): 
+            print(file.name)
+```
+A handy thing about Python is that this code is pretty self-explanatory. It only prints the names of the files ending with .txt. If you saw other files earlier in this tutorial, (such as DS_Store), they will now be ignored by our program. This is a feature of programming that people often find distracting, but it is necessary for properly working code.
+Next, we want to open up each file in the directory, and print its contents (if any). Our files are currently empty, but we can still run the same code as if they had contents:
+
+```python
+with os.scandir(targetdirectory) as currentfiles:
+    for file in currentfiles:
+        if file.name.endswith(".txt"): 
+            print(file.name)
+            with open(file.path, 'r') as currentfile:
+                print(currentfile.read())
+```
+We have added two new lines to the end of our code. Let's look at them one-by-one:
+
+``` python
+with open(file.path, 'r') as currentfile:
+```
+This line starts another loop within our current loop. Before it, we just looped through each file and printed its name. Now we want to loop through them again and open them. Notice that we have another 'with...as' structure. This is handy because with this structure Python will open and then close the file. 
+Inside the parentheses are the specific instructions for the 'open' command. We have file.path, which is the like the 'house number' of each file in the directory. We also have 'r'. This is known as a file mode, and it tells Python to open the file in order to 'read' it only, and not do anything else. Notice that we call the whole thing 'currentfile'. We looped through all files as currentfiles (plural), and now are going to each one as currentfile (singular). This is stylistic. You could use any word for these variables. It's best to use words that make good sense to humans who may read your code later!
+Finally, as we are beginning a loop, we end the line with a colon (:).
+
+Next, we have:
+
+```python
+print(currentfile.read())
+```
+This line is indented to tell Python that it is within the loop that is reading each individual file. It prints the content of that file. We spell out 'read' here because it is different from a file mode: it is actually reading the file that is already opening and printing the contents.
+If there are no contents, the result will just be the file names printed. If this happens and no error message occurs, then your code is clean and you can move to the next step.
+
+
+
 
 
 
