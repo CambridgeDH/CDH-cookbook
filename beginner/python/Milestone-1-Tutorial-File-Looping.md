@@ -47,8 +47,8 @@ Open up a fresh Jupyter Notebook (refer to *lesson* for instructions on navigati
 ```python
 import os
 ```
-Hit 'run'. If your cursor moves to the next cell, then the code has run, and the module is imported and active in your workspace. Jupyter Notebooks lives in your home folder, so your script will be there. It's recommended that you save the notebook with a unique name and with no spaces, e.g., 'file-looping-script'. 
-It's common practice to begin any program by importing/installing the necessary modules. 
+Hit 'run'. If your cursor moves to the next cell, then the code has run, and the module is imported and active in your workspace. Jupyter Notebooks lives in your home folder, so your script will be there. It's recommended that you save the notebook with a unique name and with no spaces, e.g., 'file-looping-script'. It's common practice to begin any program by importing/installing the necessary modules. 
+Now that you've opened up a notebook and put in a line of code, save the notebook. I suggest calling it something like 'file-looping-script'. This follows the naming principles we stated earlier.
 
 Now we have:
  - Established our objectives
