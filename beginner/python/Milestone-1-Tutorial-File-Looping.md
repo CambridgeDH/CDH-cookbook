@@ -124,7 +124,7 @@ Some operating systems, such as Mac or Linux, often have hidden files as a norma
 ```python
 with os.scandir(targetdirectory) as currentfiles:
     for file in files:
-        if file.name.endswith(".txt"): 
+        if file.name.endswith('.txt'): 
             print(file.name)
 ```
 A handy thing about Python is that this code is pretty self-explanatory. It only prints the names of the files ending with .txt. If you saw other files earlier in this tutorial, (such as DS_Store), they will now be ignored by our program. This is a feature of programming that people often find distracting, but it is necessary for properly working code.
@@ -133,7 +133,7 @@ Next, we want to open up each file in the directory, and print its contents (if 
 ```python
 with os.scandir(targetdirectory) as currentfiles:
     for file in currentfiles:
-        if file.name.endswith(".txt"): 
+        if file.name.endswith('.txt'): 
             print(file.name)
             with open(file.path, 'r') as currentfile:
                 print(currentfile.read())
@@ -162,9 +162,9 @@ It is simple to make a function. We simply do this:
 def read_files():
     with os.scandir(targetdirectory) as currentfiles:
         for file in currentfiles:
-            if file.name.endswith(".txt"): 
+            if file.name.endswith('.txt'): 
                 print(file.name)
-                with open(file.path, "r") as currentfile:
+                with open(file.path, 'r') as currentfile:
                     print(currentfile.read())
 read_files()
 ```
@@ -172,8 +172,106 @@ read_files()
 Notice our last line, which is just 'read_files()'. This line tells Python to run the function that we just wrote. Your output should be the list of the files within your folder. Since we have not put any content in the files, the last line, 'print(currentfile.read()) will return empty lines between our file names.
 
 ### Inserting a Sentence in Each Document
-Right now all our code does is open and close each text document within our folder, and read any contents in those documents. We now need to add in the step that tells Python to insert a sentence into each document. A built-in Python function, .write, 
+Right now all our code does is open and close each text document within our folder, and read any contents in those documents. We now need to write the function that tells Python to insert a sentence into each document. A built-in Python command, .write, will insert a string of text into an empty text file. This function will look very similar to the one we just wrote, so let's look at it in full:
 
+```python
+def write_content():
+    with os.scandir(targetdirectory) as currentfiles:
+        for file in currentfiles: 
+            if file.name.endswith('.txt'):
+                with open(file.path, 'r+') as currentfile:
+                    currentfile.write('We are putting this sentence in our files')
+write_content()
+```
+Line 1 of this function defines its name, write_content, and specifies that anything after it which is indented is a part of this function. Next, we have our os.scandir command which is still reading our target directory and the current files in it. On lines 3 and 4 we have our for loop, which tells Python to iterate through every file in our target directory (named 'currentfiles'). If the file is a text (.txt) file, Python is instructed to open it. The next level of the loop, lines 5-6, is a bit different from our previous function. Notice that 'r' now is 'r+'. This indicates Python to open the file in such a way that it can both read **and** modify the file. To write something into our files, we put it in quotes inside the curved brackets after our .write command. **Note that this loop will insert the same phrase into every file in our directory.**
+At the end of the function, we 'call' it by 'write_content()'. This tells Python to run the function we just described. 
+
+Run this code and then check the output by opening up one of your files. Is the sentence in it? If not, check that you have the correct level of indentation for every line; this is one of the most common errors in Python.
+
+### Getting a Description of File Contents
+We could stop here: we have functioning code that goes into a specific directory, tells us what is in that directory, and then opens up each file and modifies it with a sentence. You can already see the potential uses of code like this. But we can do even more! Let's say we have a lot of files in which we want to insert our sentence. It would be tedious to go in and check each one after, to ensure that our sentence is present. Fortunately, with a final loop, we can instruct Python to print whatever is now in our files.
+
+```Python
+def read_files():
+    with os.scandir(targetdirectory) as currentfiles:
+        for file in currentfiles:
+            if file.name.endswith('.txt'):
+                with open(file.path, 'r') as currentfile:
+                    print(file.name)
+                    print(currentfile.read())
+read_files()
+```
+This function is almost the same as our first; the only difference is that at the end, we have added an extra print line. This line employs the .read Python command. Notice that we keep the curved brackets after .read empty; this is because we just want Python to read the entire contents. For example, if we had a long paragraph, we could limit it to the first 10 characters, by putting '10' into those brackets. 
+
+The output for this should be that we should get a list of our two documents' names and after each name, the sentence we put in. Again, check the indentation if this is not working.
+
+## The Entire Picture
+Now that we have our three functions, let's look at them all together:
+
+```python
+import os
+currentworkingdirectory = os.getcwd()
+print(currentworkingdirectory)
+
+targetdirectory = os.path.join(currentworkingdirectory, 'file-looping')
+print(targetdirectory)
+
+def show_files():
+    with os.scandir(targetdirectory) as currentfiles:
+        for file in currentfiles:
+            if file.name.endswith('.txt'): 
+                print(file.name)
+show_files()
+
+def write_content():
+    with os.scandir(targetdirectory) as currentfiles:
+        for file in currentfiles: 
+            if file.name.endswith('.txt'):
+                with open(file.path, 'r+') as currentfile:
+                    currentfile.write('We are putting this sentence in our files')
+write_content()
+
+def read_files():
+    with os.scandir(targetdirectory) as currentfiles:
+        for file in currentfiles:
+            if file.name.endswith('.txt'):
+                with open(file.path, 'r') as currentfile:
+                    print('This is my file:', file.name)
+                    print(currentfile.read())
+read_files()
+```
+Pause and read the code for a moment. What do you observe about it? If you run it in full, consider the output. What does it look like? 
+
+If you are observant, you will notice a few things that seem 'odd' about our code. It runs, of course, which is important! But notice:
+
+<li>How repetitive it is. We call os.scandir() multiple times. We specify only .txt files multiple times. The difference between show_files() and read_files() is only one print statement.</li>
+<li>The output is correct but a bit difficult to read. The data just appear in order, but it is hard to know what command caused it just by reading.</li>
+
+There are also good things about our code. In particular:
+<li>It is 'modular'. That means each function stands on its own. It can run without any of the other functions.</li>
+<li>The names of our variables are clear, and flow like natural language</li>
+<li>The function names are descriptive, short, and appropriate.</li>
+
+If you are noticing these things, congratulations! You are developing an eye for good code. High-quality Python functions should be as independent as possible. Ideally, each should do a single, specific task, and we want to minimise one function being dependent upon another (though sometimes this is unavoidable). Python code should be easy to read for someone who hasn't written it. This means using descriptive and sensible variable names. 
+
+The issues we see are violations of the 'DRY' principle: 'Don't Repeat Yourself'. Professional developers are very careful to adhere to this principle, and there are other ways to write this program that involve no repetition whatsoever. However, repetition for beginners can actually be useful, because each function is fully standalone with this repetition. You can take it and use it in other programs without changing much. Repeating essential elements helps you learn what good code needs to run. 
+
+Often, programmers will write out a repetitive program like this, and then through a process called **refactoring** will edit their code to be more elegant and streamlined. This is not something you need to worry about unless you wish to become a professional, or unless your code is running very slowly. But it is important to know that refactoring is what we call the code editing process.
+
+There is one thing we can do right now, however, to make the output a little easier to read. In any of the print statements, you can follow this format to clarify what is being printed:
+
+```python
+print ('Message to self', printed_thing)
+```
+So, for the very first thing we print, the current working directory, we could write:
+
+```python
+print('This is the current working directory:', currentworkingdirectory)
+```
+Run that line as the third line of this program. You will fine that your note to yourself gets printed, and then the current working directory is printed after it. You can do this for any print statement to make it clearer!
+
+## Conclusion
+Congratulations: you have completed your first full Python program! By importing modules and writing a few 'for' loops, you were able to enter directories and modify files without touching them yourself. You also got to see how a programmer thinks about putting together code to achieve a task. It is often by following tutorials like these, which force you to write your own program, that you learn the most about coding. If you want to learn to do even more, you are encouraged to continue to the next lessons of this course. 
 
 
 
