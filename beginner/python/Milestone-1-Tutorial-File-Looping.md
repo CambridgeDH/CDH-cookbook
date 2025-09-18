@@ -15,9 +15,9 @@ As this is a repetitive task, we will be writing our code in the form of a 'for 
 Navigating through multiple files and performing the same kind of action on each file is one of the most common tasks we do with our computers, and it is easily automated. Because it is straightforward, it is a good 'first program' to learn how to write, and it will make you use the concepts and skills taught in the first part of this course. You will be able to use the components of this program to write future programs for navigating and modifying your files.
 
 ### Designing the Program Steps
-Since we are writing a program from beginning to end, it is important to have a clear picture of each of the program's steps. Developers often write these externally for reference, especially if their programs are complex and involve many functions. It is good to get into this habit early in your journey of learning to code.
+Since we are writing a program from beginning to end, it is important to have a clear picture of each of the program's steps. Developers often write these externally for reference, especially if their programs are complex and involve many s. It is good to get into this habit early in your journey of learning to code.
 
-For each function, we list out the actions that that function will take. Then, we put the functions together. Our program is simple, though, so we only have one function to design:
+For each function, we list out the actions that that  will take:
 
 <li>1. Identify and open the folder with our documents</li>
 <li>2. Identify the documents inside the folder</li>
@@ -27,6 +27,7 @@ For each function, we list out the actions that that function will take. Then, w
 <li>6. Repeat steps 2-5 for the next document</li>
 <li>7. Terminate when there are no more documents to open and edit</li>
 
+We can break up our actions into specific functions. This will help organise the code. Actions 1-3 will be our first function, 'read_files'. Actions 4-6 will be our second function: 'write_content'.
 Notice how each step is specific and granular. There is nothing left unsaid in our plan. Why is it so important to be this specific? It is because of an essential principle about computers:
 **Computers do exactly what you tell them: no more, no less.** 
 Computers do not 'read between the lines'. The faster you embrace the concept of designing specific and granular programs, the faster you will progress because you will not try to write programs that imply invisible steps that the computer cannot follow.
@@ -107,10 +108,10 @@ with os.scandir(targetdirectory) as currentfiles:
 ```
 Notice the first line here, with the 'with...as' statement. This is a way to create an object, which we call 'currentfiles', that is scanned by os.scandir(). Then we create the first level of the loop with our colon (':') after the end of the first line. This tells Python to open targetdirectory, scan the currentfiles, and then do a specific task. The next level of our loop, 'for file in currentfiles:' tells Python to iterate over every file in our folder, and then the final line tells Python to print the file name for us. Run this code, and if you get a list of the files we named earlier, then the program is working! Note that it will print the filesnames in a random order unless we sort them, which we won't bother with for now.
 
-## Writing the File Modification Loop
-Currently, our code can identify the folder that we want and can identify the names of the files within that folder. We now want to write a loop that will open a file, insert a sentence, save the file and then close the file. Because it is a loop, it will perform this task on all files within the folder.  
+## Writing the File Modification Loops
+Currently, our code can identify the folder that we want and can identify the names of the files within that folder. We now want to write loops that will open and read a file, insert a sentence, save the file and then close the file. These loops will perform this task on all files within the folder.  
 
-### Opening Each File
+### Function 1: Opening and Reading Each File
 Our current code is:
 
 ```python
@@ -154,7 +155,24 @@ print(currentfile.read())
 This line is indented to tell Python that it is within the loop that is reading each individual file. It prints the content of that file. We spell out 'read' here because it is different from a file mode: it is actually reading the file that is already opening and printing the contents.
 If there are no contents, the result will just be the file names printed. If this happens and no error message occurs, then your code is clean and you can move to the next step.
 
+Now, we want to make this block of code its own function. Why? Because it performs a logical, standalone task. It goes into our chosen folder, confirms the files that we want are present, and then loops through every file, reads the content, and then closes the file. 
+It is simple to make a function. We simply do this:
 
+```python
+def read_files():
+    with os.scandir(targetdirectory) as currentfiles:
+        for file in currentfiles:
+            if file.name.endswith(".txt"): 
+                print(file.name)
+                with open(file.path, "r") as currentfile:
+                    print(currentfile.read())
+read_files()
+```
+**Notice**: that when we add 'def read_files():, we indented everything after it by one tab. This indentation tells Python that everything after def read_files(): belongs to read_files only. If you do not indent correctly, your code will not work.
+Notice our last line, which is just 'read_files()'. This line tells Python to run the function that we just wrote. Your output should be the list of the files within your folder. Since we have not put any content in the files, the last line, 'print(currentfile.read()) will return empty lines between our file names.
+
+### Inserting a Sentence in Each Document
+Right now all our code does is open and close each text document within our folder. We now need to add in the step that tells Python to insert a sentence into each document. There are two basic functions for inserting text into a document: .write and .append. If our files already had text within them, we might wish to use .append, which literally appends a text string to the end of any text already present in a file. But we have empty files, so we can just use .write. 
 
 
 
