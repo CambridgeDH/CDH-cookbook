@@ -261,7 +261,7 @@ Often, programmers will write out a repetitive program like this, and then throu
 There is one thing we can do right now, however, to make the output a little easier to read. In any of the print statements, you can follow this format to clarify what is being printed:
 
 ```python
-print ('Message to self', printed_thing)
+print ('Message to self', printedthing)
 ```
 So, for the very first thing we print, the current working directory, we could write:
 
