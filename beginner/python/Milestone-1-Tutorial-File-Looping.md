@@ -172,7 +172,7 @@ read_files()
 Notice our last line, which is just 'read_files()'. This line tells Python to run the function that we just wrote. Your output should be the list of the files within your folder. Since we have not put any content in the files, the last line, 'print(currentfile.read()) will return empty lines between our file names.
 
 ### Inserting a Sentence in Each Document
-Right now all our code does is open and close each text document within our folder. We now need to add in the step that tells Python to insert a sentence into each document. There are two basic functions for inserting text into a document: .write and .append. If our files already had text within them, we might wish to use .append, which literally appends a text string to the end of any text already present in a file. But we have empty files, so we can just use .write. 
+Right now all our code does is open and close each text document within our folder, and read any contents in those documents. We now need to add in the step that tells Python to insert a sentence into each document. A built-in Python function, .write, 
 
 
 
