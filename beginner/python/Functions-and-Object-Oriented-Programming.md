@@ -125,18 +125,33 @@ print(math.sqrt(16))
 So we have seen that objects (which is virtually everything we use in Python) have methods which can be performed with them, and attributes associated with them. One last thing that is necessary to understand at a basic level about OOP is the concept of a 'class'.
 
 ### Classes
-We know that, for example, the module 'math' has .pi associated with it. But this is not automatic: Python as a language needed to be informed of this fact. Otherwise, you could call .pi on a string, like 'name.pi', which would make no sense! **Classes** are the recepies that define what specific methods and attributes an object should have. It will be a while before you will be writing classes of your own, but knowing what classes look like, and what they do, will help you tremendously in reading code and using code that other people have written.
+We know that, for example, the module 'math' has .pi associated with it. But this is not automatic: Python as a language needed to be informed of this fact. Otherwise, you could call .pi on a string, like 'name.pi', which would make no sense! **Classes** are the recepies that define what specific methods and attributes an object should have. Knowing what classes look like, and what they do, will help you tremendously in reading code and using code that other people have written.
 
 ```python
 class Greeting:
     def greet(self):
-        print(f"Hello, {self.name}!")
+        print(f'Hello, {self.name}!')
 
 g = Greeting()
-g.name = "Maria"     
+g.name = 'Maria'     
 print(g.name)        
 g.greet()           
 ```
+The class name is Greeting, and like a function, it has the same colon and indentation rules. Class names are always capitalised in code documentation. Under the class name goes the method(s). Note that these look (and operate) much like functions. Ours only has one method, which is to print a greeting. The object in this class is defined on the line 
+'g = Greeting()'. When you write this, you are telling Python to make an object that follows the instructions of 'Greeting'. We store that object in a variable, which we've called 'g' here. 
+
+Notice that 'def greet(self):' has a parameter called 'self' in the brackets. In this case, self=g. Python reads 'self' as being whatever object we created, and helps Python connect the object g to the method of 'greet'. 
+
+The rest of the lines, where you see {self.name} or g.name, g.greet(), etc., attach the attributes to the object 'g'. So g.name tells Python that g has a piece of specific data to use. Therefore when we run the last line of code, g.greet(), that specific bit of data, 'Maria', gets automatically attached. 
+
+At this stage, simply knowing that 'Classes' exist and a little bit about what they do is sufficient. The vast majority of your work with code will involve using modules that other people have written, and those modules have the Classes already defined and ready to go. Knowing these details will enable you to read documentation and code and understand a bit about what it means. It means you can also import specific Classes from modules that you want to use, rather than importing the entire module. Finally, Python bug reports often deal with the levels of Python structure, and so knowing what attributes are will help you understand when you get an error message like, 'this object has no attribute X'.
+
+## Conclusion
+This lesson is probably the most theoretical of this course, and beginners often find these details to be challenging to grasp at first. The best way to acclimate yourself is to read some code that makes sense. 
+Your homework in this case is to:
+
+1. Search online for the Textblob Python module. Read through the quick start guide. Whenever you see code like, 'from textblob import Word', that means that within the module textblob is a Class called 'Word'. Next, go to [this page](https://textblob.readthedocs.io/en/dev/api_reference.html), which describes the different classes in the textblob module. Read the documentation for the class 'Word'. This will help you get a feel for how Classes appear in documentation in some more accessible language.
+2. Take our Class that we made above, and change the .name attribute to a list of students. Instruct the class to only print the greeting if the name specified in your code is present in the list. If the name is not present, instruct the class to print a phrase indicating 'this person is not present'.
 
 
 
