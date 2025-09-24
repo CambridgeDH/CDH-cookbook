@@ -82,32 +82,61 @@ To summarise, we have three (or four, if you are counting module functions) type
 ## Introduction to Object-Oriented Programming (OOP)
 At this point it is appropriate to introduce you to the concept of 'Object-Oriented Programming' (abbreviated ubiquitously as 'OOP'). OOP is essentially the term describing an essential operational characteristic of Python. 
 
-### The 'Object' of 'Object-Oriented'
+### Objects 
 In Python we create and manipulate 'objects' at different levels (Module, Class, Function, Variable). Everything that you deal with in Python is an object. What is this 'object'? It is an encoding of data and often, a specific action to take by the computer using that data, stored in the computer's memory. Understanding how Python uses these objects can help you understand and write code more effectively.
 
 In our code above, we tell the computer to print the name 'Maria'. We can check what kind of object Python considers Maria to be:
 
 ```python
-name = "Maria"
+name = 'Maria'
 print(type(name))
 ```
 We get '<class 'str'> back. What do you think that means? It means that 'Maria' is a 'string', literally a few characters in a row. Python considers name to be an variable containing an object that is a string, which is made up of 'M' 'a' 'r' 'i' 'a'. Remember the 'Data types' from the first lesson? These are some of the types that objects can have. 
-As I mentioned above, often objects have actions associated with them. One such action for our string object is .lower(), which turns any upper-case letter into a lower-case letter. Many of the errors we see in Python code come from asking Python to perform an action on an object which is not associated with that object. Knowing the objects with which you are working can help prevent these issues.
 
-### How Objects are Organised
-As we have just seen, the action .lower() is associated with string objects. But how does Python know this? Every module and even the code behind Python itself contains elements called 'Classes'. Classes tell Python what actions go with which objects. Look at the output above, where we got: < class 'str'> back. The type() function instructs Python to tell us what class the object belongs to. 'Maria' is an string object, and in Python source code, a class called 'str' defines the rules around what Python can do with strings. 
-
-What does a class look like? We can make our own:
+### Methods
+As I mentioned above, often objects have actions associated with them. We call these actions **methods**. These are the things that Python can do with a given object. An example of a method that can be performed on a 'str' object is .lower(). This method turns any upper-case letter into a lower-case letter. Let's get this to happen for us:
 
 ```python
-class Greet:
-    def greet(self):
-        print('Hello me!')
-g = Greet()
-g.greet()
+def greet(name):
+    print(f'Hello, {name.lower()}!')
+greet('John')
 ```
-'class Greet:' defines a new class which we call 'Greet'. (self) here is just a placeholder for Python - it's necessary for it to be there, and it tells Python to keep tabs on the data that this class deals with. g = Greet() creates an object that we can use, which we call 'g'. This object only works with actions defined in the class Greet. We then take 'g' and use it with the greet() action: g.greet(). This is called 'dot notation'. 
-All of this may seem abstract and confusing at first. As we proceed through the rest of the lesson, you will see how the pieces fit together like building blocks. 
+We passed the parameter 'name' into the function 'greet'. It is an object, which happens in this case to be a string, 'John'. We then 'called' a method on this object, .lower(), which performed the action of lowering the 'J' to 'j'. 
+
+
+### Attributes
+Alongside methods, objects also have attributes, which are specific pieces of data that are associated with the object. Do you remember how we said that 'everything that we deal with in Python is an object'? That is literally true, *everything* is an object. So, Python has a module called 'math'. This module itself is an object. You can think that a module called 'math' would have a lot of pieces of specific data associated with it, and that is also correct. In fact, 'math' has a specific piece of data, pi:
+
+```python
+import math
+print(math.pi)
+```
+
+The bit, '.pi' is an **attribute** of the object 'math'. It is tricky, because we also access methods using this 'dot notation'. Let's distinguish it from dot notation denoting a method:
+
+```python
+import math
+print(math.pi)
+#this is an attribute. Pi is a specific number!
+
+print(math.sqrt(16))
+#this is an action. It takes the square root of 16!
+```
+So we have seen that objects (which is virtually everything we use in Python) have methods which can be performed with them, and attributes associated with them. One last thing that is necessary to understand at a basic level about OOP is the concept of a 'class'.
+
+### Classes
+We know that, for example, the module 'math' has .pi associated with it. But this is not automatic: Python as a language needed to be informed of this fact. Otherwise, you could call .pi on a string, like 'name.pi', which would make no sense! **Classes** are the recepies that define what specific methods and attributes an object should have. It will be a while before you will be writing classes of your own, but knowing what classes look like, and what they do, will help you tremendously in reading code and using code that other people have written.
+
+```python
+class Greeting:
+    def greet(self):
+        print(f"Hello, {self.name}!")
+
+g = Greeting()
+g.name = "Maria"     
+print(g.name)        
+g.greet()           
+```
 
 
 
