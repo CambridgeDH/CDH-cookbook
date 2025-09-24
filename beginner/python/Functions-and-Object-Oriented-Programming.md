@@ -58,8 +58,6 @@ def greet(name, known=False):
   print(f'Hello, {name}, I'm Sophie. Did you know your name has {length} letters?')
 greet(Maria)
 ```
-**Important!** If you find that your code appears correct, but when you run it in Jupyter Notebooks, nothing appears, try restarting your kernel. Playing around with different commands can cause memory issues in Jupyter Notbeooks. 
-
 Here we added in the len() function. Look at the documentation to see how it describes what len() does. It is always good to get in the habit of reading code documentation.
 
 
