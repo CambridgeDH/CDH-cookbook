@@ -40,4 +40,14 @@ In the lesson, we used both a lambda function ('format_name = lambda n: n.lower(
 Lambda functions are tools for writing small, one-off functions. They don’t “belong” to any specific object.
 Methods are action attributes that are attached to specific objects (like strings). They are usually the most direct way to manipulate an object.
 
+Finally, here is an example of using another lambda method (you could have used any to complete the homework!):
+
+```python
+def greet(name):
+    repeat_name = lambda n: n * 2
+    print(f"Hello, {repeat_name(name)}!")
+
+greet("Maria")
+```
+Try running this. What does it do? 
 
