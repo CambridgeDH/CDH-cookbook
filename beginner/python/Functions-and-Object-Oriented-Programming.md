@@ -179,11 +179,13 @@ This line of code will import the Class 'Word' from the textblob module. Word is
 Finally, Python bug reports often deal with the levels of Python structure. A common error, if you call the wrong attribute for an object, is 'this object has no attribute X'. Knowing some of this vocabulary and the way Python is put together will help you interpret such error messages.
 
 ## Conclusion
-This lesson is probably the most theoretical of this course, and beginners often find these details to be challenging to grasp at first. The best way to acclimate yourself is to read some code that makes sense. 
+This lesson is probably the most theoretical of this course, and beginners often find these details to be challenging to grasp at first. The best way to acclimate yourself is to read code documentation.
+
 Your homework in this case is to:
 
-1. Search online for the Textblob Python module. Read through the quick start guide. Whenever you see code like, 'from textblob import Word', that means that within the module textblob is a Class called 'Word'. Next, go to [this page](https://textblob.readthedocs.io/en/dev/api_reference.html), which describes the different classes in the textblob module. Read the documentation for the class 'Word'. This will help you get a feel for how Classes appear in documentation in some more accessible language.
+1. Search online for the Textblob Python module. You are already familiar with part of it from previous lessons. Read through the quick start guide to refresh your memory. Next, go to [this page](https://textblob.readthedocs.io/en/dev/api_reference.html), which describes the different classes in the textblob module. Read the documentation for the class 'Word'. This will help you get a feel for how Classes appear in documentation in some more accessible language.
 2. Take our Class that we made above, and change the .name attribute to a list of students. Instruct the class to only print the greeting if the name specified in your code is present in the list. If the name is not present, instruct the class to print a phrase indicating 'this person is not present'.
+3. Notice that we used a lambda function to turn 'Maria' lowercase early in the lesson. Then, we described '.lower' as a method attribute within the Class 'str' (string). Why do you think this redundancy exists in Python structure? Find another lambda function and modify the greeting Maria code with it. 
 
 
 
