@@ -267,7 +267,7 @@ def add(*args):
 add()
 
 ```
-What can you learn from the error message for the first function? It is expecting exactly 'x, y, z'. But the second function expects whatever you throw at it (or don't throw at it). In this case, we gave it nothing, and it returned 0. That's not an error - that's the correct output! Try now giving it an exact argument. Create some variables and put them into add() on the last line. 
+What can you learn from the error message for the first function? It is expecting exactly 'x, y, z'. But the second function expects whatever you throw at it (or don't throw at it). In this case, we gave it nothing, and it returned 0. That's not an error - that's the correct output! 
 
 5. *kwargs: this kind of argument collects keyword arguments and stores them in dictionaries:
 ```python
@@ -276,20 +276,14 @@ def print_info(**kwargs):
 
 print_info(name="Alice", age=30, job="Engineer")
 ```
+## Conclusion
+In this lesson you have learned more of the variety of syntax that Python has and different ways in which we can get Python to look at our data. It's best to think of these loops and conditionals as tools that you can pick as needed to accomplish a task: if you just want to analyse each element in a dataset only once, you can use a for loop. If you want to skip elements, you can use a break, etc. This is by no means all of the features that Python syntax can offer you, but these are the fundamentals.
 
+Your homework for this lesson involves getting used to using these tools and becoming more skilled at finding out information about your code:
 
+**Task 1:** The first example in the 'While Loop Else' section is pretty straightforward: it searches an index of books and if it finds a match (we have not written the code to specify the desired match), it processes the book to the reader. But there are some code elements that were not overtly explained in this lesson. Search online and find out exactly what they do. 
+**Task 2:** In the 4th element of the list of argument types above, we did not pass any argument into 'add()'. Try now giving this function an exact argument. Create some variables and put them into add() on the last line. 
+**Task 3:** Get creative and come up with a data scenario that would require you to use a combination of at least two types of loops and at least one conditional. See if you can write some code that will successfully run within these parameters.
 
-
-
-
-
-
-
-
-
-
-
-
-Task 1: The first example in the While Loop Else section is pretty straightforward: it searches an index of books and if it finds a match (we have not written the code to specify the desired match), it processes the book to the reader. But there are some new code elements. Search online and find out exactly what they do. 
 
 
