@@ -154,8 +154,82 @@ This checks if the 'breed' value in the dictionary matches the horse_location fr
 **The Print statement**
 This function prints the elements that have been identified and matched above. 
 
+## Conditionals
+You have probably noticed from the code above that Python uses terminology which only holds true under certain circumstances. In fact, there are a number of statements in Python that direct your code to decide on a specific action based on whether a condition is true or false. These are known as 'conditionals'. They fall under the category of 'control structures', which are statements that control how a program flows from one command to another. Loops are control structures, and so are conditionals. When we need to write code that does more than just execute commands in order, but to pay attention to specific **conditions** and act accordingly, we can use conditionals to achieve this.
 
+### The Biggest Conditional: 'If'
+You have already seen a lot of 'if' statements in this course. Let's review some of what we know about them:
 
+<li>Lines with if statements need to end in a colon.</li>
+<li>If statements tell Python to check if something is True. If so, the block of code is run. If not, the code is not run **within that indentation segment**.</li>
+<li>If statements require indentation after them, so that anything that appears after falls within their remit.</li>
+<li>If statements can stand alone, or they can be aided by further conditionals (which we are about to learn)</li>
+
+### Else and Elif
+
+#### Else
+Let's say we have a situation which we want Python to evaluate. However, rather than simply not running code if the situation is false, we want Python to do an **alternative** action. We can use this syntax:
+
+```python
+if <situation>:
+    <do task>
+else:
+    <do other task>
+# The < > are placeholders; not actual code
+```
+If the situation is true, then the else part of the code is not run, and vice versa. Here is a concrete example:
+
+```python
+refrigerator = ['ice cream', 'soda', 'salad']
+shopping_list = []
+
+ingredients = ['pizza', 'chilli peppers', 'garlic']
+
+if all(item in refrigerator for item in ingredients):
+    print('Yay! We can make dinner!')
+else:
+    shopping_list.extend(ingredients)
+
+print(f"This is the shopping list: {', '.join(shopping_list)}")
+
+```
+Here we start with a list of foods and an empty list, 'shopping_list'. We also have a list of ingredients. Our loop is an 'if all' loop, which checks each element in the refrigerator list with each element in the ingredients list. If all = True (everything in 'ingredients' is also in refrigerator'), then the code runs a print statement.
+
+If all ≠ true, then Python skips to the else statement. Here we have .extend. This list method takes a list, tuple, or string, and adds elements to it. We extend 'shopping_list' with the 'ingredients' list.
+
+Now notice our second to last print statement. First we have an f-string, which we have already learned about. Next we have {', '.join(shopping_list)}. The brackets are part of the f-string, and inside Python evaluates the expression and inserts the results right in that location.  The .join(shopping_list) then takes each individual element in the shopping_list and makes one long string. We have ', ' to tell Python to separate each item in this string with a comma.
+
+You can see the versatility of this tool; it can be used in many similarly creative ways.
+
+#### Elif
+Let's now look at elif. We use elif (else...if) when we have more than one alternative. For our shopping list, let's add the contingency that the store is out of one of the ingredients on our new shopping list:
+
+```python
+refrigerator = ['ice cream', 'soda', 'salad']
+shopping_list = []
+
+ingredients = ['pizza', 'chilli peppers', 'garlic']
+
+store = ['pizza', 'garlic']  # what the store has today
+
+# Build the shopping list (everything we need but don’t already have)
+for item in ingredients:
+    if item not in refrigerator:
+        shopping_list.append(item)
+
+print(f"This is the shopping list: {', '.join(shopping_list)}")
+
+# Now check each shopping list item at the store
+for item in shopping_list:
+    if item in store:
+        print(f'Tick off {item}')
+    elif item not in store:
+        print(f'We cannot buy {item} today')
+
+```
+As you can see, elif is pretty straightforward. You can have as many elif branches as necessary; there is no limit.
+
+## Arguments
 
 
 
