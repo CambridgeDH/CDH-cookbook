@@ -230,6 +230,52 @@ for item in shopping_list:
 As you can see, elif is pretty straightforward. You can have as many elif branches as necessary; there is no limit.
 
 ## Arguments
+One last concept we will explore in this lesson is that of 'arguments'. You have already been dealing with arguments since we discussed function. You are familiar with 'parameters',  which are the placeholder variables listed inside the curved brackets at the start of the function. Arguments are the exact instances of those variables that get acted upon when we call the code. There are different kinds of arguments, and it helps to know them:
+
+1. Positional arguments: these need to be passed into the function in a specific order:
+```python
+names = ['Alice', 'Bob', 'Charlie']
+
+def name_occupation(name, occupation):
+    print(f'{name} works as a {occupation}.')
+
+# Using positional arguments
+name_occupation('Alice', 'Engineer')
+name_occupation('Bob', 'Doctor')
+name_occupation('Charlie', 'Teacher')
+```
+
+2. Keyword arguments: like positional arguments except that the order does not matter.
+3. Default arguments: if you do not give the function a specific argument, a default appears instead. Here, the default is 'friend':
+```python
+def greet(name='friend'):
+    print('Hello,', name)
+
+greet()        
+greet('Jean Luc')
+```
+4. *args: this allows a function to accept any number of positional arguments. Python takes these arguments and collects them into a tuple. Here is an example. Run the two functions below just as they are:
+```python
+# Without *args:
+def add(x, y, z):
+    return x + y + z
+add()
+
+# With *args:
+def add(*args):
+    return sum(args)
+add()
+
+```
+What can you learn from the error message for the first function? It is expecting exactly 'x, y, z'. But the second function expects whatever you throw at it (or don't throw at it). In this case, we gave it nothing, and it returned 0. That's not an error - that's the correct output! Try now giving it an exact argument. Create some variables and put them into add() on the last line. 
+
+5. *kwargs: this kind of argument collects keyword arguments and stores them in dictionaries:
+```python
+def print_info(**kwargs):
+    print(kwargs)
+
+print_info(name="Alice", age=30, job="Engineer")
+```
 
 
 
