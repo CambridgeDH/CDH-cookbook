@@ -94,7 +94,7 @@ Everything that you deal with in Python is an 'object'. To quote Python's docume
 name = 'Maria'
 print(type(name))
 ```
-We get '<class 'str'> back. This output means that 'Maria' is an object belonging to the Class 'str'. This Class organises code around strings, which are literally characters in a row. The variable 'name' that we created contains an 'object' that is in the form of a string, 'M' 'a' 'r' 'i' 'a'. This object we created is the embodiment of the Class 'str' in real life in our code. We call these embodiments 'instances' of a Class. The Class defines the structure of some data and some actions, and when we use a Class, the result is an object, such as 'name' here.
+We get '<class 'str'> back. This output means that 'Maria' is an object belonging to the Class 'str'. This Class organises code around strings, which are literally characters in a row. The variable 'name' that we created contains an 'object' that is in the form of a string, 'M' 'a' 'r' 'i' 'a'. This object we created is the embodiment of the Class 'str' in in our code. We call these embodiments 'instances' of a Class. The Class defines the structure of some data and some actions, and when we use a Class, the result is an object, such as 'name' here.
 
 **For a quick rule of thumb: anything we create in Python is an 'object' or 'instance' embodying a more abstract organisation of code, or a Class.**
 
