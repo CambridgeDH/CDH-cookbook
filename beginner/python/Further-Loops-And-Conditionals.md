@@ -281,9 +281,9 @@ In this lesson you have learned more of the variety of syntax that Python has an
 
 Your homework for this lesson involves getting used to using these tools and becoming more skilled at finding out information about your code:
 
-**Task 1:** The first example in the 'While Loop Else' section is pretty straightforward: it searches an index of books and if it finds a match (we have not written the code to specify the desired match), it processes the book to the reader. But there are some code elements that were not overtly explained in this lesson. Search online and find out exactly what they do. 
-**Task 2:** In the 4th element of the list of argument types above, we did not pass any argument into 'add()'. Try now giving this function an exact argument. Create some variables and put them into add() on the last line. 
-**Task 3:** Get creative and come up with a data scenario that would require you to use a combination of at least two types of loops and at least one conditional. See if you can write some code that will successfully run within these parameters.
+<li>**Task 1:**</li> The first example in the 'While Loop Else' section is pretty straightforward: it searches an index of books and if it finds a match (we have not written the code to specify the desired match), it processes the book to the reader. But there are some code elements that were not overtly explained in this lesson. Search online and find out exactly what they do. 
+<li>**Task 2:**</li> In the 4th element of the list of argument types above, we did not pass any argument into 'add()'. Try now giving this function an exact argument. Create some variables and put them into add() on the last line. 
+<li>**Task 3:**</li> Get creative and come up with a data scenario that would require you to use a combination of at least two types of loops and at least one conditional. See if you can write some code that will successfully run within these parameters.
 
 
 
