@@ -83,7 +83,7 @@ Here we have a lambda function that lowers the case of the name. 'lambda' tells 
 ## Introduction to Object-Oriented Programming (OOP)
 Now we will turn our focus to the concept of 'Object-Oriented Programming' (abbreviated ubiquitously as 'OOP'). This section is more theoretical than the previous sections of this course, and it may seem disconnected at first from your ultimate goals, but understanding these concepts early on, even in a basic way, will carry you far and give you a stronger foundation upon which to build your skills. 
 
-OOP is essentially the term describing a fundamental operational characteristic of Python. It underlies how code is structured in all of the modules you will encounter, and the terminology around OOP is found in nearly every error message you might get. Knowing a bit about it will help you find what you need in other people's code and will help you understand what Python is trying to tell you when your code does not run. We will discuss the three basics of OOP today: objects, attributes, methods, and classes.
+OOP is essentially the term describing a fundamental operational characteristic of Python. It underlies how code is structured in all of the modules you will encounter, and the terminology around OOP is found in nearly every error message you might get. Knowing a bit about it will help you find what you need in other people's code and will help you understand what Python is trying to tell you when your code does not run. We will discuss the four basics of OOP today: objects, attributes, methods, and classes.
 
 You should first understand that 'Classes' are the 'blueprints' or the 'recipes' that organise Python code into actionable chunks. 
 
