@@ -161,7 +161,7 @@ This looks a bit complicated at the start, so we will deconstruct it bit by bit:
 <li>2. Under the class name goes the method(s). Note that these look (and operate) much like functions. Ours only has one method, which is to print a greeting. </li>
 <li>3.'g = Greeting()'. When you write this, you are telling Python to make an object that follows the instructions of 'Greeting'. We store that object in a variable, which we've termed 'g' here. What we name it does not matter. </li>
 
-Now look again at 'def greet(self):'. The method has this parameter called 'self' specified in the brackets, much like we may specify data for a function. This word 'self' is Python's way of making a connection between the method and the object, which we called 'g'. 'self' ties in the object about greeting with the method 'greet'. 
+Now look again at 'def greet(self):'. The method has this parameter called 'self' specified in the brackets, much like we may specify data for a function. This word 'self' is Python's way of making a connection between the method and the object, which we called 'g'. 'self' ties in the greeting object with the method 'greet'. 
 
 Remember above where we established that objects can have data attributes? 'g.name' creates a data attribute containing the name 'Maria'. Where you see {self.name}, this attaches the data attribute to the object, 'g'. Therefore when we run the last line of code, g.greet(), that specific bit of data, 'Maria', gets automatically attached. 
 
