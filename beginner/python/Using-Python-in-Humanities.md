@@ -1,4 +1,4 @@
-# Using Python to Support Humanities Research
+# Using Python to Support Humanities Research Milestone Lesson
 
 ## Contents
 
@@ -73,7 +73,7 @@ You will now want to have a safe place to save any new files you create during a
 
 [Hidden Answer]
 ```python
-results_dir = os.path.join(currentworkingdirectory, "analysis-results")
+results_dir = os.path.join(currentworkingdirectory, "analysis_results_textblob")
 os.makedirs(results_dir, exist_ok=True)
 print(results_dir)
 ```
@@ -144,12 +144,126 @@ result = analyze_text(sample_filename, sample_content)
 print(result)
 ```
 You should get a result that looks somewhat like (with the details different depending on text):
+```python
 "{'filename': 'oldmantext.txt', 'polarity': -0.04283380018674137, 'subjectivity': 0.2992763772175537, 'noun_phrases': WordList(['mixed-up whiskers', '’ t', 'man ’ s', 'body ’ s flesh crawl –', 'clothes –', 't ’', 'floor –', 'old black slouch'])}"
-
+```
 **Ensure you understand the code in the answer before continuing**
 
+Now that you have code that will assess one of your texts, write a loop that will assess them all in this way. For each file, call your text_analysis function, and print out the filename with its sentiment polarity and subjectivity. This will give you a quick overview of all the texts.
 
+[Hidden Answer]
 
+```python
+for filename, content in texts:
+    result = text_analysis(filename, content)
+    print(f"File: {result['filename']}")
+    print(f"  Polarity: {result['polarity']}")
+    print(f"  Subjectivity: {result['subjectivity']}")
+    print()
+```
+The result should be a list of filenames with their polarity and subjectivity as decimals under them.
 
+TextBlob also gives us noun phrases. Instead of printing them all, let’s count how many noun phrases appear in each text. Add this count to your printed output.
+
+[Hidden Answer]
+
+```python
+for filename, content in texts:
+    result = text_analysis(filename, content)
+    noun_count = len(result["noun_phrases"])
+    
+    print(f"File: {result['filename']}")
+    print(f"  Polarity: {result['polarity']}")
+    print(f"  Subjectivity: {result['subjectivity']}")
+    print(f"  Number of noun phrases: {noun_count}")
+    print()
+```
+Now you should see the number of noun phrases in each text.
+
+Finally, you might like to plot some of this data on a chart. We have not gotten into the depths of Python visualisation, but here is a simple code snippet which will help you plot the polarity of each text:
+
+```python
+import matplotlib.pyplot as plt
+
+# Collect filenames and polarity scores
+filenames = []
+polarities = []
+
+for filename, content in texts:
+    result = text_analysis(filename, content)
+    filenames.append(result["filename"])
+    polarities.append(result["polarity"])
+
+# Simplest bar chart
+plt.bar(filenames, polarities)
+
+# Tilt the x-axis labels so they’re easier to read
+plt.xticks(rotation=45)
+
+plt.show()
+
+```
+The import statement is written to shorten the name for typing convenience. The module is now called 'plt'. 
+The second block of code creates a place to store the filenames and polarity scores separately.
+The third code block goes through each text, runs the analysis function, and builds two lists: one of filenames, one of polarity scores. Those two lists are then used for plotting in the  bar chart command: .bar() is a function in the nicknamed 'plt' module. We give it the filenames and the polarities so that it can plot them as a bar chart. 
+Finally, because we need to be able to see the labels, 'plt' has a function called xticks() which has a parameter, 'rotation'. We rotate the labels 45 degrees. 
+plt.show is the command in 'plt' to show the plot we just constructed.
+
+### Saving Our Analysis
+Now let’s save all the results into a file, and also save the plot as an image. Both will go into the analysis_results_textblob folder we created earlier. Take a look at this code. Try to understand it naturally before reading the explanation afterward.
+
+```python
+
+# 1. Collect results
+results = []
+filenames = []
+polarities = []
+
+for filename, content in texts:
+    result = text_analysis(filename, content)
+    noun_count = len(result["noun_phrases"])
+    results.append(f"{result['filename']}: Polarity={result['polarity']}, "
+                   f"Subjectivity={result['subjectivity']}, "
+                   f"Noun Phrases={noun_count}")
+
+    filenames.append(result["filename"])
+    polarities.append(result["polarity"])
+
+# 2. Save results to a text file
+results_path = os.path.join(results_dir, "analysis_summary.txt")
+with open(results_path, "w", encoding="utf-8") as f:
+    for line in results:
+        f.write(line + "\n")
+print(f"Results saved to: {results_path}")
+
+plt.bar(filenames, polarities)
+plt.xticks(rotation=45)
+plt.ylabel("Polarity")
+plt.title("Sentiment Polarity of Texts")
+
+plot_path = os.path.join(results_dir, "sentiment_plot.png")
+plt.tight_layout()
+plt.savefig(plot_path)
+plt.close()
+
+print(f"Plot saved to: {plot_path}")
+```
+
+The first three lines create containers for the results and the filenames. The first loop saves those things in these containers. The second loop uses those containers to save the results in a new text file, and save it in the directory you created above for the results. 
+The final few blocks of code create the plot and give it its various elements. It then saves it in the directory for the results.
+
+## Conclusions
+Congratulations! Within a few lines of code you have taken 8 texts and have automated some analysis of their natural language features. This is a model of the workflow for this kind of work with other datasets and research questions. 
+
+Some crucial things to remember:
+<li>Have a concrete question that is answerable using code. Vague questions are unlikely to help get you satisfactory results</li>
+<li>Take the time to prepare your datasets and design your approach to the problem. A big coding project is made much easier with some clarity on the direction you are headed!</li>
+<li>Keep your old code and documentation. Chances are, you can re-use a lot of what you write.</li>
+<li>Read the formal documentation! Search the internet when you have questions! It is not cheating to look for assistance.</li>
+
+## Homework
+This was an intensive lesson where you were encouraged to write a lot of your own code before looking at the answers. However, to get the most out of this lesson, it is worth now pondering your own research challenges and situations. What kinds of data do you have? What things would you like to know about it, or accomplish with it? What steps would you need to take to get your data ready for digital analysis of any kind? If you are looking for a particular method, can you search online to find some Python modules which perform this method? 
+
+By asking these questions with a greater awareness of what it takes to write code and run it on real data, you will be enabling yourself to do more with these powerful tools. 
 
 
