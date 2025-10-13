@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../cookbook.css">
-# Lesson 2: Fundamental Commands and Actions in Python
+# Lesson 2: Fundamental Commands in Python
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
 - [Overview](#overview)
