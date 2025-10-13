@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../cookbook.css">
-# Lesson 3: The Basic Mechanics of the Python Language
+# Lesson 3: The Mechanics of the Python Language
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
 
