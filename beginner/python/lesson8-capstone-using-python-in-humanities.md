@@ -1,4 +1,4 @@
-# Using Python to Support Humanities Research Milestone Lesson
+# Lesson 8: Capstone: Using Python in Humanities Research 
 
 ## Contents
 
