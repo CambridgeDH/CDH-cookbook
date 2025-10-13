@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../../cookbook.css">
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
-# Homework Solutions: Lesson 2: Fundamental Commands and Actions in Python
+# Homework Solutions: Lesson 2: Fundamental Commands in Python
 Here we have given some suggested code and thematic solutions to the relevant homework questions for Lesson 2: Fundamental Commands and Actions in Python.
 
 ## Task 1
