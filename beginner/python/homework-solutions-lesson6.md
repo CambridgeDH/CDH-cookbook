@@ -1,4 +1,4 @@
-# Homework Solutions: Lesson 5: Further Loops and Conditionals
+# Homework Solutions: Lesson 6: Further Loops and Conditionals
 
 ## Task 1:
 The code example this task depends on is:
