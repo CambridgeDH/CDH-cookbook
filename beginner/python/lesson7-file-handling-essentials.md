@@ -1,4 +1,4 @@
-# Lesson 6: File Handling Essentials
+# Lesson 7: File Handling Essentials
 
 ## Contents
 
