@@ -1,4 +1,4 @@
-# Homework Solutons: Lesson 6
+# Homework Solutions Lesson 7: File Handling Essentials
 Your tasks in this lesson were to practice using file handling commands and to search for documentation on some file handling modules.
 
 ## Task 1
