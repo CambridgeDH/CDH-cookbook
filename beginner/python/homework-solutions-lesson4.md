@@ -1,4 +1,4 @@
-# Milestone 1 Tutorial: A File Looping Program
+# Homework Solutions: Lesson 4: Milestone Lesson: Your First Program
 
 In the past three lessons you have learned the necessary essentials to begin coding. These essentials provide you with a few fundamental skills that enable to you to write your first Python program. This tutorial is designed to have you put those skills to use by showing how to write the correct commands, in the proper order, for looping through and editing files.
 
