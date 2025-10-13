@@ -1,4 +1,4 @@
-# Milestone Lesson 1: The Bricks of Python
+# Milestone Lesson 1: Your First Program
 ## Contents
 - [Summary of Material Covered So Far](#summary-of-material-covered-so-far)
 - [Why Did I Learn This?](#why-did-i-learn-this?)
