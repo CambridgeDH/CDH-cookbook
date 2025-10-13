@@ -1,4 +1,4 @@
-# Lesson 4 Homework Solutions
+# Homework Solutions Lesson 5: A Deeper Look at Functions and Introduction to Object Oriented Programming
 # Task 1
 For this task you should have explored some Classes within the textblob module. As such, there are no 'solutions' for us to cover. But this is an important opportunity to pause and reflect on what you saw. What was confusing? What made sense? If something was confusing, how might you go about finding more information about it?
 
