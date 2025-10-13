@@ -7,7 +7,7 @@ The beginner Python course has three lessons. If you're completely new to Python
 3. [The Mechanics of the Python Language](lesson3-mechanics-python-language)
 4. [Milestone Lesson](lesson4-milestone-lesson)
 5. [Functions and Object-Oriented Programming](lesson5-functions-and-object-oriented-programming)
-6. [Further Loops and Conditionals)[lesson6-further-loops-and-conditionals]
+6. [Further Loops and Conditionals](lesson6-further-loops-and-conditionals)
 7. [File Handling Essentials](lesson7-file-handling-essentials)
 8. [Capstone Lesson: Using Python in the Humanities](lesson8-capstone-using-python-in-humanities)
 9. [Concluding Lesson](lesson9-concluding-lesson)
