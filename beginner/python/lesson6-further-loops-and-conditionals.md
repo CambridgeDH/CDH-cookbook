@@ -1,4 +1,4 @@
-# Lesson 5: Further Loops and Conditionals
+# Homework Solutions Lesson 6: Further Loops and Conditionals
 ## Contents
 
 ## Overview
