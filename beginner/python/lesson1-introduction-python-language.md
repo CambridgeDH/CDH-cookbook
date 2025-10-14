@@ -1,6 +1,7 @@
 # Lesson 1: Introduction to the Python Language
 <link rel="stylesheet" href="../../cookbook.css">
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
+
 ## Contents
 
 - [Overview](#overview)
