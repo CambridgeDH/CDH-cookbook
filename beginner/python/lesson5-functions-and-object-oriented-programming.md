@@ -73,10 +73,10 @@ These functions are special in that they are **short**, containing only a single
 ```python
 def greet(name, known=False):
     format_name = lambda n: n.lower()
-  if known:
-      print(f'Hello, {format_name(name)}!')
-  else:
-  print(f'Hello, {format_name(name)}, I'm Sophie')
+    if known:
+        print(f'Hello, {format_name(name)}!')
+    else:
+        print(f'Hello, {format_name(name)}, I\'m Sophie')
 greet('Maria')
 ```
 Here we have a lambda function that lowers the case of the name. 'lambda' tells Python that this is anonymous. After it, we give the parameter, 'n'. We could call it anything, like 'name'. The colon separates our parameter from the action. Notice that in the {name} statements we call 'format_name' and then in the brackets, put 'name'. Try running this code - what happens?
