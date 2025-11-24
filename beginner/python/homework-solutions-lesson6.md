@@ -4,6 +4,14 @@
 The code example this task depends on is:
 
 ```python
+university_library = ['Book A', 'Book B', 'Book C']
+
+def present(book):
+    return book == 'Book B'
+    
+def process(book):
+    print(f"Processing: {book}")
+    
 index = 0
 while index < len(university_library):
     book = university_library[index]
