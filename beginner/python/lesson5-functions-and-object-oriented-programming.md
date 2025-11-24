@@ -59,7 +59,7 @@ def greet(name, known=False):
   if known:
       print(f'Hello, {name}! Did you know your name has {length} letters?')
   else:
-  print(f'Hello, {name}, I'm Sophie. Did you know your name has {length} letters?')
+      print(f'Hello, {name}, I\'m Sophie. Did you know your name has {length} letters?')
 greet('Maria')
 ```
 Here we added in the len() function. Look at the documentation to see how it describes what len() does. It is always good to get in the habit of reading code documentation.
