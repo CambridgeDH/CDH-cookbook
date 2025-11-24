@@ -107,7 +107,7 @@ count = 0
 while count < 5:
     print("Count is:", count)
 ```
-The condition upon which the loop operates is that if the count variable is less than 5, print a statement. The problem is, the count variable here is never updated to anything other than 0, which is less than 5. Therefore, if you were to run this code, it would run forever or until you quit your notebook. To fix it, we would add:
+The condition upon which the loop operates is that if the count variable is less than 5, print a statement. The problem is, the count variable here is never updated to anything other than 0, which is less than 5. Therefore, if you were to run this code, it would run forever or until you quit your notebook. To stop it running forever, we add:
 
 ```python
 count = 0
