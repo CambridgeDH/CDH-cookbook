@@ -33,7 +33,7 @@ def greet(name, known=False):
   if known:
       print(f'Hello, {name}! We have met before.')
   else:
-  print(f'Hello, {name}, I'm Sophie. Nice to meet you!')
+      print(f"Hello, {name}, I'm Sophie. Nice to meet you!")
 greet('Maria', True)
 ```
 Here we define a new function, 'greet'. It has specific input parameters: name (this means when you call the function, you have to give a name), and known=False (this means that if you know the person you are greeting, you need to put 'True' in the brackets when you call the function). 
