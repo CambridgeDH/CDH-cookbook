@@ -77,6 +77,14 @@ The code here is straightforward: the loop is taking the 0th element out of the 
 One last element you can add in a while loop is an 'else' clause. Look at the following example:
 
 ```python
+university_library = ['Book A', 'Book B', 'Book C']
+
+def present(book):
+    return book == 'Book B'
+    
+def process(book):
+    print(f"Processing: {book}")
+    
 index = 0
 while index < len(university_library):
     book = university_library[index]
