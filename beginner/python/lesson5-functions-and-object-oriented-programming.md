@@ -33,10 +33,13 @@ def greet(name, known=False):
   if known:
       print(f'Hello, {name}! We have met before.')
   else:
-      print(f"Hello, {name}, I'm Sophie. Nice to meet you!")
+      print(f'Hello, {name}, I\'m Sophie. Nice to meet you!')
 greet('Maria', True)
 ```
 Here we define a new function, 'greet'. It has specific input parameters: name (this means when you call the function, you have to give a name), and known=False (this means that if you know the person you are greeting, you need to put 'True' in the brackets when you call the function). 
+
+Notice the \ in I'm. This is because we are using single quotes around the entire string. This backslash (\) is an escape character sign and tells the computer to ignore the apostrophe which comes after it. Remove it and see what happens.
+
 Try calling the function in a new Jupyter Notebook. Call it with 'greet(name)' and then with 'greet(name, True)'. See what happens? 
 
 Now try removing 'True'. What does the output look like now?
