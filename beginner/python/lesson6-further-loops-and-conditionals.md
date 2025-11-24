@@ -74,7 +74,7 @@ while animals:
 The code here is straightforward: the loop is taking the 0th element out of the list. The print statement then prints that element. But when the 0th element is 'wolf', the code is instructed to take it out (this is animals.pop(0)), and then 'continue' skips the rest of the loop body (the print statement). Therefore, 'wolf' doesn't get printed, and it is removed from the list like every other element that gets processed. The loop then keeps running with the rest of the elements.
 
 ### While Loop Else
-One last element you can add in a while loop is an 'else' clause. Many people find this concept tricky, because they read 'else' like an 'if' statement.  the loop, but Python does not treat it like this. Look at the following example:
+One last element you can add in a while loop is an 'else' clause. Look at the following example:
 
 ```python
 index = 0
