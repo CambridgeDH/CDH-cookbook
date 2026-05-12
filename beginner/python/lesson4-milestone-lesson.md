@@ -1,4 +1,5 @@
 # Milestone Lesson 1: Your First Program
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
 - [Summary of Material Covered So Far](#summary-of-material-covered-so-far)
 - [Why Did I Learn This?](#why-did-i-learn-this?)
@@ -73,5 +74,8 @@ First, what are your objectives? If you simply need to slightly manipulate files
 Second, are you actually ready? The next lessons are more complex in concept and application. Check the list at the beginning of this lesson and ask yourself if you are confident with each of these items. Then, work through the homework tutorial and build your first program using a loop to iterate through some files on your computer. If you can build your first program with that tutorial, then you are ready to continue to the next few lessons.
 
 
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+
+<p class="previous-next-lesson"><a href="lesson3-mechanics-python-language.html">&lt; Previous lesson</a> | <a href="homework-solutions-lesson5.html">&gt; Next lesson</p>
 
 

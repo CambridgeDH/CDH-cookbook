@@ -1,4 +1,6 @@
 # Lesson 6: Further Loops and Conditionals
+
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
 
 ## Overview
@@ -293,5 +295,7 @@ Your homework for this lesson involves getting used to using these tools and bec
 <li>Task 2:</li> In the 4th element of the list of argument types above, we did not pass any argument into 'add()'. Try now giving this function an exact argument. Create some variables and put them into add() on the last line. 
 <li>Task 3:</li> Get creative and come up with a data scenario that would require you to use a combination of at least two types of loops and at least one conditional. See if you can write some code that will successfully run within these parameters.
 
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
+<p class="previous-next-lesson"><a href="lesson5-functions-and-object-oriented-programming.html">&lt; Previous lesson</a> | <a href="lesson7-file-handling-essentials.html">&gt; Next lesson</p>
 

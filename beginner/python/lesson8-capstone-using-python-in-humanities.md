@@ -1,5 +1,6 @@
 # Lesson 8: Capstone: Using Python in Humanities Research 
 
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
 
 ## Overview
@@ -242,4 +243,7 @@ This was an intensive lesson where you were encouraged to write a lot of your ow
 
 By asking these questions with a greater awareness of what it takes to write code and run it on real data, you will be enabling yourself to do more with these powerful tools. 
 
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+
+<p class="previous-next-lesson"><a href="lesson7-file-handling-essentials.html">&lt; Previous lesson</a> | <a href="lesson9-concluding-lesson.html">&gt; Next lesson</p>
 

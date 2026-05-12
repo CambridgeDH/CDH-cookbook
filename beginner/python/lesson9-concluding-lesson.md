@@ -1,5 +1,6 @@
 # Concluding Lesson: First Steps for Coding in Python
-# Contents
+
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 
 ## Overview
 This short course has covered the fundamentals 
@@ -81,7 +82,9 @@ Regardless, do not be discouraged when you hit roadblocks. They are inevitable, 
 ### The Rest of this Cookbook
 This Cookbook is meant to link a wide variety of methods using programming languages such as R and Python. If you want to continue learning coding methods for Humanities research, this Cookbook is constantly growing with new methods that world-class researchers have developed and taught. Working through these lessons will sharpen and extend your newfound skilset.
 
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
+<p class="previous-next-lesson"><a href="lesson8-capstone-using-python-in-humanities.html">&lt; Previous lesson</a></p>
 
 
 

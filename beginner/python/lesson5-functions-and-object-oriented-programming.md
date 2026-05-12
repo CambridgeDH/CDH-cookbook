@@ -1,5 +1,6 @@
 # Lesson 5: A Deeper Look at Functions and Introduction to Object Oriented Programming
 
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
 
 
@@ -191,6 +192,8 @@ Your homework in this case is to:
 2. Take our Class that we made above, and change the .name attribute to a list of students. Instruct the class to only print the greeting if the name specified in your code is present in the list. If the name is not present, instruct the class to print a phrase indicating 'this person is not present'.
 3. Notice that we used a lambda function to turn 'Maria' lowercase early in the lesson. Then, we described '.lower' as a method attribute within the Class 'str' (string). Why do you think this redundancy exists in Python structure? Find another lambda function and modify the greeting Maria code with it. 
 
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
 
+<p class="previous-next-lesson"><a href="lesson4-milestone-lesson.html">&lt; Previous lesson</a> | <a href="homework-solutions-lesson6.html">&gt; Next lesson</p>
 
