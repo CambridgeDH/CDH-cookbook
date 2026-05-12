@@ -68,11 +68,13 @@ You will now want to have a safe place to save any new files you create during a
 
 <details>
 <summary>Expand to check your answer</summary>
-```python
+<pre>
+<code>
 results_dir = os.path.join(currentworkingdirectory, "analysis_results_textblob")
 os.makedirs(results_dir, exist_ok=True)
 print(results_dir)
-```
+</code>
+</pre>
 </details>
 
 Now you have a working directory populated with your files, and an empty directory ready to receive new files created by the analysis.
