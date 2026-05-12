@@ -46,5 +46,4 @@ The purpose of this task is to get you to explore what exists online about code 
 ## Summary
 And, that's it!  This lesson should have you comfortably installing and importing packages and modules. Once you can do this easily, you are ready to start learning how to write more substantial commands.
 
-
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>

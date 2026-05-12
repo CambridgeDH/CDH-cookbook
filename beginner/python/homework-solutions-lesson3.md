@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="../../cookbook.css">
-
 # Homework Solutions: Lesson 3: The Mechanics of the Python Language
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 Here you will find sample solutions for each of the three difficulty levels of the homework for Lesson 3: The Mechanics of the Python Language.
 
 ## Easy Level

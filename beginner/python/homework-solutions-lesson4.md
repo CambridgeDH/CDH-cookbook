@@ -1,5 +1,6 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Homework Solutions: Lesson 4: Milestone Lesson: Your First Program
-
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 In the past three lessons you have learned the necessary essentials to begin coding. These essentials provide you with a few fundamental skills that enable to you to write your first Python program. This tutorial is designed to have you put those skills to use by showing how to write the correct commands, in the proper order, for looping through and editing files.
 
 ## Phase 1: Objectives, Program Design, and Workspace Setup
@@ -273,7 +274,4 @@ Run that line as the third line of this program. You will fine that your note to
 ## Conclusion
 Congratulations: you have completed your first full Python program! By importing modules and writing a few 'for' loops, you were able to enter directories and modify files without touching them yourself. You also got to see how a programmer thinks about putting together code to achieve a task. It is often by following tutorials like these, which force you to write your own program, that you learn the most about coding. If you want to learn to do even more, you are encouraged to continue to the next lessons of this course. 
 
-
-
-
-
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>

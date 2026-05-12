@@ -1,4 +1,6 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Homework Solutions Lesson 7: File Handling Essentials
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 Your tasks in this lesson were to practice using file handling commands and to search for documentation on some file handling modules.
 
 ## Task 1
@@ -68,6 +70,4 @@ print('PDF created successfully.')
 ```
 If you were able to learn from this homework to better understand file handling, congratulations, you have a major aspect of coding foundation under your belt. These are the kinds of commands which you will use daily in your coding career.
 
-
-
-`
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>

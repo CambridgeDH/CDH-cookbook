@@ -77,5 +77,5 @@ Second, are you actually ready? The next lessons are more complex in concept and
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-<p class="previous-next-lesson"><a href="lesson3-mechanics-python-language.html">&lt; Previous lesson</a> | <a href="homework-solutions-lesson5.html">Next lesson &gt;</a></p>
+<p class="previous-next-lesson"><a href="lesson3-mechanics-python-language.html">&lt; Previous lesson</a> | <a href="lesson5-functions-and-object-oriented-programming.html">Next lesson &gt;</a></p>
 

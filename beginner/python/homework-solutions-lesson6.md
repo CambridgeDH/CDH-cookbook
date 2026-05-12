@@ -1,5 +1,6 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Homework Solutions: Lesson 6: Further Loops and Conditionals
-
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Task 1:
 The code example this task depends on is:
 
@@ -76,3 +77,4 @@ Notice that we use a list of dictionaries (each 'element:element' is one diction
 
 As you write more code, becoming more familiar with how to move seamlessly between different types of data, different functions, and different syntax structures will become more second-nature. In the meantime, if you were able to complete this homework, you can be confident that you have a foundation in some of the most important elements of Python syntax.
 
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>

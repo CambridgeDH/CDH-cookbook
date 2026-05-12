@@ -1,4 +1,6 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Homework Solutions Lesson 5: A Deeper Look at Functions and Introduction to Object Oriented Programming
+<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 # Task 1
 For this task you should have explored some Classes within the textblob module. As such, there are no 'solutions' for us to cover. But this is an important opportunity to pause and reflect on what you saw. What was confusing? What made sense? If something was confusing, how might you go about finding more information about it?
 
@@ -51,3 +53,4 @@ greet("Maria")
 ```
 Try running this. What does it do? 
 
+<p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
