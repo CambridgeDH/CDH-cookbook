@@ -50,14 +50,16 @@ Now open a fresh Jupyter notebook and set up your workspace. Check what your cur
 
 <details>
 <summary>Expand to check your answer</summary>
-```python
+<pre>
+<code>
 import os
 currentworkingdirectory = os.getcwd()
 print('This is the current working directory:', currentworkingdirectory)
 
 targetdirectory = os.path.join(currentworkingdirectory, 'file-looping')
 print('This is the target directory:', targetdirectory)
-```
+</code>
+</pre>
 </details>
 
 This sets the location on your computer where your files are as the location that Python is reading. 
@@ -79,10 +81,12 @@ Finally, you want to ensure you have the up to date version of textblob. Go ahea
 
 <details>
 <summary>Expand to check your answer</summary>
-```python
+<pre>
+<code>
 pip install textblob
 from textblob import TextBlob
-```
+</code>
+</pre>
 </details>
 
 Note that we imported only the class TextBlob from the module. This is optional; you could import the entire module if you wanted. 
@@ -97,7 +101,8 @@ While our texts are in individual files, it can be easier to analyse them if we 
 
 <details>
 <summary>Expand to check your answer</summary>
-```python
+<pre>
+<code>
 # Get list of text files (and ignore other file types)
 files = [f for f in os.listdir(targetdirectory)
          if f.lower().endswith(".txt") and not f.startswith(".")]
@@ -112,7 +117,8 @@ for filename in files:
 
 print(f"Loaded {len(texts)} files.")
 print(texts)
-```
+</code>
+</pre>
 </details>
 
 The output should be all of the contents of your text files. Sometimes you may run into problems if your file is not saved in UTF-8. If that happens, re-save the file as UTF-8 and try again. We won’t go into encodings here.
@@ -125,6 +131,8 @@ Write a function called 'text_analysis' that takes two arguments — the filenam
 
 <details>
 <summary>Expand to check your answer</summary>
+<pre>
+<code>
 def text_analysis(filename, content):
     # Create a TextBlob object
     blob = TextBlob(content)
@@ -147,7 +155,8 @@ def text_analysis(filename, content):
 sample_filename, sample_content = texts[0]
 result = analyze_text(sample_filename, sample_content)
 print(result)
-```
+</code>
+</pre>
 </details>
 
 You should get a result that looks somewhat like (with the details different depending on text):
@@ -160,14 +169,16 @@ Now that you have code that will assess one of your texts, write a loop that wil
 
 <details>
 <summary>Expand to check your answer</summary>
-```python
+<pre>
+<code>
 for filename, content in texts:
     result = text_analysis(filename, content)
     print(f"File: {result['filename']}")
     print(f"  Polarity: {result['polarity']}")
     print(f"  Subjectivity: {result['subjectivity']}")
     print()
-```
+</code>
+</pre>
 </details>
 
 The result should be a list of filenames with their polarity and subjectivity as decimals under them.
@@ -177,7 +188,8 @@ TextBlob also gives us noun phrases. Instead of printing them all, let’s count
 
 <details>
 <summary>Expand to check your answer</summary>
-```python
+<pre>
+<code>
 for filename, content in texts:
     result = text_analysis(filename, content)
     noun_count = len(result["noun_phrases"])
@@ -187,7 +199,8 @@ for filename, content in texts:
     print(f"  Subjectivity: {result['subjectivity']}")
     print(f"  Number of noun phrases: {noun_count}")
     print()
-```
+</code>
+</pre>
 </details>
 
 Now you should see the number of noun phrases in each text.

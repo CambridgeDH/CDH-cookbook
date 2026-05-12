@@ -65,9 +65,11 @@ It is easy to become overwhelmed when confronted with large, complex programs th
 ### Using ChatGPT or other Generative AI Tools
 Today, as AI tools are becoming ubiquitous, it is natural that you may want to turn to these tools for assistance to help you learn to code. This is a generally good strategy, but there is the risk of over-relying on these tools and then not truly learning the material. Most programmers use AI as a **tool**, or an assistant, to help them write good code, rather than a means of producing code directly. Here are my **top three tips** for integrating AI into your learning process appropriately:
 
+<ul>
 <li>1. Ask questions for the AI to answer, don't ask it to do tasks for you. Coding is a skill: you will not learn unless you practice it yourself. But asking AI to help you understand coding concepts or to help you figure out the components of your code is very useful for learning. </li>
 <li>2. Don't blindly rely on code that the AI generates. Typically, the code it writes is twice as complex and half as effective as the solutions that you will encounter in this course. A better use of AI is to paste someone's code into the chat and ask it to explain the code for you, or to ask it to help you think through the steps of a problem.</li>
 <li>Use the AI tool to push you deeper into understanding, not to automate understanding. It feels tempting to ask it to explain something to you the moment you feel a bit frustrated, but that frustration is actually your brain making new connections. Try to think through a question or problem first, and then use the AI to see if you missed anything after.</li>
+</ul>
 
 In summary, AI platforms like ChatGPT can be powerful tools to assist your learning, so long as you use them with discretion and always prioritise doing the activities yourself and thinking through isses and concepts first before turning to it for help.
 

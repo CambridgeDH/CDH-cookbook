@@ -176,9 +176,11 @@ In this lesson you have learned the most crucial elements for getting your code 
 ## Homework
 The exercises for this lesson have three levels depending on how much challenge you want:
 
+<ul>
  <li>Easy: create a list with up to 10 elements. Write a for loop that prints those elements with a meaningful phrase.</li>
  <li>Medium: Make a function that takes two inputs, like a name and a food. Then call the function to print a sentence that makes sense with these two inputs. </li>
  <li>Hard: Search online for a way to find an item in a list using Python code. Write one line of code that prints the second item in your list.</li>
+ </ul>
 
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
