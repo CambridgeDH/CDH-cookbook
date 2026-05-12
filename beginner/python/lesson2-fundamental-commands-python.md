@@ -273,4 +273,4 @@ In this lesson we have covered the following core concepts:
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-<p class="previous-next-lesson"><a href="Introduction-Python-Language.html">&lt; Previous lesson</a> | <a href="Mechanics-Python-Language.html">Next lesson &gt;</a></p>
+<p class="previous-next-lesson"><a href="lesson1-introduction-python-language.html">&lt; Previous lesson</a> | <a href="lesson3-mechanics-python-language.html">Next lesson &gt;</a></p>

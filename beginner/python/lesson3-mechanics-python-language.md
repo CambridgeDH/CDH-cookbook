@@ -183,4 +183,4 @@ The exercises for this lesson have three levels depending on how much challenge 
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-<p class="previous-next-lesson"><a href="Fundamental-Commands-Python.html">&lt; Previous lesson</a></p>
+<p class="previous-next-lesson"><a href="lesson2-fundamental-commands-python.html">&lt; Previous lesson</a> | <a href="lesson4-milestone-lesson.html">&gt; Next lesson</p>

@@ -197,4 +197,4 @@ In this lesson you have learned the fundamentals about how Python code is struct
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-<p class="previous-next-lesson"><a href="Fundamental-Commands-Python.html">Next lesson &gt;</a></p>
+<p class="previous-next-lesson"><a href="lesson2-fundamental-commands-python.html">Next lesson &gt;</a></p>
