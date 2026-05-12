@@ -88,9 +88,6 @@ Suppose a particular book on Mumbai catches my eye. I open it up, and find that 
 
 &#x1F7E9; This metaphor is of course simplified in order to help you conceptualise how most Python code is typically organised, but know that actual Python programs are not always so neatly structured, and each component can exist on its own or in combination with other components, for example a Module can exist independently of a Package, and we can use Functions by themselves. 
 
-
-[GRAPH OF THE PYTHON STRUCTURE?]
-
 [Back to table of contents](#contents)
 
 ## Getting Acquainted with Python Packages and Modules 

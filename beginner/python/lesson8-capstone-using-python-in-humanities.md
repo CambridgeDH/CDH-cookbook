@@ -5,43 +5,51 @@
 ## Contents
 
 - [The Research Question](#the-research-question)
-- [Conclusions](#Conclusions)
+- [Conclusions](#conclusions)
 
 ## Overview
 Welcome to the final tutorial lesson of this short course. This lesson focuses more on the practicalities of using Python to support and communicate your research, rather than on the act of writing code. This lesson is similar to the earlier Milestone Tutorial Lesson in that we will be walking through an analytical process together. The goal of today's lesson is to explore what it looks like to think through a research question using some texts, apply some code to help answer that question using the skills we have learned, and then assess the results of our analysis. This is meant to give you a foundation by taking you through a small, self-contained data analysis exercise, before you stretch out to searching for and utilising digital tools with coding that can further your own research project.
 
 The steps which we will take are:
+
+<ul>
 <li>Devising a clear and answerable question</li>
 <li>Gathering a concise dataset</li>
 <li>Using Python to navigate the files in our dataset</li>
 <li>Writing functions to perform certain analytical tasks on the data</li>
 <li>Saving the results of the analysis in a new folder</li>
+</ul>
 
 [Back to table of contents](#contents)
 
 ## The Research Question
 Let's construct a hypothetical research situation, where we have a group of texts written by some famous authors. We want to use the Python module 'textblob' to perform some very basic Natural Language Processing tasks on these texts (do not worry; full-level NLP is outisde of the scope of this course!). Let us assume for the moment that we do not know what the module is capable of doing - before continuing further in the lesson, go read the introductory material about the textblob Python module. It is good to solidly establish the habit of reading the documentation from the very start.
 
-Once you have done this, have any natural research questions come to mind? 
+<details>
+<summary>Once you have done this, have any natural research questions come to mind? (expand)</summary>
 
-[Hidden Answer] Let's say that we have eight passages from famous literary sources, and we want to do some basic text analysis on them to compare styles of authorhship as shown through sentiment analysis (the tone of each text) and the density of noun phrases in each text (how descriptive the texts are).
+Let's say that we have eight passages from famous literary sources, and we want to do some basic text analysis on them to compare styles of authorhship as shown through sentiment analysis (the tone of each text) and the density of noun phrases in each text (how descriptive the texts are).
+</details>
 
 ### Setting Up Files
 
   Go to the folder where you put your text files for the Milestone Lesson. In that folder, replace any files with eight plain new text files with a couple of paragraphs from some famous works. [or INSERT LINK TO DATASET HERE]. 
 
 The first thing to know is that you should name your file names with the following parameters:
+
+<ul>
 <li>Descriptive names</li>
 <li>No spaces: do something like 'no_spaces', or 'nospaces', or 'NoSpaces'</li>
 <li>Unique names, so the computer can tell them each apart.</li>
+</ul>
 
 Once you have done this you will have some analysable data with which to work.
 
 ### Setting Up Code Workspace
 Now open a fresh Jupyter notebook and set up your workspace. Check what your current working directory is, and then build a path to the directory where your files are.
 
-[Hidden Answer]
-
+<details>
+<summary>Expand to check your answer</summary>
 ```python
 import os
 currentworkingdirectory = os.getcwd()
@@ -50,25 +58,33 @@ print('This is the current working directory:', currentworkingdirectory)
 targetdirectory = os.path.join(currentworkingdirectory, 'file-looping')
 print('This is the target directory:', targetdirectory)
 ```
+</details>
+
 This sets the location on your computer where your files are as the location that Python is reading. 
 
 You will now want to have a safe place to save any new files you create during analysis. Try doing that. If you are unsure, search online before peeking at the answer.
 
-[Hidden Answer]
+<details>
+<summary>Expand to check your answer</summary>
 ```python
 results_dir = os.path.join(currentworkingdirectory, "analysis_results_textblob")
 os.makedirs(results_dir, exist_ok=True)
 print(results_dir)
 ```
+</details>
+
 Now you have a working directory populated with your files, and an empty directory ready to receive new files created by the analysis.
 
 Finally, you want to ensure you have the up to date version of textblob. Go ahead and install it inside Jupyter or import it (if it is already installed).
 
-[Hidden Answer]
+<details>
+<summary>Expand to check your answer</summary>
 ```python
 pip install textblob
 from textblob import TextBlob
 ```
+</details>
+
 Note that we imported only the class TextBlob from the module. This is optional; you could import the entire module if you wanted. 
 ! A special note: the sentiment analysis functionality in textblob only works with some additional installations. Here they are below:
 
@@ -78,7 +94,9 @@ Note that we imported only the class TextBlob from the module. This is optional;
 
 While our texts are in individual files, it can be easier to analyse them if we bring the raw contents into the codespace. Create a new list called 'texts' and tell Python to store the text data in that list.
 
-[Hidden answer]
+
+<details>
+<summary>Expand to check your answer</summary>
 ```python
 # Get list of text files (and ignore other file types)
 files = [f for f in os.listdir(targetdirectory)
@@ -95,6 +113,8 @@ for filename in files:
 print(f"Loaded {len(texts)} files.")
 print(texts)
 ```
+</details>
+
 The output should be all of the contents of your text files. Sometimes you may run into problems if your file is not saved in UTF-8. If that happens, re-save the file as UTF-8 and try again. We won’t go into encodings here.
 
 ### Performing the Analysis
@@ -102,7 +122,9 @@ Now that our texts are in a directory and we have the required modules, we can b
 
 Write a function called 'text_analysis' that takes two arguments — the filename and the content. Inside the function, create a TextBlob from the content and return a summary that includes: (a) sentiment polarity, (b) sentiment subjectivity, and (c) the noun phrases TextBlob found. If you are unsure how to do this, look at the documentation before looking up the lesson's answer.
 
-[Hidden Answer]
+
+<details>
+<summary>Expand to check your answer</summary>
 def text_analysis(filename, content):
     # Create a TextBlob object
     blob = TextBlob(content)
@@ -126,6 +148,8 @@ sample_filename, sample_content = texts[0]
 result = analyze_text(sample_filename, sample_content)
 print(result)
 ```
+</details>
+
 You should get a result that looks somewhat like (with the details different depending on text):
 ```python
 "{'filename': 'oldmantext.txt', 'polarity': -0.04283380018674137, 'subjectivity': 0.2992763772175537, 'noun_phrases': WordList(['mixed-up whiskers', '’ t', 'man ’ s', 'body ’ s flesh crawl –', 'clothes –', 't ’', 'floor –', 'old black slouch'])}"
@@ -134,8 +158,8 @@ You should get a result that looks somewhat like (with the details different dep
 
 Now that you have code that will assess one of your texts, write a loop that will assess them all in this way. For each file, call your text_analysis function, and print out the filename with its sentiment polarity and subjectivity. This will give you a quick overview of all the texts.
 
-[Hidden Answer]
-
+<details>
+<summary>Expand to check your answer</summary>
 ```python
 for filename, content in texts:
     result = text_analysis(filename, content)
@@ -144,12 +168,15 @@ for filename, content in texts:
     print(f"  Subjectivity: {result['subjectivity']}")
     print()
 ```
+</details>
+
 The result should be a list of filenames with their polarity and subjectivity as decimals under them.
 
 TextBlob also gives us noun phrases. Instead of printing them all, let’s count how many noun phrases appear in each text. Add this count to your printed output.
 
-[Hidden Answer]
 
+<details>
+<summary>Expand to check your answer</summary>
 ```python
 for filename, content in texts:
     result = text_analysis(filename, content)
@@ -161,6 +188,8 @@ for filename, content in texts:
     print(f"  Number of noun phrases: {noun_count}")
     print()
 ```
+</details>
+
 Now you should see the number of noun phrases in each text.
 
 Finally, you might like to plot some of this data on a chart. We have not gotten into the depths of Python visualisation, but here is a simple code snippet which will help you plot the polarity of each text:
@@ -196,7 +225,6 @@ plt.show is the command in 'plt' to show the plot we just constructed.
 Now let’s save all the results into a file, and also save the plot as an image. Both will go into the analysis_results_textblob folder we created earlier. Take a look at this code. Try to understand it naturally before reading the explanation afterward.
 
 ```python
-
 # 1. Collect results
 results = []
 filenames = []
@@ -241,10 +269,13 @@ The final few blocks of code create the plot and give it its various elements. I
 Congratulations! Within a few lines of code you have taken 8 texts and have automated some analysis of their natural language features. This is a model of the workflow for this kind of work with other datasets and research questions. 
 
 Some crucial things to remember:
+
+<ul>
 <li>Have a concrete question that is answerable using code. Vague questions are unlikely to help get you satisfactory results</li>
 <li>Take the time to prepare your datasets and design your approach to the problem. A big coding project is made much easier with some clarity on the direction you are headed!</li>
 <li>Keep your old code and documentation. Chances are, you can re-use a lot of what you write.</li>
 <li>Read the formal documentation! Search the internet when you have questions! It is not cheating to look for assistance.</li>
+</ul>
 
 ## Homework
 This was an intensive lesson where you were encouraged to write a lot of your own code before looking at the answers. However, to get the most out of this lesson, it is worth now pondering your own research challenges and situations. What kinds of data do you have? What things would you like to know about it, or accomplish with it? What steps would you need to take to get your data ready for digital analysis of any kind? If you are looking for a particular method, can you search online to find some Python modules which perform this method? 
@@ -253,5 +284,5 @@ By asking these questions with a greater awareness of what it takes to write cod
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-<p class="previous-next-lesson"><a href="lesson7-file-handling-essentials.html">&lt; Previous lesson</a> | <a href="lesson9-concluding-lesson.html">&gt; Next lesson</p>
+<p class="previous-next-lesson"><a href="lesson7-file-handling-essentials.html">&lt; Previous lesson</a> | <a href="lesson9-concluding-lesson.html">Next lesson &gt;</a></p>
 

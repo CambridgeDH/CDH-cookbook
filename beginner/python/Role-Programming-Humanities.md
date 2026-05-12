@@ -2,7 +2,7 @@
 # What is the Role of Programming in the Humanities?
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
-- [Could Your Project Benefit from Digital Tools?](#could-your-project-benefit-from-digital-tools?)
+- [Could Your Project Benefit from Digital Tools?](#could-your-project-benefit-from-digital-tools)
 - [How to Find Methods and Code to Help Achieve Research Goals](#how-to-find-methods-and-code-to-help-achieve-research-goals)
 
 If you are taking these courses, chances are you are a student or academic working in the Humanities who believes that you need coding skills to complete a project or analyse your data. Because most lessons one finds online are geared towards people from STEM backgrounds, we believe it is important to provide here some guidance and opportunities for reflection about how to conceptualise of your project in terms of digital tools, and how to see where code could potentially help your work grow.

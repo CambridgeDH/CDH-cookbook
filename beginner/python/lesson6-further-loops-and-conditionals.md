@@ -111,8 +111,12 @@ else:
 The 'else' is not an exception to the loop - it only runs if the loop completes. In our example above, if the desired book is found, there is a break in the loop and it terminates. If the desired book is not located, then the 'else' statement applies, and the output is our sentence, 'no book found'. 
 
 Things like 'else' and 'break' are very useful for navigating large or multiple datasets and performing analyses on only parts of those datasets. You may also have heard of infinite loops - either the ones that are created by accident when the programmer forgets to put in a terminal point to their loop, or one that is designed to run indefinitely. Beginning programmers do not usually need to write infinite loops on purpose; what is important for you to remember now is that your while loop:
+
+<ul>
 <li>Will either end when it runs out of objects, depending on the task</li>
 <li>If it needs a condition to run, and that condition never ends, the loop will never end.</li>
+</ul>
+
 Here is an example of a loop that is missing a necessary condition:
 
 ```python
@@ -184,10 +188,12 @@ You have probably noticed from the code above that Python uses terminology which
 ### The Biggest Conditional: 'If'
 You have already seen a lot of 'if' statements in this course. Let's review some of what we know about them:
 
+<ul>
 <li>Lines with if statements need to end in a colon.</li>
 <li>If statements tell Python to check if something is True. If so, the block of code is run. If not, the code is not run **within that indentation segment**.</li>
 <li>If statements require indentation after them, so that anything that appears after falls within their remit.</li>
 <li>If statements can stand alone, or they can be aided by further conditionals (which we are about to learn)</li>
+</ul>
 
 ### Else and Elif
 
@@ -259,13 +265,17 @@ As you can see, elif is pretty straightforward. You can have as many elif branch
 One last concept we will explore in this lesson is that of 'arguments'. You have already been dealing with arguments since we discussed function. You are familiar with 'parameters',  which are the placeholder variables listed inside the curved brackets at the start of the function. Arguments are the exact instances of those variables that get acted upon when we call the code. There are different kinds of arguments, and it helps to know them:
 
 1. Positional arguments: these need to be passed into the function in a specific order:
+
 ```python
 names = ['Alice', 'Bob', 'Charlie']
 
 def name_occupation(name, occupation):
     print(f'{name} works as a {occupation}.')
+```
 
-# Using positional arguments
+### Using positional arguments
+
+```python
 name_occupation('Alice', 'Engineer')
 name_occupation('Bob', 'Doctor')
 name_occupation('Charlie', 'Teacher')
@@ -273,6 +283,7 @@ name_occupation('Charlie', 'Teacher')
 
 2. Keyword arguments: like positional arguments except that the order does not matter.
 3. Default arguments: if you do not give the function a specific argument, a default appears instead. Here, the default is 'friend':
+
 ```python
 def greet(name='friend'):
     print('Hello,', name)
@@ -280,28 +291,32 @@ def greet(name='friend'):
 greet()        
 greet('Jean Luc')
 ```
-4. *args: this allows a function to accept any number of positional arguments. Python takes these arguments and collects them into a tuple. Here is an example. Run the two functions below just as they are:
+4. `*args`: this allows a function to accept any number of positional arguments. Python takes these arguments and collects them into a tuple. Here is an example. Run the two functions below just as they are:
+
 ```python
 # Without *args:
 def add(x, y, z):
     return x + y + z
 add()
-
+```
+```python
 # With *args:
 def add(*args):
     return sum(args)
 add()
-
 ```
+
 What can you learn from the error message for the first function? It is expecting exactly 'x, y, z'. But the second function expects whatever you throw at it (or don't throw at it). In this case, we gave it nothing, and it returned 0. That's not an error - that's the correct output! 
 
 5. *kwargs: this kind of argument collects keyword arguments and stores them in dictionaries:
+
 ```python
 def print_info(**kwargs):
     print(kwargs)
 
 print_info(name="Alice", age=30, job="Engineer")
 ```
+
 [Back to table of contents](#contents)
 
 ## Conclusion
@@ -309,9 +324,11 @@ In this lesson you have learned more of the variety of syntax that Python has an
 
 Your homework for this lesson involves getting used to using these tools and becoming more skilled at finding out information about your code:
 
+<ul>
 <li>Task 1:</li> The first example in the 'While Loop Else' section is pretty straightforward: it searches an index of books and if it finds a match (we have not written the code to specify the desired match), it processes the book to the reader. But there are some code elements that were not overtly explained in this lesson. Search online and find out exactly what they do. 
 <li>Task 2:</li> In the 4th element of the list of argument types above, we did not pass any argument into 'add()'. Try now giving this function an exact argument. Create some variables and put them into add() on the last line. 
 <li>Task 3:</li> Get creative and come up with a data scenario that would require you to use a combination of at least two types of loops and at least one conditional. See if you can write some code that will successfully run within these parameters.
+</ul>
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 

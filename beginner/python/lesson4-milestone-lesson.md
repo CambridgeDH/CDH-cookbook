@@ -11,22 +11,32 @@ At this point, you have seen three lessons which cover the most fundamental conc
 Here is a list of the topics we have covered so far:
 
 You have learned about the nature of 'coding':
+<ul>
 <li>What is coding and what is programming</li>
 <li>How most Python programs are designed into 'Packages', 'Modules','Classes', 'Functions', 'Variables' and 'Data' and how to navigate Jupyter Notebooks. </li>
 <li>What is a code repository and how to navigate repositories and find source code</li>
+</ul>
 
 We have discussed getting set up before writing code:
+
+<ul>
 <li>How to install, import, and navigate packages and modules</li>
 <li>How to declare and print variables</li>
 <li>How to tell Python to read a file on your computer</li>
 <li>How Python reads your data (some common data types)</li>
+</ul>
 
 We have introduced some features of the Python language that one must know in order to code:
+
+<ul>
 <li>Crucial things for anyone writing in Python to know: zero-indexing, commenting, and writing consistency</li>
 <li>What are Python functions</li>
 <li>What is a 'for loop'</li>
+</ul>
 
 Coding, however, is a skill. Here is a checklist of the skills you need to confidently proceed to the next lessons:
+
+<ul>
 <li>Find Python modules, packages, and source code on the Python website and on code repositories</li>
 <li>Install packages that you want to use</li>
 <li>Import packages or parts of packages that you want to use</li>
@@ -36,6 +46,7 @@ Coding, however, is a skill. Here is a checklist of the skills you need to confi
 <li>Write a variable to be of a specific data type</li>
 <li>Find and read functions in someone's code (even if things aren't clear yet!)</li>
 <li>Write a simple 'for loop' that gives the expected output when run</li>
+</ul>
 
 [Back to table of contents](#contents)
 

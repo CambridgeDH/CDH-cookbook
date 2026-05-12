@@ -13,10 +13,12 @@
 ## Overview
 In this lesson we will study the following fundamental aspects of dealing with data in Python:
 
+<ul>
 <li>Loading data into Jupyter Notebooks or Google Colab.</li>
 <li>How to declare variables.</li>
 <li>Good practices for naming variables (very important!).</li>
 <li>Types of data in Python.</li>
+</ul>
 
 We will also cover some helpful aspects to navigating Python code such as zero-indexing, comments, print statements, and Jupyter notebook shortcuts.
 
@@ -26,12 +28,11 @@ If you are a beginner at coding, it is important to clearly understand these con
 
 ## Navigating Jupyter Notebooks
 The first step to setting up a coding workspace is to launch Jupyter Notebooks, and create a new notebook for yourself. If you did the homework in the last lesson, then you initiated a Notebook and typed some commands into some cells and ran them. Here we will take a closer look at the components of a Jupyter Notebook:
-
-[Screenshot with components indicated]
+<ul>
 <li><strong>Moving, Cutting, and Running Cells</strong>: Jupyter Notebooks are made up of individual cells. Using the options in the menu at the top, you can move cells up and down, you can 'cut' (delete), or 'add' a new cell, and you can run the code in the current cell. If you run code in one cell which affects cells below it, they have to be run in order (or the computer will not know that the previous cell is relevant). You can reorder cells by clicking the up and down arrows in the menu.</li>
 <li><strong>The Kernel</strong>: you can think of this as the 'working memory' of your notebook. If your code gets messy, or you start getting odd results when you run cells, you can restart the kernel by selecting from the restart options in the dropbox. Note that doing this will wipe the memory of the notebook and you'll have to run all your commands from the beginning.</li>
 <li><strong>Switching between Code and Markdown</strong>: The cells can either be code cells (which run live code), or they can be Markdown cells (Markdown is a kind of text formatting language for display). To turn a code cell into Markdown, press Control + M, and the cell outline should turn blue. To turn a Markdown cell into code, press Control + Y, and the cell outline should turn blue.</li>
-
+</ul>
 
 &#x1f4a1; Tip: A full tutorial on Jupyter Notebook shortcuts can be [found here.](https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330) These shortcuts typically work for most Jupyter-based Notebooks (such as Google Colab), but there are some variations.
 
@@ -244,20 +245,25 @@ As we will see in the following lessons, print statements are extremely useful. 
 
 ### What you name your variables is really important
 When you're in the midst of analysing data, and creating multiple variables in a group of commands in your code, you will want your variable names to make sense. The rule of thumb is to keep your variables short but descriptive and specific. Some people have the habit of calling their variables things like 'x', 'y', or 'variable1', 'variable2', etc. This is a bad idea for two reasons: 
+<ul>
 <li>When you come back to your code later, you may not remember what the variable was supposed to signify</li>
 <li> Badly-named variables can be easily overwritten later, which means that you can accidentally name two different things the same name. The computer will only use the latest declared variable, so if you have x = 'Cat' and later write x = 'Dog', the computer will only read 'Dog'.</li> 
+</ul>
+
 You can see how not being specific and careful with variable names can create problems!
 
 [Back to table of contents](#contents)
 
 ## Lesson Summary
 In this lesson we have covered the following core concepts: 
+
+<ul>
 <li>The basics of navigating Jupyter Notebooks</li>
 <li>What variables are, and how to 'declare' them</li>
 <li>How to tell Jupyter Notebooks to read files from your home folder</li>
 <li>What data types are and their importance to coding in Python</li>
 <li>Essential facts about Python</li>
-
+</ul>
 
  In the next lesson we will cover functions and for loops, which is fundamental syntax for doing tasks in Python. Before going there, you should practice some of these skills by working on the homework exercises below.
 

@@ -27,10 +27,12 @@ def write_content():
                     currentfile.write('We are putting this sentence in our files')
 write_content()
 ```
-<li> - 'def' indicates a new function is being defined.</li>
-<li> - 'write_content():' is the name of the function. The curved brackets are there to contain 'input parameters' for the function, which are essentially specifications, like the type of food we may want to cook: 'bread' or 'cake'. For this function, we did not need any specific instructions, hence the empty brackets.</li>
-<li> - Below the first line, we have an **indented** block of code. The colon on the first line demands indentation, which tells Python that everything under that line is part of that function and nothing else. The indented lines form the 'body' of the function. They are like the cooking instructions for our recipe.</li>
-<li> - At the bottom, we have 'write_content()' again. Since we have no input parameters (no special ingredients), we do not include anything in the brackets here. </li>
+<ul>
+<li>'def' indicates a new function is being defined.</li>
+<li>'write_content():' is the name of the function. The curved brackets are there to contain 'input parameters' for the function, which are essentially specifications, like the type of food we may want to cook: 'bread' or 'cake'. For this function, we did not need any specific instructions, hence the empty brackets.</li>
+<li>Below the first line, we have an **indented** block of code. The colon on the first line demands indentation, which tells Python that everything under that line is part of that function and nothing else. The indented lines form the 'body' of the function. They are like the cooking instructions for our recipe.</li>
+<li>At the bottom, we have 'write_content()' again. Since we have no input parameters (no special ingredients), we do not include anything in the brackets here. </li>
+</ul>
 
 Let's look at a function that does have input parameters:
 
@@ -168,9 +170,11 @@ g.greet()
 ```
 This looks a bit complicated at the start, so we will deconstruct it bit by bit:
 
-<li>1. The class name is Greeting, and like a function, it has the same colon and indentation rules. Class names are always capitalised in code documentation.</li>
-<li>2. Under the class name goes the method(s). Note that these look (and operate) much like functions. Ours only has one method, which is to print a greeting. </li>
-<li>3.'g = Greeting()'. When you write this, you are telling Python to make an object that follows the instructions of 'Greeting'. We store that object in a variable, which we've termed 'g' here. What we name it does not matter. </li>
+<ol>
+<li>The class name is Greeting, and like a function, it has the same colon and indentation rules. Class names are always capitalised in code documentation.</li>
+<li>Under the class name goes the method(s). Note that these look (and operate) much like functions. Ours only has one method, which is to print a greeting. </li>
+<li>'g = Greeting()'. When you write this, you are telling Python to make an object that follows the instructions of 'Greeting'. We store that object in a variable, which we've termed 'g' here. What we name it does not matter. </li>
+</ol>
 
 Now look again at 'def greet(self):'. The method has this parameter called 'self' specified in the brackets, much like we may specify data for a function. This word 'self' is Python's way of making a connection between the method and the object, which we called 'g'. 'self' ties in the greeting object with the method 'greet'. 
 

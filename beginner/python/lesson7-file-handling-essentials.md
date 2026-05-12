@@ -94,19 +94,24 @@ os.rename('old_name.txt', 'new_name.txt')
 ```
 
 There are other kinds of filetypes and actions are a bit more tricky, and involve more complex Python modules, but if you need them, the solution is to search for them and then read their documentation thoroughly. Common modules for this sort of task are:
+
+<ul>
 <li>The os module</li>
 <li>The openpyxl module</li>
 <li>The shutil module</li>
 <li>The reportlab module</li>
+</ul>
 
 ## Conclusions
 This brief lesson gives you a basis in the fundamentals of file handling in Python. Such tasks are so common that any coding foundation in Python would be incomplete with out them.
 
 Homework for this lesson:
 
-<li>Task 1:</li> Open a text file and use Python to load all its lines in a list. Then insert a new line somewhere in the middle of that list, and save the updated content back into the file.
-<li>Task 2:</li>Copy the content of one file into another, but transform the content while copying (e.g., uppercase, add line numbers, or replace a word). Do not do this manually; have Python do everything for you.
-<li>Task 3 (Advanced)</li>: Search the internet for the shutil and reportlab module documentation. Use shutil.copy() to duplicate a file. Use reportlab to generate a simple PDF with one line of text. 
+<ul>
+<li>Task 1: Open a text file and use Python to load all its lines in a list. Then insert a new line somewhere in the middle of that list, and save the updated content back into the file.</li>
+<li>Task 2: the content of one file into another, but transform the content while copying (e.g., uppercase, add line numbers, or replace a word). Do not do this manually; have Python do everything for you.</li>
+<li>Task 3: (Advanced) Search the internet for the shutil and reportlab module documentation. Use shutil.copy() to duplicate a file. Use reportlab to generate a simple PDF with one line of text.</li>
+</ul>
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
