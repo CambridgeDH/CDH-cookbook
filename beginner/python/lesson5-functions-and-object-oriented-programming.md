@@ -3,10 +3,14 @@
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
-
+- [The Wide World of Function Types](#the-wide-world-of-function-types)
+- [Introduction to Object-Oriented Programming (OOP)](#introduction-to-object-oriented-programming-oop)
+- [Conclusion](#conclusion)
 
 ## Overview
 In the previous Milestone lesson, you learned how to write a small program in Python to loop through some files and modify them. This program involved writing three different functions, and creating variables that you 'called' within those functions. These are the most basic kinds of functions that one can write in Python, and so now is appropriate to begin looking into the other kinds of functions that are possible in this language. You will also be introduced to the concept of 'Object Oriented Programming' - which is essentially the organisation of much of Python code. Understanding it will enable you to read and use other people's code more effectively and understand common error messages you may receive.
+
+[Back to table of contents](#contents)
 
 ## The Wide World of Function Types
 We will begin with function types. Knowing these will help you both to write your own functions and to use the functions others have written.
@@ -84,6 +88,8 @@ greet('Maria')
 Here we have a lambda function that lowers the case of the name. 'lambda' tells Python that this is anonymous. After it, we give the parameter, 'n'. We could call it anything, like 'name'. The colon separates our parameter from the action. Notice that in the {name} statements we call 'format_name' and then in the brackets, put 'name'. Try running this code - what happens?
 
  To summarise, these three kinds of functions are those which you will most commonly see and use when writing code in Python. It is a good idea to check your modules and check the built-in function list before trying to write code, as the task you might be trying to do may already have functions written for it.
+
+[Back to table of contents](#contents)
 
 ## Introduction to Object-Oriented Programming (OOP)
 Now we will turn our focus to the concept of 'Object-Oriented Programming' (abbreviated ubiquitously as 'OOP'). This section is more theoretical than the previous sections of this course, and it may seem disconnected at first from your ultimate goals, but understanding these concepts early on, even in a basic way, will carry you far and give you a stronger foundation upon which to build your skills. 
@@ -183,6 +189,8 @@ from textblob import Word
 This line of code will import the Class 'Word' from the textblob module. Word is a Class that contains many methods around analysing words in texts.
 
 Finally, Python bug reports often deal with the levels of Python structure. A common error, if you call the wrong attribute for an object, is 'this object has no attribute X'. Knowing some of this vocabulary and the way Python is put together will help you interpret such error messages.
+
+[Back to table of contents](#contents)
 
 ## Conclusion
 This lesson is probably the most theoretical of this course, and beginners often find these details to be challenging to grasp at first. The best way to acclimate yourself is to read code documentation.

@@ -3,9 +3,17 @@
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
+- [The 'For Loop' Review](#the-for-loop--review)
+- [The 'While Loop'](#the-while-loop)
+- [Nested Loops](#nested-loops)
+- [Conditionals](#conditionals)
+- [Arguments](#arguments)
+- [Conclusion](#conclusion)
 
 ## Overview
 In previous lessons we covered the basic 'for loop' and used it to build some simple iterative functions and modify some files. However, 'for loops' are just scratching the surface of Python's capabilities. In this lesson we are going to look at two other loop types. We will also introduce the concept of 'conditional statements', which enable your code to respond to different potential situations. Finally, we will take a deeper look at 'arguments', which are the variables you give to functions to help them run. 
+
+[Back to table of contents](#contents)
 
 ## The 'For Loop' Review
 Before we get deep into different kinds of loops in Python, let's pause for a moment and review a simple for loop:
@@ -19,6 +27,8 @@ for patient in patients:
 As should be familiar by now, 'patients' is our list of names. The loop identifies this list, and for each element ('patient') in the list, it prints a greeting. Note that we could call this anything, say, 'for unicorn in patients...print ("hello", unicorn)'. The word 'patient' (or unicorn) in this code is a placeholder for the elements in the list.
 
 **The for loop operates by this logic: for each thing in a category, do x** We do not need to tell the loop to stop running; when it has reached the end of the items in the category, it stops. It is the simplest loop in Python.
+
+[Back to table of contents](#contents)
 
 ## The 'While Loop'
 The next kind of loop that we encounter in Python is called the 'while' loop. It is slightly more complex than the for loop. It is meant to run the code *while* some condition is true, and to stop running when that condition changes. The basic abstract anatomy of a while loop is:
@@ -120,6 +130,7 @@ while count < 5:
 ```
 The last line here increases the count by one each time the loop is run. After 5 times, the loop will terminate.
 
+[Back to table of contents](#contents)
 
 ## Nested Loops
 The last kind of loop we will cover in this course is the 'nested loop'. These are exactly as the name suggests: loops within loops. They are very handy for multifaceted tasks. Let's look at an example:
@@ -164,6 +175,8 @@ This checks if the 'breed' value in the dictionary matches the horse_location fr
 
 **The Print statement**
 This function prints the elements that have been identified and matched above. 
+
+[Back to table of contents](#contents)
 
 ## Conditionals
 You have probably noticed from the code above that Python uses terminology which only holds true under certain circumstances. In fact, there are a number of statements in Python that direct your code to decide on a specific action based on whether a condition is true or false. These are known as 'conditionals'. They fall under the category of 'control structures', which are statements that control how a program flows from one command to another. Loops are control structures, and so are conditionals. When we need to write code that does more than just execute commands in order, but to pay attention to specific **conditions** and act accordingly, we can use conditionals to achieve this.
@@ -240,6 +253,8 @@ for item in shopping_list:
 ```
 As you can see, elif is pretty straightforward. You can have as many elif branches as necessary; there is no limit.
 
+[Back to table of contents](#contents)
+
 ## Arguments
 One last concept we will explore in this lesson is that of 'arguments'. You have already been dealing with arguments since we discussed function. You are familiar with 'parameters',  which are the placeholder variables listed inside the curved brackets at the start of the function. Arguments are the exact instances of those variables that get acted upon when we call the code. There are different kinds of arguments, and it helps to know them:
 
@@ -287,6 +302,8 @@ def print_info(**kwargs):
 
 print_info(name="Alice", age=30, job="Engineer")
 ```
+[Back to table of contents](#contents)
+
 ## Conclusion
 In this lesson you have learned more of the variety of syntax that Python has and different ways in which we can get Python to look at our data. It's best to think of these loops and conditionals as tools that you can pick as needed to accomplish a task: if you just want to analyse each element in a dataset only once, you can use a for loop. If you want to skip elements, you can use a break, etc. This is by no means all of the features that Python syntax can offer you, but these are the fundamentals.
 

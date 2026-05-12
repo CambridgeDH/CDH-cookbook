@@ -2,6 +2,9 @@
 # Concluding Lesson: First Steps for Coding in Python
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
+## Contents
+- [Developing from Here](#developing-from-here)
+- [What to Expect](#what-to-expect)
 
 ## Overview
 This short course has covered the fundamentals 
@@ -32,6 +35,8 @@ Finally, you have written two small programs:
 
 All of these skills are transferable and extendable beyond the bounds of this lesson. They give you a foundation not just for working in Python, but for thinking code can address research problems in different Humanities research and teaching areas.
 
+[Back to table of contents](#contents)
+
 ## Developing from Here
 You are possibly wondering what you can actually accomplish now, and what trajectories your learning can potentially take going forward. At this level you should be able to:
 
@@ -45,6 +50,8 @@ You are possibly wondering what you can actually accomplish now, and what trajec
 <li>Troubleshoot simple syntax errors and interpret error messages</li>
 
 So what is the next appropriate step? That is dependent upon your goals. If the exercises in this course make sense to you, you are ready for an intermediate level course. If all you need to know how to do is basic file handling, then you will only need to research some extra commands that we did not have the space to cover in this course, but the syntax should not be confusing. If you want to begin rightaway with a field-specific module you have found, you are certainly equipped with the basics.
+
+[Back to table of contents](#contents)
 
 ## What to Expect
 Let's take each of these paths in turn. 

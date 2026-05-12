@@ -3,8 +3,8 @@
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
 - [Summary of Material Covered So Far](#summary-of-material-covered-so-far)
-- [Why Did I Learn This?](#why-did-i-learn-this?)
-- [Should I Continue?](#should-i-continue?)
+- [Why Did I Learn This?](#why-did-i-learn-this)
+- [Should I Continue?](#should-i-continue)
 
 ## Summary of Material Covered So Far
 At this point, you have seen three lessons which cover the most fundamental concepts about coding in Python, as well as some foundational skills.  You have also been presented with the opportunity to complete exercises which teach you to navigate the language and lightly process some data. 
@@ -37,6 +37,7 @@ Coding, however, is a skill. Here is a checklist of the skills you need to confi
 <li>Find and read functions in someone's code (even if things aren't clear yet!)</li>
 <li>Write a simple 'for loop' that gives the expected output when run</li>
 
+[Back to table of contents](#contents)
 
 ## Why Did I Learn This?
 At this stage you may be asking yourself 'So what? How does declaring a variable or knowing that functions begin with 'def' help me actually accomplish my research objectives?' At this stage many Humanities researchers often feel disconnected from their actual goals and find that they are not concerned so much with the finer points of coding; their primary aim is a research output. At this point many people find themselves tuning out from tutorials and lessons because they feel that the concepts they are learning do not directly apply to what they want to achieve. If you have found yourself giving up programming tutorials after a few lessons, this is likely the issue.
@@ -67,6 +68,8 @@ This is, essentially, a computer program, from start to finish. It automates a t
 The homework for this lesson is to follow a tutorial which helps you put your newfound skills together to write this program. You are encouraged to engage with it because it will help you understand how impactful a few simple coding concepts can be for your research.
 
 In short, almost nothing one learns about coding is actually disconnected from real-world objectives, but it is easy to get lost in the details and lose sight of the bigger picture. Reminding yourself that there are concrete applications for everything you learn about code is the way to help keep your perspective and keep up your motivation to learn.
+
+[Back to table of contents](#contents)
 
 ## Should I Continue?
 The previous three lessons covered the fundamentals of coding in Python. There are two points to consider before going forward. 

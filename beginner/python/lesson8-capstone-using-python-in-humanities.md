@@ -4,6 +4,9 @@
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
 
+- [The Research Question](#the-research-question)
+- [Conclusions](#Conclusions)
+
 ## Overview
 Welcome to the final tutorial lesson of this short course. This lesson focuses more on the practicalities of using Python to support and communicate your research, rather than on the act of writing code. This lesson is similar to the earlier Milestone Tutorial Lesson in that we will be walking through an analytical process together. The goal of today's lesson is to explore what it looks like to think through a research question using some texts, apply some code to help answer that question using the skills we have learned, and then assess the results of our analysis. This is meant to give you a foundation by taking you through a small, self-contained data analysis exercise, before you stretch out to searching for and utilising digital tools with coding that can further your own research project.
 
@@ -13,6 +16,8 @@ The steps which we will take are:
 <li>Using Python to navigate the files in our dataset</li>
 <li>Writing functions to perform certain analytical tasks on the data</li>
 <li>Saving the results of the analysis in a new folder</li>
+
+[Back to table of contents](#contents)
 
 ## The Research Question
 Let's construct a hypothetical research situation, where we have a group of texts written by some famous authors. We want to use the Python module 'textblob' to perform some very basic Natural Language Processing tasks on these texts (do not worry; full-level NLP is outisde of the scope of this course!). Let us assume for the moment that we do not know what the module is capable of doing - before continuing further in the lesson, go read the introductory material about the textblob Python module. It is good to solidly establish the habit of reading the documentation from the very start.
@@ -229,6 +234,8 @@ print(f"Plot saved to: {plot_path}")
 
 The first three lines create containers for the results and the filenames. The first loop saves those things in these containers. The second loop uses those containers to save the results in a new text file, and save it in the directory you created above for the results. 
 The final few blocks of code create the plot and give it its various elements. It then saves it in the directory for the results.
+
+[Back to table of contents](#contents)
 
 ## Conclusions
 Congratulations! Within a few lines of code you have taken 8 texts and have automated some analysis of their natural language features. This is a model of the workflow for this kind of work with other datasets and research questions. 
