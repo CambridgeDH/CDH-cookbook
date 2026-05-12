@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Milestone Lesson 1: Your First Program
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
@@ -76,6 +77,5 @@ Second, are you actually ready? The next lessons are more complex in concept and
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-<p class="previous-next-lesson"><a href="lesson3-mechanics-python-language.html">&lt; Previous lesson</a> | <a href="homework-solutions-lesson5.html">&gt; Next lesson</p>
-
+<p class="previous-next-lesson"><a href="lesson3-mechanics-python-language.html">&lt; Previous lesson</a> | <a href="homework-solutions-lesson5.html">Next lesson &gt;</a></p>
 

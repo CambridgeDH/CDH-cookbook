@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Lesson 6: Further Loops and Conditionals
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
@@ -297,5 +298,5 @@ Your homework for this lesson involves getting used to using these tools and bec
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-<p class="previous-next-lesson"><a href="lesson5-functions-and-object-oriented-programming.html">&lt; Previous lesson</a> | <a href="lesson7-file-handling-essentials.html">&gt; Next lesson</p>
+<p class="previous-next-lesson"><a href="lesson5-functions-and-object-oriented-programming.html">&lt; Previous lesson</a> | <a href="lesson7-file-handling-essentials.html">Next lesson &gt;</a></p>
 

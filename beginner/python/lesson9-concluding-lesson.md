@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Concluding Lesson: First Steps for Coding in Python
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
@@ -85,8 +86,3 @@ This Cookbook is meant to link a wide variety of methods using programming langu
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
 <p class="previous-next-lesson"><a href="lesson8-capstone-using-python-in-humanities.html">&lt; Previous lesson</a></p>
-
-
-
-
-

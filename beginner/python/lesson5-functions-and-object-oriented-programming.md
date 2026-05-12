@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Lesson 5: A Deeper Look at Functions and Introduction to Object Oriented Programming
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
@@ -194,6 +195,4 @@ Your homework in this case is to:
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-
-<p class="previous-next-lesson"><a href="lesson4-milestone-lesson.html">&lt; Previous lesson</a> | <a href="homework-solutions-lesson6.html">&gt; Next lesson</p>
-
+<p class="previous-next-lesson"><a href="lesson4-milestone-lesson.html">&lt; Previous lesson</a> | <a href="homework-solutions-lesson6.html">Next lesson &gt;</a></p>

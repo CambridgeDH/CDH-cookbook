@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Lesson 8: Capstone: Using Python in Humanities Research 
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>

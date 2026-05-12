@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../../cookbook.css">
 # Lesson 7: File Handling Essentials
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
@@ -110,6 +111,4 @@ Homework for this lesson:
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
-<p class="previous-next-lesson"><a href="lesson6-further-loops-and-conditionals.html">&lt; Previous lesson</a> | <a href="lesson8-capstone-using-python-in-humanities.html">&gt; Next lesson</p>
-
-
+<p class="previous-next-lesson"><a href="lesson6-further-loops-and-conditionals.html">&lt; Previous lesson</a> | <a href="lesson8-capstone-using-python-in-humanities.html">Next lesson &gt;</a></p>
