@@ -18,13 +18,13 @@ In the Capstone Lesson you will be supported in writing your own self-contained 
 9. [Concluding Lesson](lesson9-concluding-lesson)
 
 ## Homework Solutions
- * [Homework Solutions Lesson 1](homework-solutions-lesson1)
- * [Homework Solutions Lesson 2](homework-solutions-lesson2)
- * [Homework Solutions Lesson 3](homework-solutions-lesson3)
- * [Homework Solutions Lesson 4](homework-solutions-lesson4)
- * [Homework Solutions Lesson 5](homework-solutions-lesson5)
- * [Homework Solutions Lesson 6](homework-solutions-lesson6)
- * [Homework Solutions Lesson 7](homework-solutions-lesson7)
+ *  [Homework Solutions Lesson 1](homework-solutions-lesson1)
+ *  [Homework Solutions Lesson 2](homework-solutions-lesson2)
+ *  [Homework Solutions Lesson 3](homework-solutions-lesson3)
+ *  [Homework Solutions Lesson 4](homework-solutions-lesson4)
+ *  [Homework Solutions Lesson 5](homework-solutions-lesson5)
+ *  [Homework Solutions Lesson 6](homework-solutions-lesson6)
+ *  [Homework Solutions Lesson 7](homework-solutions-lesson7)
 
 ## Additional Lesson
  [The Role of Programming in the Humanities](Role-Programming-Humanities)
