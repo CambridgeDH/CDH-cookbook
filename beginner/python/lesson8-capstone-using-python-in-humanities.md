@@ -6,7 +6,7 @@
 - [Overview](#overview)
 - [The Research Question](#the-research-question)
 - [Setting Up Files](#setting-up-files)
-- [Setting Up the Code Workspace(#setting-up-the-code-workspace)
+- [Setting Up the Code Workspace](#setting-up-the-code-workspace)
 - [Performing the Analysis](#performing-the-code-analysis)
 - [Saving Our Analysis](#saving-our-analysis)
 - [Conclusions](#conclusions)
