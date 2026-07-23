@@ -34,7 +34,7 @@ This course then covered the following fundamental programming skills:
 <li>Functions: how they are built and how to declare them</li>
 <li>Arguments, parameters, and conditionals</li>
 <li>Loops: the for loop, while loop, and nested loops</li>
-<li>Different types of functions (built-in, user-defined, with *args and *kwargs)</li>
+<li>Different types of functions (built-in, user-defined)</li>
 <li>Basics of Object-Oriented Programming</li>
 <li>File management</li>
 </ul>
