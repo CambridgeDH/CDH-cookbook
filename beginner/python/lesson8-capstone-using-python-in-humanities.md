@@ -47,7 +47,7 @@ Once you have done this you will have some analysable data with which to work.
 Now open a fresh Jupyter or Google Colab notebook and set up your workspace. Check what your current working directory is, and then build a path to the directory where your files are. Do this yourself first and then expand the arrows below to see if you got the code correct.
 
 <details>
-<summary>Expand to check your answer (This code sets the folder where your files are as the location that Python is reading.) </summary>
+<summary>Expand to check your answer (This code sets the folder where your files are as the location that Python is reading) </summary>
 <pre>
 <code>
 import os
@@ -59,6 +59,8 @@ print('This is the target directory:', targetdirectory)
 </code>
 </pre>
 </details>
+
+
 
 You will now want to have a safe place to save any new files you create during analysis. Try doing that before peeking at the answer, and if you are unsure, search online to see if you can make headway yourself.
 
@@ -72,6 +74,8 @@ print(results_dir)
 </code>
 </pre>
 </details>
+
+
 
 Finally, you want to ensure you have the up to date version of textblob. Go ahead and install it inside Jupyter or import it (if it is already installed).
 
