@@ -6,7 +6,7 @@
 - [Overview](#overview)
 - [Developing from Here](#developing-from-here)
 - [What to Expect](#what-to-expect)
-- [Getting Stuck and Getting Help(#getting-stuck-and-getting-help)
+- [Getting Stuck and Getting Help](#getting-stuck-and-getting-help)
 
 ## Overview
 This short course has covered the fundamentals of coding in Python. Here is a recap of what we covered. 
@@ -104,14 +104,12 @@ As you progress along the journey of learning to code, you will get stuck. You w
 <li>Find a mentor. One of the best ways to develop your coding skills is to force yourself to work on a specific project, and only turn to someone for help when you absolutely cannot proceed. This is the way that many successful self-taught programmers learned. They worked until they could no longer find a way forward at all, which brought them to the very cusp of their abilities, and then they asked for help from a friendly mentor. This then extended their skillset. Encountering a challenge, pushing it to the edge, and then overcoming it with a mentor is one of the richest learning experiences!</li>
 <li>Utilise forums. Either your problem will have been posted before, in which case, the answer is there ready for you to find it. Or, you will post a new problem that can help someone else in the future. Either way, everyone wins.</li>
 <li>If in doubt, re-read the documentation. Many problems come from skimming or avoiding reading the documentation. Yes, it is boring. Yes, you will want to do anything else. But it can save you headaches! </li>
+</ul>
 
 ### A Note on AI
-(continue edits here)
-  
-  
-  Having a language model write code for you before you know how to code yourself is problematic, because in order to use the LLM effectively, you  need to know how to design the program, think through the edge cases, and understand the code that the LLM provides you. If you cannot do these things at a professional level, you will inevitably get code from the LLM that has problems, does not achieve what you ultimately want, or is outdated and less useful to others. At this stage in your learning LLMs are best used to help you understand small details about new code that you encounter. For example, asking an LLM 'explain everything in this line of code' can be a powerful way to extend your knowledge. </li>
-<li>Search your error messages on the internet. This is the fastest way to figure out how to debug code. You can also ask ChatGPT what the error means, but often, people have written more in-depth information on forums about specific error messages. </li>
-</ul>
+(continue edits here) Having a language model write code for you before you know how to code yourself is problematic, because in order to use the LLM effectively, you  need to know how to design the program, think through the edge cases, and understand the code that the LLM provides you. If you cannot do these things at a professional level, you will inevitably get code from the LLM that has problems, does not achieve what you ultimately want, or is outdated and less useful to others. At this stage in your learning LLMs are best used to help you understand small details about new code that you encounter. For example, asking an LLM 'explain everything in this line of code' can be a powerful way to extend your knowledge. 
+Search your error messages on the internet. This is the fastest way to figure out how to debug code. You can also ask ChatGPT what the error means, but often, people have written more in-depth information on forums about specific error messages. 
+
 
 
 ### The Rest of this Cookbook
