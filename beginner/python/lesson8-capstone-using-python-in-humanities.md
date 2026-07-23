@@ -8,48 +8,46 @@
 - [Conclusions](#conclusions)
 
 ## Overview
-Welcome to the final tutorial lesson of this short course. This lesson focuses more on the practicalities of using Python to support and communicate your research, rather than on the act of writing code. This lesson is similar to the earlier Milestone Tutorial Lesson in that we will be walking through an analytical process together. The goal of today's lesson is to explore what it looks like to think through a research question using some texts, apply some code to help answer that question using the skills we have learned, and then assess the results of our analysis. This is meant to give you a foundation by taking you through a small, self-contained data analysis exercise, before you stretch out to searching for and utilising digital tools with coding that can further your own research project.
+Welcome to the capstone tutorial lesson of this short course. Here we will focus specifically on how to use Python to support and communicate your research. This lesson is similar to the earlier Milestone Tutorial Lesson in that we will be walking through an analytical process together. Our goal is to explore thinking through a research question about some texts, use our newfound skill sto write some code to help answer that question, and then assess the results. This limited exercise is an example of a code-driven Humanities research project in miniature form. 
 
-The steps which we will take are:
+These are the steps to take:
 
 <ul>
-<li>Devising a clear and answerable question</li>
-<li>Gathering a concise dataset</li>
-<li>Using Python to navigate the files in our dataset</li>
-<li>Writing functions to perform certain analytical tasks on the data</li>
-<li>Saving the results of the analysis in a new folder</li>
+<li>Devise a clear and answerable question</li>
+<li>Gather a concise dataset</li>
+<li>Use Python to navigate the files in our dataset</li>
+<li>Write functions to perform certain analytical tasks on the data</li>
+<li>Save the results of the analysis in a new folder</li>
 </ul>
 
 [Back to table of contents](#contents)
 
 ## The Research Question
-Let's construct a hypothetical research situation, where we have a group of texts written by some famous authors. We want to use the Python module 'textblob' to perform some very basic Natural Language Processing tasks on these texts (do not worry; full-level NLP is outisde of the scope of this course!). Let us assume for the moment that we do not know what the module is capable of doing - before continuing further in the lesson, go read the introductory material about the textblob Python module. It is good to solidly establish the habit of reading the documentation from the very start.
+Let's construct a hypothetical research situation: we have a group of texts written by some famous authors, and we want to use the Python module 'textblob' to perform some very basic Natural Language Processing tasks on these texts. Let us assume for the moment that we do not know what the module is capable of doing - before continuing further in the lesson, go read the introductory material about it.
 
 <details>
-<summary>Once you have done this, have any natural research questions come to mind? (expand)</summary>
+<summary>Once you have done this, have any natural research questions come to mind? Click on the arrow here to compare the questions you thought of to the ones we will pursue today. How do they differ? Note how specific the objective is, and note how we pinpointed the exact method to use.</summary>
 
-Let's say that we have eight passages from famous literary sources, and we want to do some basic text analysis on them to compare styles of authorhship as shown through sentiment analysis (the tone of each text) and the density of noun phrases in each text (how descriptive the texts are).
+Let's say that we have eight passages from famous literary sources. An objective could be to compare styles of authorship, perhaps based on how their tone changes. For this we can choose the NLP method of sentiment analysis. Another objective could be to determine how descriptive the texts are. An NLP task for this is to measure the proportion of the texts that contain noun phrases (known as 'density').
 </details>
 
 ### Setting Up Files
 
-  Go to the folder where you put your text files for the Milestone Lesson. In that folder, replace any files with eight plain new text files with a couple of paragraphs from some famous works. [or INSERT LINK TO DATASET HERE]. 
-
-The first thing to know is that you should name your file names with the following parameters:
+  Go to the folder where you put your text files for the Milestone Lesson. In that folder, replace any files with a few (best to have at least 4) plain new text files with a couple of paragraphs from some famous works. [Project Gutenberg](https://www.gutenberg.org/) is a great place to find classic works that you can download and save as plain .txt files. Remember that you should name your file names with the following parameters:
 
 <ul>
 <li>Descriptive names</li>
-<li>No spaces: do something like 'no_spaces', or 'nospaces', or 'NoSpaces'</li>
+<li>No spaces: do something like 'no_spaces', or 'nospaces', no-spaces, or 'NoSpaces'</li>
 <li>Unique names, so the computer can tell them each apart.</li>
 </ul>
 
 Once you have done this you will have some analysable data with which to work.
 
 ### Setting Up Code Workspace
-Now open a fresh Jupyter notebook and set up your workspace. Check what your current working directory is, and then build a path to the directory where your files are.
+Now open a fresh Jupyter or Google Colab notebook and set up your workspace. Check what your current working directory is, and then build a path to the directory where your files are. Do this yourself first and then expand the arrows below to see if you got the code correct.
 
 <details>
-<summary>Expand to check your answer</summary>
+<summary>Expand to check your answer (This code sets the folder where your files are as the location that Python is reading.) </summary>
 <pre>
 <code>
 import os
@@ -62,12 +60,10 @@ print('This is the target directory:', targetdirectory)
 </pre>
 </details>
 
-This sets the location on your computer where your files are as the location that Python is reading. 
-
-You will now want to have a safe place to save any new files you create during analysis. Try doing that. If you are unsure, search online before peeking at the answer.
+You will now want to have a safe place to save any new files you create during analysis. Try doing that before peeking at the answer, and if you are unsure, search online to see if you can make headway yourself.
 
 <details>
-<summary>Expand to check your answer</summary>
+<summary>Expand to check your answer (this creates a working directory populated with your files, and an empty directory ready to receive new files created during the analysis</summary>
 <pre>
 <code>
 results_dir = os.path.join(currentworkingdirectory, "analysis_results_textblob")
@@ -77,12 +73,10 @@ print(results_dir)
 </pre>
 </details>
 
-Now you have a working directory populated with your files, and an empty directory ready to receive new files created by the analysis.
-
 Finally, you want to ensure you have the up to date version of textblob. Go ahead and install it inside Jupyter or import it (if it is already installed).
 
 <details>
-<summary>Expand to check your answer</summary>
+<summary>Expand to check your answer (these are the basic install and import commands) </summary>
 <pre>
 <code>
 pip install textblob
@@ -91,8 +85,9 @@ from textblob import TextBlob
 </pre>
 </details>
 
-Note that we imported only the class TextBlob from the module. This is optional; you could import the entire module if you wanted. 
-! A special note: the sentiment analysis functionality in textblob only works with some additional installations. Here they are below:
+Note that in the answer above, we imported only the class TextBlob from the module. This is optional; you could import the entire module if you wanted. 
+
+**A special note**: the sentiment analysis functionality in textblob only works with some additional installations. Here they are below:
 
 ```python
 !python -m textblob.download_corpora
@@ -165,9 +160,10 @@ You should get a result that looks somewhat like (with the details different dep
 ```python
 "{'filename': 'oldmantext.txt', 'polarity': -0.04283380018674137, 'subjectivity': 0.2992763772175537, 'noun_phrases': WordList(['mixed-up whiskers', '’ t', 'man ’ s', 'body ’ s flesh crawl –', 'clothes –', 't ’', 'floor –', 'old black slouch'])}"
 ```
-**Ensure you understand the code in the answer before continuing**
+**Ensure you understand the code in the answer before continuing!**
 
-Now that you have code that will assess one of your texts, write a loop that will assess them all in this way. For each file, call your text_analysis function, and print out the filename with its sentiment polarity and subjectivity. This will give you a quick overview of all the texts.
+Now that you have code that will assess one of your texts, write a loop that will assess them all in this way. As an aside, a major programming trick is to get something working for a small thing, and then expand. Take things one small bite at a time!
+For each file, call your text_analysis function, and print out the filename with its sentiment polarity and subjectivity. This will give you a quick overview of all the texts.
 
 <details>
 <summary>Expand to check your answer</summary>
@@ -230,11 +226,12 @@ plt.xticks(rotation=45)
 plt.show()
 
 ```
-The import statement is written to shorten the name for typing convenience. The module is now called 'plt'. 
-The second block of code creates a place to store the filenames and polarity scores separately.
-The third code block goes through each text, runs the analysis function, and builds two lists: one of filenames, one of polarity scores. Those two lists are then used for plotting in the  bar chart command: .bar() is a function in the nicknamed 'plt' module. We give it the filenames and the polarities so that it can plot them as a bar chart. 
-Finally, because we need to be able to see the labels, 'plt' has a function called xticks() which has a parameter, 'rotation'. We rotate the labels 45 degrees. 
-plt.show is the command in 'plt' to show the plot we just constructed.
+Here are some pointers to understand that code:
+1. The import statement is written to shorten the name for typing convenience. The module is now called 'plt'. 
+2. The second block of code creates a place to store the filenames and polarity scores separately.
+3. The third code block goes through each text, runs the analysis function, and builds two lists: one of filenames, one of polarity scores. Those two lists are then used for plotting in the  bar chart command: .bar() is a function in the nicknamed 'plt' module. We give it the filenames and the polarities so that it can plot them as a bar chart. 
+4. Finally, because we need to be able to see the labels, 'plt' has a function called xticks() which has a parameter, 'rotation'. We rotate the labels 45 degrees. 
+5. plt.show is the command in 'plt' to show the plot we just constructed.
 
 ### Saving Our Analysis
 Now let’s save all the results into a file, and also save the plot as an image. Both will go into the analysis_results_textblob folder we created earlier. Take a look at this code. Try to understand it naturally before reading the explanation afterward.
@@ -275,13 +272,16 @@ plt.close()
 print(f"Plot saved to: {plot_path}")
 ```
 
-The first three lines create containers for the results and the filenames. The first loop saves those things in these containers. The second loop uses those containers to save the results in a new text file, and save it in the directory you created above for the results. 
-The final few blocks of code create the plot and give it its various elements. It then saves it in the directory for the results.
+Here is the explanation of that code:
+1. The first three lines create containers for the results and the filenames.
+2. The first loop saves those things in these containers.
+3. The second loop uses those containers to save the results in a new text file, and save it in the directory you created above for the results.
+4. The final few blocks of code create the plot and give it its various elements. It then saves it in the directory for the results.
 
 [Back to table of contents](#contents)
 
 ## Conclusions
-Congratulations! Within a few lines of code you have taken 8 texts and have automated some analysis of their natural language features. This is a model of the workflow for this kind of work with other datasets and research questions. 
+Congratulations! Within a few lines of code you have taken some texts and have automated an analysis of their natural language features. This is a miniature example of what a code-driven research workflow can look like.
 
 Some crucial things to remember:
 
@@ -289,6 +289,7 @@ Some crucial things to remember:
 <li>Have a concrete question that is answerable using code. Vague questions are unlikely to help get you satisfactory results</li>
 <li>Take the time to prepare your datasets and design your approach to the problem. A big coding project is made much easier with some clarity on the direction you are headed!</li>
 <li>Keep your old code and documentation. Chances are, you can re-use a lot of what you write.</li>
+<li>Comment your code to remind future you what your code does.</li>
 <li>Read the formal documentation! Search the internet when you have questions! It is not cheating to look for assistance.</li>
 </ul>
 
