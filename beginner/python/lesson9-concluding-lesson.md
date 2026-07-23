@@ -96,6 +96,8 @@ The next steps would be to identify the specific file types with which you need 
 ### Field-Specific Modules
 If you have a particular module that you want to use, you can now try reading the documentation in more depth. The best place to start is to go to the module's GitHub repository (if one exists, though it's unusual for one not to exist). First, look at the README file. These give essential details about the software and how to use it. You can also search online for the module name and potentially find tutorials  that give more step-by-step information. If you are needing to use a specific module, a logical step here would be to contact the developer as well - especially in many Digital Humanities spaces, developers are happy to support users in learning how to use their software. People who build open-source software are delighted that others want to use it, so do not be shy to approach them for support!
 
+[Back to table of contents](#contents)
+
 ## Getting Stuck and Getting Help
 As you progress along the journey of learning to code, you will get stuck. You will feel like a task is impossible, or a problem is unsolvable. This is normal (all of us have been there!) and not a sign that you are bad at coding; rather it's a signal that you are building your abilities. Many who have struggled on this journey have developed practical strategies to help them through it:
 
@@ -111,8 +113,9 @@ As you progress along the journey of learning to code, you will get stuck. You w
 Search your error messages on the internet. This is the fastest way to figure out how to debug code. You can also ask ChatGPT what the error means, but often, people have written more in-depth information on forums about specific error messages. 
 
 
+[Back to table of contents](#contents)
 
-### The Rest of this Cookbook
+## The Rest of this Cookbook
 This Cookbook is meant to link a wide variety of methods using programming languages such as R and Python. If you want to continue learning coding methods for Humanities research, this Cookbook is constantly growing with new methods that world-class researchers in the Humanities, Computer Science, and Data Science have developed and taught. Working through these lessons will sharpen and extend your newfound skilset.
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
