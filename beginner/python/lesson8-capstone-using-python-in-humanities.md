@@ -8,7 +8,7 @@
 - [Conclusions](#conclusions)
 
 ## Overview
-Welcome to the capstone tutorial lesson of this short course. Here we will focus specifically on how to use Python to support and communicate your research. This lesson is similar to the earlier Milestone Tutorial Lesson in that we will be walking through an analytical process together. Our goal is to explore thinking through a research question about some texts, use our newfound skill sto write some code to help answer that question, and then assess the results. This limited exercise is an example of a code-driven Humanities research project in miniature form. 
+Welcome to the capstone tutorial lesson of this short course. Here we will focus specifically on a beginning-to-end workflow for using Python to conduct a small sample research project and produce a visualisation of the results. This lesson is similar to the earlier Milestone Tutorial Lesson in that we will be walking through an analytical process together. Our goal is to explore thinking through a research question about some texts, use our newfound skill sto write some code to help answer that question, and then assess the results and make them visible to others. This limited exercise is an example of a code-driven Humanities research project in miniature form. 
 
 These are the steps to take:
 
