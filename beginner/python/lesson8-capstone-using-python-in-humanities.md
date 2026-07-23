@@ -31,7 +31,7 @@ Let's construct a hypothetical research situation: we have a group of texts writ
 Let's say that we have eight passages from famous literary sources. An objective could be to compare styles of authorship, perhaps based on how their tone changes. For this we can choose the NLP method of sentiment analysis. Another objective could be to determine how descriptive the texts are. An NLP task for this is to measure the proportion of the texts that contain noun phrases (known as 'density').
 </details>
 
-### Setting Up Files
+## Setting Up Files
 
   Go to the folder where you put your text files for the Milestone Lesson. In that folder, replace any files with a few (best to have at least 4) plain new text files with a couple of paragraphs from some famous works. [Project Gutenberg](https://www.gutenberg.org/) is a great place to find classic works that you can download and save as plain .txt files. Remember that you should name your file names with the following parameters:
 
@@ -43,7 +43,7 @@ Let's say that we have eight passages from famous literary sources. An objective
 
 Once you have done this you will have some analysable data with which to work.
 
-### Setting Up Code Workspace
+## Setting Up Code Workspace
 Now open a fresh Jupyter or Google Colab notebook and set up your workspace. Check what your current working directory is, and then build a path to the directory where your files are. Do this yourself first and then expand the arrows below to see if you got the code correct.
 
 <details>
@@ -124,7 +124,7 @@ print(texts)
 
 The output should be all of the contents of your text files. Sometimes you may run into problems if your file is not saved in UTF-8. If that happens, re-save the file as UTF-8 and try again. We won’t go into encodings here.
 
-### Performing the Analysis
+## Performing the Analysis
 Now that our texts are in a directory and we have the required modules, we can begin the actual analytical step. It is strongly recommended that you go read a little on sentiment analysis and noun phrase density if you are not already familiar with these concepts. 
 
 Write a function called 'text_analysis' that takes two arguments — the filename and the content. Inside the function, create a TextBlob from the content and return a summary that includes: (a) sentiment polarity, (b) sentiment subjectivity, and (c) the noun phrases TextBlob found. If you are unsure how to do this, look at the documentation before looking up the lesson's answer.
@@ -237,7 +237,7 @@ Here are some pointers to understand that code:
 4. Finally, because we need to be able to see the labels, 'plt' has a function called xticks() which has a parameter, 'rotation'. We rotate the labels 45 degrees. 
 5. plt.show is the command in 'plt' to show the plot we just constructed.
 
-### Saving Our Analysis
+## Saving Our Analysis
 Now let’s save all the results into a file, and also save the plot as an image. Both will go into the analysis_results_textblob folder we created earlier. Take a look at this code. Try to understand it naturally before reading the explanation afterward.
 
 ```python
