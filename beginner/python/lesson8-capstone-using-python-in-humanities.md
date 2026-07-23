@@ -3,9 +3,14 @@
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
-
+- [Overview](#overview)
 - [The Research Question](#the-research-question)
+- [Setting Up Files](#setting-up-files)
+- [Setting Up the Code Workspace(#setting-up-the-code-workspace)
+- [Performing the Analysis](#performing-the-code-analysis)
+- [Saving Our Analysis](#saving-our-analysis)
 - [Conclusions](#conclusions)
+
 
 ## Overview
 Welcome to the capstone tutorial lesson of this short course. Here we will focus specifically on a beginning-to-end workflow for using Python to conduct a small sample research project and produce a visualisation of the results. This lesson is similar to the earlier Milestone Tutorial Lesson in that we will be walking through an analytical process together. Our goal is to explore thinking through a research question about some texts, use our newfound skill sto write some code to help answer that question, and then assess the results and make them visible to others. This limited exercise is an example of a code-driven Humanities research project in miniature form. 
@@ -47,7 +52,7 @@ Once you have done this you will have some analysable data with which to work.
 
 [Back to table of contents](#contents)
 
-## Setting Up Code Workspace
+## Setting Up the Code Workspace
 Now open a fresh Jupyter or Google Colab notebook and set up your workspace. Check what your current working directory is, and then build a path to the directory where your files are. Do this yourself first and then expand the arrows below to see if you got the code correct.
 
 <details>
