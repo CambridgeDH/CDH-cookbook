@@ -80,7 +80,7 @@ There are many, many Python courses online, of varying costs and utility. The va
 Another possibility is that you want to do some other more hardcore data analytics/statistics. In that case, you are encouraged to take the Introduction to R course which this Cookbook hosts as well. While there are powerful statistical modules in Python, R is a programming language designed specifically for statistics. Its syntax is streamlined for data analysis, machine learning, and visualisation and some find that if those are their main tasks, it is a more effective language.
 
 ### File Handling Commands
-We covered some fundamental file handling commands, such as:
+In Lesson 7 we covered some fundamental file handling commands, such as:
 
 
 <ul>
