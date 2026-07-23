@@ -7,6 +7,7 @@
 - [Developing from Here](#developing-from-here)
 - [What to Expect](#what-to-expect)
 - [Getting Stuck and Getting Help](#getting-stuck-and-getting-help)
+- [The Rest of this Cookbook](#the-rest-of-this-cookbook)
 
 ## Overview
 This short course has covered the fundamentals of coding in Python. Here is a recap of what we covered. 
@@ -117,6 +118,8 @@ Search your error messages on the internet. This is the fastest way to figure ou
 
 ## The Rest of this Cookbook
 This Cookbook is meant to link a wide variety of methods using programming languages such as R and Python. If you want to continue learning coding methods for Humanities research, this Cookbook is constantly growing with new methods that world-class researchers in the Humanities, Computer Science, and Data Science have developed and taught. Working through these lessons will sharpen and extend your newfound skilset.
+
+[Back to table of contents](#contents)
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
