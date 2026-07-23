@@ -56,7 +56,7 @@ Once you have done this you will have some analysable data with which to work.
 Now open a fresh Jupyter or Google Colab notebook and set up your workspace. Check what your current working directory is, and then build a path to the directory where your files are. Do this yourself first and then expand the arrows below to see if you got the code correct.
 
 <details>
-<summary>Expand to check your answer (This code sets the folder where your files are as the location that Python is reading) </summary>
+<summary>Expand to check your answer </summary>
 <pre>
 <code>
 import os
@@ -68,13 +68,12 @@ print('This is the target directory:', targetdirectory)
 </code>
 </pre>
 </details>
-
-
+This code sets the folder where your files are as the location that Python is reading.
 
 You will now want to have a safe place to save any new files you create during analysis. Try doing that before peeking at the answer, and if you are unsure, search online to see if you can make headway yourself.
 
 <details>
-<summary>Expand to check your answer (this creates a working directory populated with your files, and an empty directory ready to receive new files created during the analysis</summary>
+<summary>Expand to check your answer</summary>
 <pre>
 <code>
 results_dir = os.path.join(currentworkingdirectory, "analysis_results_textblob")
@@ -84,12 +83,12 @@ print(results_dir)
 </pre>
 </details>
 
-
+This creates a working directory populated with your files, and an empty directory ready to receive new files created during the analysis.
 
 Finally, you want to ensure you have the up to date version of textblob. Go ahead and install it inside Jupyter or import it (if it is already installed).
 
 <details>
-<summary>Expand to check your answer (these are the basic install and import commands) </summary>
+<summary>Expand to check your answer </summary>
 <pre>
 <code>
 pip install textblob
@@ -97,6 +96,7 @@ from textblob import TextBlob
 </code>
 </pre>
 </details>
+These are the basic install and import commands. 
 
 Note that in the answer above, we imported only the class TextBlob from the module. This is optional; you could import the entire module if you wanted. 
 
