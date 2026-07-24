@@ -1,17 +1,17 @@
 <link rel="stylesheet" href="../../cookbook.css">
 # Homework Solutions Lesson 7: File Handling Essentials
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
-Your tasks in this lesson were to practice using file handling commands and to search for documentation on some file handling modules.
+The homework tasks for this lesson were to practice using file handling commands and to search for documentation on some file handling modules.
 
 ## Task 1
 Here is a solution for inserting a line into the middle of a file:
 
 ```python
 # Step 1: read the file
-with open('my_text.txt', 'r') as file:
+with open('my_text.txt') as file:
     lines = file.readlines()
 
-# Step 2: insert a new line (at position 1 after the first line)
+# Step 2: insert a new line right after the first line: remember Python is 0-indexed! Line 1 in Python = line 0, etc.
 lines.insert(1, 'This is the new inserted line.\n')
 
 # Step 3: rewrite the file with the updated content
@@ -19,7 +19,7 @@ with open('my_text.txt', 'w') as file:
     file.writelines(lines)
 
 # Step 4: check the new content
-with open('my_text.txt', 'r') as file:
+with open('my_text.txt') as file:
     print(file.read())
 ```
 Why is there not a simpler way to do this? Well, there are no gaps in the bytes that comprise each file. Therefore, Python cannot find a location in which to automatically insert content in the middle of a file. What this code does is extract the content, manipulate it in working memory, and then re-insert it into our file.
@@ -29,7 +29,7 @@ Here is a solution for copying the content from one file to another while also t
 
 ```python
 # Step 1: read source file
-with open('source.txt', 'r') as source:
+with open('source.txt') as source:
     content = source.read()
 
 # Step 2: transform content (make uppercase)
@@ -40,13 +40,13 @@ with open('target.txt', 'w') as target:
     target.write(content_upper)
 
 # Step 4: confirm
-with open('target.txt', 'r') as target:
+with open('target.txt') as target:
     print(target.read())
 ```
 The result should be that all the content in the new file is in UPPERCASE. 
 
 ## Task 3:
-For this task, which is a bit more advanced because it involves reading some slightly more complex documentation, there is a potential solution:
+This final task is a bit more advanced because it involves reading some slightly more complex documentation, there is a potential solution (out of others):
 
 ```python
 import shutil
