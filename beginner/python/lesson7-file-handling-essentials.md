@@ -7,10 +7,10 @@
 - [Overview](#overview)
 - [Open and Close](#open-and-close)
 - [Reading and Writing](#reading-and-writing)
-- [Copying and Reusing Content)[#copying-and-reusing-content]
-- (Dealing with File Types)[#dealing-with-file-types]
-- (Renaming Files)[#renaming-files]
-- (Conclusions)[#conclusions]
+- [Copying and Reusing Content](#copying-and-reusing-content)
+- [Dealing with File Types](#dealing-with-file-types)
+- [Renaming Files](#renaming-files)
+- [Conclusions](#conclusions)
 
 
 ## Overview
