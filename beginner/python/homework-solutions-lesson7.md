@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="../../cookbook.css">
 # Homework Solutions Lesson 7: File Handling Essentials
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
+
 The homework tasks for this lesson were to practice using file handling commands and to search for documentation on some file handling modules.
 
 ## Task 1
