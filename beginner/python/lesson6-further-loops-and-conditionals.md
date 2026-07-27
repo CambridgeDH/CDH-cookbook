@@ -101,24 +101,27 @@ university_library = ['Book A', 'Book B', 'Book C']
 def on_shelf(book):
     return book == 'Book B'
     
-def process(book):
-    print(f"Processing: {book}")
+def check_out(book):
+    print(f"Checking out: {book}")
     
 index = 0
 while index < len(university_library):
     book = university_library[index]
     if on_shelf(book):
-        process(book)
+        check_out(book)
         break
     index += 1
 else:
-    print('No book found.')
+    print('Book not found.')
 ```
 Let's decode this bit-by-bit again.
-First we have our list, which we named 'university_library', and this list contains three books. The first function, 'on_shelf', checks if a book, as we typed it, is in 'university_library'. The next function, 'process', is a print statement that runs if the book is found in 'on_shelf'.
-The 'else' is not an exception to the loop - it only runs if the loop completes. In our example above, if the desired book is found, there is a break in the loop and it terminates. If the desired book is not located, then the 'else' statement applies, and the output is our sentence, 'no book found'. 
+First we have our list, which we named 'university_library', and this list contains three books. The first function, 'on_shelf', checks if a book, as we typed it, is in 'university_library'. The next function, 'check_out', is a print statement that runs if the book is found in 'on_shelf'.
 
-Things like 'else' and 'break' are very useful for navigating large or multiple datasets and performing analyses on only parts of those datasets. You may also have heard of infinite loops - either the ones that are created by accident when the programmer forgets to put in a terminal point to their loop, or one that is designed to run indefinitely. Beginning programmers do not usually need to write infinite loops on purpose; what is important for you to remember now is that your while loop:
+Next we have 'index = 0'. This tells the program to start at the beginning of the list. The while statement can be read as 'while there is still something in the 'university_library'...'. The next line, 'book = university_library[index]' tells the computer the specific index we are looking at. Next we have our 'if' part of the loop. If the book is on the shelf, run the 'check_out' function. Then we break the loop -- we only want to check out one particular book on the shelf, not every book!. The line ' index += 1' tells the computer to search the entire list. 
+
+Then we have the 'else' statement. In our example above, say we want to see if Book A is present and if so, check it out. If it's in our list, the loop terminates and according to the 'check-out' function we wrote, prints: 'Checking out: Book A'.  If our desired book is not located, then the 'else' statement applies, and the output is our sentence, 'Book not found'. 
+
+Things like 'else' and 'break' are very useful for navigating large or multiple datasets and performing analyses on only parts of those datasets. You may also have heard of infinite loops - either the ones that are created by accident when the programmer forgets to put in a terminal point to their loop, or one that is designed to run indefinitely. Beginner programmers do not usually need to write infinite loops on purpose; what is important for you to remember now is that your while loop:
 
 <ul>
 <li>Will either end when it runs out of objects, depending on the task</li>
@@ -132,7 +135,7 @@ count = 0
 while count < 5:
     print("Count is:", count)
 ```
-The condition upon which the loop operates is that if the count variable is less than 5, print a statement. The problem is, the count variable here is never updated to anything other than 0, which is less than 5. Therefore, if you were to run this code, it would run forever or until you quit your notebook. To stop it running forever, we add:
+The condition upon which the loop operates is: if the count variable is less than 5, print a statement. The problem is, the count variable here is never updated to anything other than 0, which is less than 5. Therefore, if you were to run this code, it would run forever or until you quit your notebook. To stop it running forever, we add:
 
 ```python
 count = 0
