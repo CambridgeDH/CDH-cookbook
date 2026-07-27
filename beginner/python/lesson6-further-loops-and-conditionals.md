@@ -56,9 +56,11 @@ The second line has what we call a built-in list method, .pop(). To solidify the
 
 Essentially, .pop() works with the data structure 'list'. That is why it is specifically called a 'list method'. It removes an item from the list in order to do something with it. Then, our print function tells Python to print the item that was removed from the list. And because this is a loop, it does this again and again until nothing is left in the list. This is like putting your hand in a bag of gifts, and then taking one gift at a time out to show to the recipient. Once the bag is empty, you stop. Once the program removes the last element of the list, the program stops.
 
-Now you may wonder why '0' is a parameter in .pop. Take a moment to think about how Python counts things. We discussed this in the first lesson.
-
-[hide answer] We put a 0 in .pop because Python is 0-indexed. It will remove the 0th element in the list each time the loop runs.
+<details>
+<summary>Now you may wonder why '0' is a parameter in .pop. Take a moment to think about how Python counts things. We discussed this in the first lesson.
+</summary>
+ We put a 0 in .pop because Python is 0-indexed. It will remove the 0th element in the list each time the loop runs.
+</details>
 
 ### While Loop Breaks
 Consider this scenario: you have a long list of animals, but you only want to list them until you hit a particular animal midway through the list. Fortunately, Python has a method for interrupting a while loop: the loop break. It will cause the loop to terminate at a specified point in the list. Let's see an example:
