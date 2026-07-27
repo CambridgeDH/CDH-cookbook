@@ -3,7 +3,9 @@
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
-- [The 'For Loop' Review](#the-for-loop--review)
+
+- [Overview](#overview)
+- [The For Loop Review](#the-for-loop--review)
 - [The 'While Loop'](#the-while-loop)
 - [Nested Loops](#nested-loops)
 - [Conditionals](#conditionals)
@@ -11,11 +13,11 @@
 - [Conclusion](#conclusion)
 
 ## Overview
-In previous lessons we covered the basic 'for loop' and used it to build some simple iterative functions and modify some files. However, 'for loops' are just scratching the surface of Python's capabilities. In this lesson we are going to look at two other loop types. We will also introduce the concept of 'conditional statements', which enable your code to respond to different potential situations. Finally, we will take a deeper look at 'arguments', which are the variables you give to functions to help them run. 
+In previous lessons we covered the basic **for loop** and used it to build some simple iterative functions and modify some files. However, for loops just scratch the surface of Python's capabilities. In this lesson we are going to look at two other loop types. We will also introduce the concept of **conditional statements**, which enable your code to respond to different potential situations. Finally, we will take a deeper look at **arguments**, which are the variables you give to functions to instruct them to run with certain specifications. 
 
 [Back to table of contents](#contents)
 
-## The 'For Loop' Review
+## The For Loop Review
 Before we get deep into different kinds of loops in Python, let's pause for a moment and review a simple for loop:
 
 ```python
@@ -24,20 +26,20 @@ patients = ['Alice', 'Ramji', 'Jonathan']
 for patient in patients:
     print('Hello', patient)
 ```
-As should be familiar by now, 'patients' is our list of names. The loop identifies this list, and for each element ('patient') in the list, it prints a greeting. Note that we could call this anything, say, 'for unicorn in patients...print ("hello", unicorn)'. The word 'patient' (or unicorn) in this code is a placeholder for the elements in the list.
+As should be familiar by now, 'patients' is our list of names. The loop identifies this list, and for each element ('patient') in the list, it prints a greeting. Note that we could call this anything, say, 'for unicorn in patients...print ("hello", unicorn)'. The word 'patient' (or unicorn) in this code is a placeholder for the elements in the list. In other words, the template is: 'for each element in the list of elements, print it'. 
 
-**The for loop operates by this logic: for each thing in a category, do x** We do not need to tell the loop to stop running; when it has reached the end of the items in the category, it stops. It is the simplest loop in Python.
+**Therefore, the for loop operates by this logic: for each thing in a category, do x** We do not need to tell the loop to stop running; when it has reached the end of the items in the category, it stops. It is the simplest loop in Python.
 
 [Back to table of contents](#contents)
 
-## The 'While Loop'
-The next kind of loop that we encounter in Python is called the 'while' loop. It is slightly more complex than the for loop. It is meant to run the code *while* some condition is true, and to stop running when that condition changes. The basic abstract anatomy of a while loop is:
+## The While Loop
+The next kind of loop that we encounter in Python is called the 'while' loop. It is slightly more complex than the for loop. It is meant to run the code *while* some condition is true, and to stop running when that condition changes. The basic anatomy of a while loop is:
 
 ```python
 while condition holds:
     perform task
 ```
-Now obviously we cannot run this code. 'Condition holds' and 'task' have not been defined. However, it is clear how the loop operates. It is important to note that if the condition we state does not have an end point, the loop will run **forever** (or until your computer dies). Let's look at a real 'while loop' in action:
+Now obviously we cannot run this code. 'Condition holds' and 'task' have not been defined. However this is the essential structure of the while loop. It is important to note that if the condition we state does not have an end point, the loop will run **forever** (or until your computer dies). Let's look at a real 'while loop':
 
 ```python
 animals = ['jaguar', 'wolf', 'unicorn']
@@ -45,17 +47,21 @@ while animals:
     animal = animals.pop(0)
     print('Next animal is:', animal)
 ```
-First, we have a list of animals. The line 'while animals:' looks odd to humans, because it is not a complete statement. We can read this as 'while the list animals has something in it:'. Python operates by the truth value of statements. So, 'While animals = TRUE (the list has something in it), do X.' If 'animals' = FALSE, then nothing is in the list to analyse, and the code would not run.
+Let's break this down bit-by-bit:
+In the first line we have a list of animals, as denoted by the square brackets. Remember each element in the list must have quote marks and be separated by commas after the quote marks. The line 'while animals:' looks odd to a reader because it is not a complete statement. It translates to: 'while the list called animals has something in it:'...and then the rest of the code will finish that statement.
 
-The second line has what is known as a built-in list method, .pop(). To get you in the habit of reading Python documentation, read up on this built in function [here](https://docs.python.org/3/tutorial/datastructures.html).
+As an aside, it is important to understand that Python operates by the truth value of statements. So, 'while animals = TRUE (meaning, the list we called 'animals' has something in it), do specified thing.' In the line of code, 'while animals:', the 'true' is implied and the computer runs the program. If the list 'animals' had nothing in it, the computer would interpret the situation as 'while animals = FALSE' and the code would not run. 
 
-Essentially, .pop() works with the data structure 'list'. That is why it is specifically called a 'list method'. It removes an item from the list. Our print function then tells Python to print what was removed from the list. And because this is a loop, it does this again and again until nothing is left in the list. This is like putting your hand in a bag, and then taking one present out at a time to show the recipient. Once the bag is empty, the loop finishes. 
+The second line has what we call a built-in list method, .pop(). To solidify the habit of reading Python documentation, look at the specs on this built in function [here](https://docs.python.org/3/tutorial/datastructures.html) **before** reading the explanation below.
+
+Essentially, .pop() works with the data structure 'list'. That is why it is specifically called a 'list method'. It removes an item from the list in order to do something with it. Then, our print function tells Python to print the item that was removed from the list. And because this is a loop, it does this again and again until nothing is left in the list. This is like putting your hand in a bag of gifts, and then taking one gift at a time out to show to the recipient. Once the bag is empty, you stop. Once the program removes the last element of the list, the program stops.
+
 Now you may wonder why '0' is a parameter in .pop. Take a moment to think about how Python counts things. We discussed this in the first lesson.
 
 [hide answer] We put a 0 in .pop because Python is 0-indexed. It will remove the 0th element in the list each time the loop runs.
 
 ### While Loop Breaks
-Consider this scenario: you have a long list of animals, but you only want to list them until you hit 'wolf'. Fortunately, Python has a method for interrupting a while loop: the loop break. It will cause the loop to terminate at a specified point, and the program to run any code that appears after. Let's see an example:
+Consider this scenario: you have a long list of animals, but you only want to list them until you hit a particular animal midway through the list. Fortunately, Python has a method for interrupting a while loop: the loop break. It will cause the loop to terminate at a specified point in the list. Let's see an example:
 
 ```python
 animals = ['shark', 'panda', 'kingfisher', 'wolf', 'jaguar', 'unicorn', 'eagle']
@@ -68,7 +74,7 @@ while animals:
 
 print('I found all the animals up to and including the wolf')
 ```
-The new line here is 'if animal == 'wolf':'. This line tells Python that if the animal encountered is the string 'wolf', then it should 'break' and stop running the loop. **!Notice** the == sign? Since we use '=' to assign variables, we use '==' to say 'equals' instead. So, if animal equals 'wolf', break the loop.
+The new line here is 'if animal == 'wolf':'. This line tells Python that if the animal encountered is the string 'wolf', then it should 'break' and stop running the loop. **Notice** the == sign! In Python, since we use '=' to assign variables, we use '==' to say 'equals' instead. So, if 'animal' equals 'wolf', break the loop.
 
 Notice also that the code keeps running after the loop is broken. It just terminates the loop process and goes to the next line of code, which is our print next print function.
 
@@ -84,15 +90,15 @@ while animals:
         continue   
     print("Next animal is:", animal)
 ```
-The code here is straightforward: the loop is taking the 0th element out of the list. The print statement then prints that element. But when the 0th element is 'wolf', the code is instructed to take it out (this is animals.pop(0)), and then 'continue' skips the rest of the loop body (the print statement). Therefore, 'wolf' doesn't get printed, and it is removed from the list like every other element that gets processed. The loop then keeps running with the rest of the elements.
+The code here is straightforward: the loop is taking the 0th element out of the list. The print statement then prints that element. But when the 0th element is 'wolf', the code is instructed to first take it out like it does for every other element (this is what animals.pop(0) does), and then 'continue' tells it to throw that element away, and then keep running as usual for the rest. Therefore, 'wolf' doesn't get printed, but every other element will be printed.
 
 ### While Loop Else
-One last element you can add in a while loop is an 'else' clause. Look at the following example:
+One final element you can add in a while loop is an 'else' clause. Look at the following example:
 
 ```python
 university_library = ['Book A', 'Book B', 'Book C']
 
-def present(book):
+def on_shelf(book):
     return book == 'Book B'
     
 def process(book):
@@ -101,13 +107,15 @@ def process(book):
 index = 0
 while index < len(university_library):
     book = university_library[index]
-    if present(book):
+    if on_shelf(book):
         process(book)
         break
     index += 1
 else:
     print('No book found.')
 ```
+Let's decode this bit-by-bit again.
+First we have our list, which we named 'university_library', and this list contains three books. The first function, 'on_shelf', checks if a book, as we typed it, is in 'university_library'. The next function, 'process', is a print statement that runs if the book is found in 'on_shelf'.
 The 'else' is not an exception to the loop - it only runs if the loop completes. In our example above, if the desired book is found, there is a break in the loop and it terminates. If the desired book is not located, then the 'else' statement applies, and the output is our sentence, 'no book found'. 
 
 Things like 'else' and 'break' are very useful for navigating large or multiple datasets and performing analyses on only parts of those datasets. You may also have heard of infinite loops - either the ones that are created by accident when the programmer forgets to put in a terminal point to their loop, or one that is designed to run indefinitely. Beginning programmers do not usually need to write infinite loops on purpose; what is important for you to remember now is that your while loop:
