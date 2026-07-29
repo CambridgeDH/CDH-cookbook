@@ -7,36 +7,37 @@ The code example this task depends on is:
 ```python
 university_library = ['Book A', 'Book B', 'Book C']
 
-def present(book):
+def on_shelf(book):
     return book == 'Book B'
     
-def process(book):
-    print(f"Processing: {book}")
+def check_out(book):
+    print(f"Checking out: {book}")
     
 index = 0
 while index < len(university_library):
     book = university_library[index]
-    if present(book):
-        process(book)
+    if on_shelf(book):
+        check_out(book)
         break
     index += 1
 else:
-    print('No book found.')
+    print('Book not found.')
 ```
 The elements which were not explained in the lesson are:
 <li>'index=0'</li>
 <li>'while index < len(university_library)'</li>
 
-The first element a variable used to track our position in the university_library list. It tells Python to start with the 0th element and continue, which is 'index += 1', that appears at  the end of the indented block. This bit of code helps Python keep track of where it is in the list.
+The first element is a variable used to track our position in the university_library list. It tells Python to start with the 0th element and continue, which is 'index += 1', that appears at  the end of the indented block. This bit of code helps Python keep track of where it is in the list.
 
-The core of the second element is len(university_library). This is the length of the list that 'university library' has. It could be the entire database of books that readers can check out. The loop is stating that while the index is less than the total number of books in the library, then Python should keep checking if each given book is present. Once it reaches the last book, the loop will stop. 
+The core of the second element is len(university_library). This is the length of the list that the variable university_library contains. The loop is stating that while the index is less than the total number of books in the library, then Python should keep checking if each given book is present. Once it reaches the last book, the loop will stop. 
 
 The reason you were encouraged to look these up yourself is because much of your time spent writing code will be searching for answers to such questions. No programmer remembers every fact or bit of syntax. It is the ability to find information that will take you far.
 
 ## Task 2:
-In this task you were asked to create variables to form the basis of arguments for the function add(). Here is a numerical example (but your code, so long as it ran as you wanted, does not need to involve numbers):
+In this task you were asked to create variables to form the basis of arguments for the function add(). Here are two ways to do this with some numbers:
 
 ```python
+# defining some variables and then putting the variables into the function as arguments:
 def add(*args):
     return sum(args)
 
@@ -45,6 +46,12 @@ y = 10
 z = 15
 
 print(add(x, y, z))
+
+# with numbers, you can put them straight in as arguments without defining them behind a variable:
+def add(*args):
+    return sum(args)
+
+print(add(5, 10, 15))
 ```
 **! A note of caution**: In this example we used 'x', 'y', 'z' for simplicity's sake. Typically it is a bad idea to use such generic variable names. Ideally you want to write code that someone else could read (or that you could read years later). In your own code be sure to use descriptive variable names. 
 
@@ -73,7 +80,7 @@ for student, books in student_assigned_reading.items():
         index += 1
 ```
 
-Notice that we use a list of dictionaries (each 'element:element' is one dictionary), we use indexing and a while loop to move through the dictionaries, and we use an if...else formulation to print very specific information from the data.
+Notice that we use a set of dictionaries (each 'element:element' is one dictionary), and the second element of each dictionary is a list of books associated with a name. We use indexing and a while loop to move through the dictionaries, and we use an if...else formulation to print very specific information from the data.
 
 As you write more code, becoming more familiar with how to move seamlessly between different types of data, different functions, and different syntax structures will become more second-nature. In the meantime, if you were able to complete this homework, you can be confident that you have a foundation in some of the most important elements of Python syntax.
 
