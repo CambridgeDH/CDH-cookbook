@@ -129,11 +129,10 @@ This brief lesson gives you a basis in the fundamentals of file handling in Pyth
 
 Homework for this lesson:
 
-<ul>
-<li>Task 1: Open a text file and use Python to load all its lines in a list. Then insert a new line somewhere in the middle of that list, and save the updated content back into the file.</li>
-<li>Task 2: the content of one file into another, but transform the content while copying (e.g., uppercase, add line numbers, or replace a word). Do not do this manually; have Python do everything for you.</li>
-<li>Task 3: (Advanced) Search the internet for the shutil and reportlab module documentation. Use shutil.copy() to duplicate a file. Use reportlab to generate a simple PDF with one line of text.</li>
-</ul>
+Task 1: Open a text file and use Python to load all its lines in a list. Then insert a new line somewhere in the middle of that list, and save the updated content back into the file.
+Task 2: the content of one file into another, but transform the content while copying (e.g., uppercase, add line numbers, or replace a word). Do not do this manually; have Python do everything for you.
+Task 3: (Advanced) Search the internet for the shutil and reportlab module documentation. Use shutil.copy() to duplicate a file. Use reportlab to generate a simple PDF with one line of text.
+
 
 [Back to table of contents](#contents)
 
