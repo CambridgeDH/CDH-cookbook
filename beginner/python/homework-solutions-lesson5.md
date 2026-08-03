@@ -36,21 +36,22 @@ Remember the following:
 <li>Notice the if statement: 'if name in self.names:'. self.names is an attribute of self, or g. It means that this object has the list of names associated with it. </li>
 <li>This task is a bit tricky because I asked you to write an 'if...else' statement. We haven't yet covered those formally. However, you will come across many things in programming that will require you to act before you have formally learned the relevant facts. How did you go about looking for this information? Were you successful? What could you have done differently?</li>
 
-#Task 3
-In the lesson, we used both a lambda function ('format_name = lambda n: n.lower()') and a method ('.lower()') to make text lowercase. This 'redundancy' isn't actually redundancy. It's a core part of the flexibility of the Python language. You can either choose to use a built-in method associated with an object (in this case, an object which we implement under the 'str' Class) or you can write a quick lambda function. The result is the same. To review:
-
-Lambda functions are tools for writing small, one-off functions. They don’t “belong” to any specific object.
-Methods are action attributes that are attached to specific objects (like strings). They are usually the most direct way to manipulate an object.
-
-Finally, here is an example of using another lambda method (you could have used any to complete the homework!):
+# Task 3
+Your task was to incorporate a lambda/anonymous function into the Greeting class to ensure that all the students' names get printed correctly.
+Here is a possible solution:
 
 ```python
-def greet(name):
-    repeat_name = lambda n: n * 2
-    print(f"Hello, {repeat_name(name)}!")
+class Greeting:
+    def greet(self):
+        clean_name = lambda n: n.strip().capitalize()
+        print(f"Hello, {clean_name(self.name)}!")
 
-greet("Maria")
+g = Greeting()
+g.name = "  maria  "  
+g.greet()
+
 ```
 Try running this. What does it do? 
+Notice that this solution uses a lambda/anonymous function (clean_name), and within it, we have string methods, n.strip() and .capitalize()! The takeaway message is that you can use a lambda/anonymous function to support the idiosyncrasies of your situation, and methods are actions predefined by Python that are tied specifically to types of objects (like strings). Methods can be incorporated wherever needed, including inside your own lambda/anonymous functions.
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
