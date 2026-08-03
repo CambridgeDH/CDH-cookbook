@@ -281,7 +281,9 @@ As you can see, elif is pretty straightforward. You can have as many elif branch
 ## Arguments
 One last concept we will explore in this lesson is that of 'arguments'. You have already been dealing with arguments since we discussed  the concept of a function. Remember 'parameters' -- these are the placeholder variables listed inside the curved brackets at the start of a function. Arguments are the exact instances of those variables that get acted upon when we call the code. There are different kinds of arguments, and it helps to know them:
 
-### Positional arguments: these need to be passed into the function in a specific order:
+### Positional arguments
+
+These arguments need to be passed into the function in a specific order:
 
 ```python
 names = ['Alice', 'Bob', 'Charlie']
@@ -324,7 +326,7 @@ greet('Jean Luc')
 ```
 We see that in the first calling of the function, 'greet()', the computer outputs 'Hello, friend'. In the second calling, we put in a specific name as an argument, and so the computer ignored the default and used the name instead, 'Hello, Jean Luc'. 
 
-### `*args`
+### *args
 
 This setting allows a function to accept any number of positional arguments. Python takes these arguments and collects them into a tuple. For an example, run the two functions below just as they are, one at a time in different cells:
 
