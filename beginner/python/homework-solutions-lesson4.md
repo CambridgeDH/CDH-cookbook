@@ -75,7 +75,7 @@ Since we have:
 
  [Back to table of contents](#contents)
 
-## Phase 2: Writing the Function
+## Phase 2: Writing the Functions
 We will now write the code for the function by moving through the steps of our program that we designed. In more complex programs we would not necessarily proceed in the same order as that listed in the program steps, but our program is very simple, so we can go in order.
 
 ### Identifying and Opening Our Folder
