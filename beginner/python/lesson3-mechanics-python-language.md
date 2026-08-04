@@ -9,7 +9,7 @@
 - [Built-in and Preexisting Functions](#built-in-and-preexisting-functions)
 - [Function Parameters and Arguments](#function-parameters-and-arguments)
 - [Loops](#loops)
-- [Summary](#summary)
+- [Conclusion](#conclusion)
 - [Homework](#homework)
 
 ## Overview
@@ -18,38 +18,40 @@ In this lesson we will begin writing more complex commands than just naming vari
 It is recommended that you feel comfortable running cells in Jupyter Notebooks and that you understand the contents of Lessons 1 and 2 before starting this lesson. Fundamentally, you should know: 
 
 <ol>
-<li>How to install and load a Python package or Module.</li>
+<li>How to install and load a Python package or module.</li>
 <li>What a variable is, how to name it, and how to print it.</li>
 <li>What data types are, and a few kinds of data types.</li>
 </ol>
 
-In this lesson, we will master the most important structure in Python code: the **function**. You will learn what a function is and its 'anatomy'. You will also get your first look at **loops** and will learn to write a simple loop using what you learn about functions.
+Most importantly, we will meet the foundational element in Python code: the **function**. You will learn what a function is and its 'anatomy'. You will also get your first look at **loops**, which are forms that functions can take, and you will learn to write a simple loop.
 
 You are encouraged to follow along by copying and pasting code into your own Jupyter Notebook cells and running them. 
 
 [Back to table of contents](#contents)
 
 ## Functions: The Building Blocks of Python Code
-In the previous lesson you learned that Python categorises data into different types, such as lists, strings, integers, etc. You also learned how to 'declare' variables by giving your data specific names. But now, we want to *do* something with all of this data. After all, that is the purpose of code: to get the computer to perform tasks for us.
+In the previous lesson you learned that Python categorises data into different categories, such as lists, strings, integers, etc. You also learned how to 'declare' variables by giving your data specific names. But now, we want to *do* something with all of this data. After all, that is the purpose of code: to get the computer to perform tasks for us.
 
-**Functions** are the things that help us do this. They are what we call the instructions telling the computer to do something with your variables. In fact, you have already been using a function: the print statement! This statement is a built-in function (more on that later!) that reads the variable you declared and prints it on the screen.
+**Functions** are the action elements of Python code. They are the instructions telling the computer to do something with your variables. In fact, you have already been using a function: the print statement! This statement is a special kind of function known as a built-in function, and we will discuss this kind of function in later lessons. 
 
 [Back to table of contents](#contents)
 
 ## The Anatomy of a Function
-In order to have functions that function, we have to obey the rules of the Python language and use the proper syntax. Functions can be complex or simple, but they all start with a basic core structure. The following function, called 'greet', prints the phrase 'Hello World!' when run:
+In order to have functions that function, we have to obey the rules of the Python language and use the proper syntax. Functions can be complex or simple, but they all start with a basic core structure. Let's get a sense of this.
+
+The following function, called 'greet', prints the phrase 'Hello World!' when run:
 
 ```python
 def greet():
     print('Hello World!')
 greet()
 ```
-When looking at code, it helps to break it down into its individual parts. Let's look at this function's parts, line by line.
+When looking at code, it helps to break it down into its individual parts. Let's examine this function line by line.
 
 ```python
 def greet():
 ```
-'def' tells Python that you are about to **define** a function. 'greet' is the name we will give this function. We could call it anything, but 'greet' makes the most sense here. After 'greet', you see curved brackets, with nothing inside, before a colon. These are where we could put in other elements, called *parameters* to help the function work. But here, 'greet()' doesn't need anything extra, so they are empty. We will explain more about this later in the lesson.
+'def' tells Python that you are about to **define** a function. 'greet' is the name we will give this function. We could call it anything, but 'greet' makes the most sense here. After 'greet', you see curved brackets, with nothing inside, before a colon. These are where we could put in other elements, called *parameters* to help the function work. But here, 'greet()' doesn't need anything extra, so they are empty. We will explain more about why these curved brackets are sometimes empty later in the lesson.
 
 Now, on to the next line:
 
@@ -76,7 +78,7 @@ def greet():
     print('Hello World!')
 greet()
 ```
-Our final line, 'greet()', is like our 'print()' statement. Because we have defined a function called 'greet', we can summon it (or 'call' it) by just writing 'greet()'. Notice that it is isn't indented, and that's because it's not part of the function instructions! We can call greet() anywhere in our program, even in another cell. Try it!
+Our final line, 'greet()', is like our 'print()' statement. Because we have defined a function called 'greet', we can summon it (or 'call' it) by just writing 'greet()'. Notice that it is isn't indented, and that's because it's not part of the function instructions. Since our greet function now exists, we can type it in another cell, and run that cell, and then we have thus 'called' the function. Try that and see what happens!
 
 To summarise, the components of a full function:
 
@@ -86,12 +88,12 @@ To summarise, the components of a full function:
 <li>The 'call' of the function later.</li>
 </ul>
 
+[Back to table of contents](#contents)
+
 ## Built-in and Preexisting Functions
-When you are just getting started in coding, it's not common to write all of your own functions from scratch. If you are using packages or modules that someone else has written, you will often use functions that they have already defined in their code. We will see examples of this in later lessons.
+When you are just getting started in coding, you probably won't be writing all of your own functions from scratch. If you are using packages or modules that someone else has written, you will often use functions that they have already defined in their code. You can use these already-built functions to do tasks specific to your project. We will see examples of this in later lessons.
 
-Another very common way that people access functions is by using Python's built-in functions. 'Print' is such a function. We don't have to write the code for instructing the computer how to execute a print action each time, because the code underlying the Python language already has those instructions. You can find a list of all the built-in functions that Python has to offer [here](https://docs.python.org/3/library/functions.html). 
-
-When we use a built-in or preexisting function, we 'call' it. Since our greet function now exists, we can type it in another cell, and run that cell. We have thus 'called' the function. 
+Another very common way that people do things with their code is by using Python's built-in functions. 'Print' is such a function. We don't have to write the code for instructing the computer how to execute a print action each time, because the code underlying the Python language already has those instructions. You can find a list of all the built-in functions that Python has to offer [here](https://docs.python.org/3/library/functions.html).  
 
 [Back to table of contents](#contents)
 
@@ -125,16 +127,16 @@ def introduction(name, age):
 introduction("Nancy", 55)
 ```
 Here, we gave the function we call 'introduction' two parameters: name, and age. We put them in the parentheses and separate them with a comma.
-Notice that the print statement also separates out the components the way we want. When we call the function, all we have to do is specify our arguments: the name, and the age.
+Notice that the print statement also separates out the components the way we want with a comma. When we call the function, all we have to do is specify our arguments: the name, and the age.
 
 &#x1F3C1; **Challenge**: reorder the elements within the print statement, but make sure you have 'name' and 'age' somewhere inside those brackets. What happens when you call the function now?
 
 [Back to table of contents](#contents)
 
 ## Loops
-The above functions we have written are useful in that they achieve something. But what if we have multiple things to print? Calling the same function over and over, and substituting in different inputs would be tedious.
+The above functions are useful for printing one phrase or sentence. But what if we have multiple things to print? Calling the same function over and over, and substituting in different inputs would be tedious and defeat the purpose of coding altogether.
 
-Fortunately, Python has a specific kind of code structure called a **loop** which can do the work for us. While there are different kinds of loops, the most straightforward is the **for loop**.
+Fortunately, Python has a specific kind of code structure called a **loop** which does the work for us. While there are different kinds of loops, the most straightforward is the **for loop**.
 
 A for loop allows us to run the same code over and over, across a list or other collection of data. Here's an example:
 
@@ -150,7 +152,7 @@ When we run this code, we get the word Hello printed with the names of our patie
 for patient in patients:
 ```
 In plain English, this means: "For each patient in the list called patients, do the following:"
-Then, in the next line, which we remember **must** be indented, it gives the instructions to finish the sentence: 'print the word Hello, with the patient's name. Do this until you run out of patients.' 
+Then, in the next line, which we remember **must** be indented, it gives the instructions to finish the sentence: 'print the word Hello, with the patient's name'. The computer will continue doing this until it runs out of patients in the list. 
 
 ### Loops with Functions
 We can combine this with our greet function, too:
@@ -164,17 +166,17 @@ def greet(patient):
 for patient in patient_names:
     greet(patient)
 ```
-Notice that in the 'greet' function, you can say 'patient', but in the loop, you say 'for patient in patient_names'. This is because you are asking the loop to read the list called 'patient_names' and insert each element (patient) in that list into the greeting. 
+Notice that in the 'greet' function, you can say 'patient', but in the loop, you say 'for patient in patient_names'. This is because you are asking the loop to read the list called 'patient_names' and insert each element (patient) in that list into the greeting. Notice also that the function call is indented in this second loop. This is because we are having the function 'greet' run for each of the patients in the list. If you were to put 'greet(patient)' outside the loop (meaning, unindented), what happens?
 
 [Back to table of contents](#contents)
 
-## Summary
+## Conclusion
 In this lesson you have learned the most crucial elements for getting your code to accomplish something with your variables: writing a function, and getting that function to iterate over multiple pieces of data. Try out the homework exercises below to solidify this knowledge.
 
 [Back to table of contents](#contents)
 
 ## Homework
-The exercises for this lesson have three levels depending on how much challenge you want:
+The exercises for this lesson have three levels depending on how much of a challenge you want:
 
 <ul>
  <li>Easy: create a list with up to 10 elements. Write a for loop that prints those elements with a meaningful phrase.</li>
