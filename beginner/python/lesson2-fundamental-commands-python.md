@@ -8,15 +8,15 @@
 - [Loading Packages and Preparing our Data](#loading-packages-and-preparing-our-data)
 - [Types of Data in Python](#types-of-data-in-python)
 - [Navigating Python](#navigating-python)
-- [Lesson Summary](#lesson-summary)
+- [Conclusion](#conclusion)
 
 ## Overview
 In this lesson we will study the following fundamental aspects of dealing with data in Python:
 
 <ul>
-<li>Loading data into Jupyter Notebooks or Google Colab.</li>
+<li>Loading data into a coding notebook system like Jupyter Notebooks or Google Colab (we use Jupyter Notebooks in this course but other platforms are equivalent).</li>
 <li>How to declare variables.</li>
-<li>Good practices for naming variables (very important!).</li>
+<li>Good practices for naming variables.</li>
 <li>Types of data in Python.</li>
 </ul>
 
@@ -27,14 +27,14 @@ If you are a beginner at coding, it is important to clearly understand these con
 [Back to table of contents](#contents)
 
 ## Navigating Jupyter Notebooks
-The first step to setting up a coding workspace is to launch Jupyter Notebooks, and create a new notebook for yourself. If you did the homework in the last lesson, then you initiated a Notebook and typed some commands into some cells and ran them. Here we will take a closer look at the components of a Jupyter Notebook:
+The first step to setting up a coding workspace is to launch Jupyter Notebooks and create a new notebook for yourself. If you did the homework in the last lesson, then you initiated a Notebook and typed some commands into some cells and ran them. Here we will take a closer look at the components of a Jupyter Notebook:
 <ul>
 <li><strong>Moving, Cutting, and Running Cells</strong>: Jupyter Notebooks are made up of individual cells. Using the options in the menu at the top, you can move cells up and down, you can 'cut' (delete), or 'add' a new cell, and you can run the code in the current cell. If you run code in one cell which affects cells below it, they have to be run in order (or the computer will not know that the previous cell is relevant). You can reorder cells by clicking the up and down arrows in the menu.</li>
 <li><strong>The Kernel</strong>: you can think of this as the 'working memory' of your notebook. If your code gets messy, or you start getting odd results when you run cells, you can restart the kernel by selecting from the restart options in the dropbox. Note that doing this will wipe the memory of the notebook and you'll have to run all your commands from the beginning.</li>
-<li><strong>Switching between Code and Markdown</strong>: The cells can either be code cells (which run live code), or they can be Markdown cells (Markdown is a kind of text formatting language for display). To turn a code cell into Markdown, press Control + M, and the cell outline should turn blue. To turn a Markdown cell into code, press Control + Y, and the cell outline should turn blue.</li>
+<li><strong>Switching between Code and Markdown</strong>: The cells can either be code cells (which run live code), or they can be Markdown cells (Markdown is a kind of text formatting language for visual display). To turn a code cell into Markdown, press Control + M. To turn a Markdown cell into code, press Control + Y.</li>
 </ul>
 
-&#x1f4a1; Tip: A full tutorial on Jupyter Notebook shortcuts can be [found here.](https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330) These shortcuts typically work for most Jupyter-based Notebooks (such as Google Colab), but there are some variations.
+&#x1f4a1; Tip: A good (but old) tutorial on Jupyter Notebook shortcuts can be [found here.](https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330) These shortcuts typically work for most Jupyter-based Notebooks (such as Google Colab), but there are some variations. These platforms do regularly update their interface so be prepared to occasionally have to check new settings or buttons.
 
 [Back to table of contents](#contents)
 
@@ -100,7 +100,7 @@ import os
 from textblob import TextBlob
 # This line imports a specific Class of commands, TextBlob, from the textblob package
 # Notice the capitalisation for the difference!
-# While we don't typically capitalise variable names, Class names are sometimes capitalised.
+# While we don't typically capitalise variable names, Class names are capitalised and have no spaces between words.
 
 ```
 Now that we have installed and loaded all the necessary software, in order to do anything with it, we next must declare a variable:
@@ -134,7 +134,7 @@ Now we have everything set up: our packages and modules are installed and loaded
 [Back to table of contents](#contents)
 
 ## Types of Data in Python
-Just as we work with different kinds of data in everyday life, so Python has different ways of categorising data, which are known as 'data types'. It is important to know what these are and how to tell Python which data type you are using,  because certain programming operations will only work with particular data types. We will learn a few of the fundamental types today. In your Notebook cells, work through the examples below by copy and pasting the code and then running the cells.
+Just as we work with different kinds of data in everyday life, so Python has different ways of categorising data; these are known as 'data types'. It is important to know what data types are and how to tell Python which data type you are using,  because certain programming operations will only work with particular data types. We will learn a few of the fundamental types today. In your Notebook cells, work through the examples below by copying and pasting the code and then running the cells.
 
 ### Strings
 Strings are lines of continuous text, like our test sentence above.
@@ -197,7 +197,7 @@ print(Breeds)
 
 ```
 
-&#x1F3C1; **Challenge**: Add in a duplicate to your code on the set of snakes (snake_types). Print it. What happens differently if you print a set with a duplicate item?
+&#x1F3C1; **Challenge**: Add in a duplicate snake name to your code in the set of snakes (snake_types). Print it. What happens differently if you print a set with a duplicate item?
 
 ### Dictionaries
 Dictionaries are organisations of data into 'keys' and 'values'. These terms come from database design and programming. Essentially, a key is an entry for an object in the dictionary, and the value is something which describes the key. Below I have a group of horse breeds, the keys. Each breed of horse has a name, the value:
@@ -254,7 +254,7 @@ You can see how not being specific and careful with variable names can create pr
 
 [Back to table of contents](#contents)
 
-## Lesson Summary
+## Conclusion
 In this lesson we have covered the following core concepts: 
 
 <ul>
