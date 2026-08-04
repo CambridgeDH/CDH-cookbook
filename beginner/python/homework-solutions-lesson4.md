@@ -3,9 +3,9 @@
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 
 ## Main Contents
-- [Phase 1: Objectives, Program Design, and Workspace Setup](#objectives-program-design-and-workplace-setup)
-- [Phase 2: Orienting Python to our Data](#orienting-python-to-our-data)
-- [Phase 3: Writing the File Modification Loops](#writing-the-file-modification-loops)
+- [Objectives, Program Design, and Workspace Setup](#objectives-program-design-and-workplace-setup)
+- [Orienting Python to our Data](#orienting-python-to-our-data)
+- [Writing the File Modification Loops](#writing-the-file-modification-loops)
 - [The Entire Picture](#the-entire-picture)
 - [Conclusion](#conclusion)
 
