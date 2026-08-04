@@ -3,9 +3,9 @@
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 
 ## Main Contents
-- [Objectives, Program Design, and Workspace Setup](#objectives-program-design-and-workplace-setup)
-- [Orienting Python to our Data](#orienting-python-to-our-data)
-- [Writing the File Modification Loops](#writing-the-file-modification-loops)
+- [Phase 1: Objectives, Program Design, and Workspace Setup](#phase-1-objectives-program-design-and-workplace-setup)
+- [Phase 2: Orienting Python to our Data](#phase-2-orienting-python-to-our-data)
+- [Phase 3: Writing the File Modification Loops](#phase-3-writing-the-file-modification-loops)
 - [The Entire Picture](#the-entire-picture)
 - [Conclusion](#conclusion)
 
@@ -140,7 +140,7 @@ A handy thing about Python is that this code is pretty self-explanatory. It only
 
 [Back to table of contents](#contents)
 
-## Writing the File Modification Loops
+## Phase 3: Writing the File Modification Loops
 Currently, our code can identify the folder that we want and can identify the names of the files within that folder. We now want to write loops that will open and read a file, insert a sentence, save the file and then close the file. These loops will perform this task on all files within the folder. Let's do this one function at a time.
 
 ### Function 1: Opening and Reading Each File
