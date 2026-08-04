@@ -3,8 +3,8 @@
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 
 ## Main Contents
-- [Phase 1: Objectives, Program Design, and Workspace Setup](#phase-1-objectives-program-design-and-workplace-setup)
-- [Phase 2: Writing the Function](#writing-the-function)
+- [Phase 1: Objectives, Program Design, and Workspace Setup](#objectives-program-design-and-workplace-setup)
+- [Phase 2: Orienting Python to our Data](#orienting-python-to-our-data)
 - [Phase 3: Writing the File Modification Loops](#writing-the-file-modification-loops)
 - [The Entire Picture](#the-entire-picture)
 - [Conclusion](#conclusion)
@@ -75,7 +75,7 @@ Since we have:
 
  [Back to table of contents](#contents)
 
-## Phase 2: Writing the Functions
+## Phase 2: Orienting Python to our Data
 We will now write the code for the function by moving through the steps of our program that we designed. In more complex programs we would not necessarily proceed in the same order as that listed in the program steps, but our program is very simple, so we can go in order.
 
 ### Identifying and Opening Our Folder
