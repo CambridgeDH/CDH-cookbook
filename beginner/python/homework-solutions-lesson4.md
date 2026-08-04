@@ -1,64 +1,79 @@
 <link rel="stylesheet" href="../../cookbook.css">
 # Homework Solutions: Lesson 4: Milestone Lesson: Your First Program
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
-In the past three lessons you have learned the necessary essentials to begin coding. These essentials provide you with a few fundamental skills that enable to you to write your first Python program. This tutorial is designed to have you put those skills to use by showing how to write the correct commands, in the proper order, for looping through and editing files.
+
+## Main Contents
+- [Phase 1: Objectives, Program Design, and Workspace Setup](#phase-1-objectives-program-design-and-workplace-setup)
+- [Phase 2: Writing the Function](#writing-the-function)
+- [Phase 3: Writing the File Modification Loops](#writing-the-file-modification-loops)
+- [The Entire Picture](#the-entire-picture)
+- [Conclusion](#conclusion)
+
+In the past three lessons you learned the necessary essentials to begin coding. They provide you with some fundamental skills enabling you to write your first Python program. Here you will put those skills to use by learning how to write the correct commands, in the proper order, for looping through and editing files.
 
 ## Phase 1: Objectives, Program Design, and Workspace Setup
-Before you begin to write any sort of code, it is essential that you set clear objectives. Pausing and stating what exactly you want to achieve, and gathering the tools needed to achieve it, will potentially save you hours of time. It is never wise to start writing a computer program without your goals understood and the tools readily available. This involves recording somewhere the following three things: what you are doing, how you are doing it, and your reasons for doing it.
+Before you begin to write any sort of code, it is essential to set clear objectives. Pausing and stating what exactly you want to achieve, and gathering the tools needed to achieve it, will save you hours of time. It is never wise to start writing a computer program before doing this. You should get in the habit of recording somewhere the following three things: what you are doing, how you are doing it, and your reasons for doing it. Be as concrete as possible, even if it seems trivial.
 
 #### What We are Doing?
 Today we will be writing a program in Python that will go into a file directory, open and read each of the files in that directory, put a sentence into those files, and save and close them. 
 
 #### How We Will Do This?
-As this is a repetitive task, we will be writing our code in the form of a 'for loop'. We do this by building a simple program that uses the Python module 'os'.The os module instructs Python in navigating your operating system, including your files and directories. This module is known as a 'built-in' module, which means that it is part of the copy of Python on your computer.  [Here](https://docs.python.org/3/library/os.html) is a link to the official Python documentation on this module. In this link you will see many headings in bold that look like os.chdir(), osgetcwd(), etc. These are the specific functions of the module (refer to Lesson 1 for an explanation of the layers of Python code). 
+As this is a repetitive task, we will be writing our code in the form of a 'for loop'. We do this by building a simple program that uses the Python module 'os'. The os module instructs Python to navigate your files and directories through your operating system. This module is known as a 'built-in' module, which means that it is part of the copy of Python on your computer.  [Here](https://docs.python.org/3/library/os.html) is a link to the official Python documentation on this module. In this link you will see many headings in bold that look like os.chdir(), osgetcwd(), etc. These are the specific building blocks of the module (refer to Lesson 1 for an explanation of the layers of Python code). 
 
 #### Why Are We Doing This?
-Navigating through multiple files and performing the same kind of action on each file is one of the most common tasks we do with our computers, and it is easily automated. Because it is straightforward, it is a good 'first program' to learn how to write, and it will make you use the concepts and skills taught in the first part of this course. You will be able to use the components of this program to write future programs for navigating and modifying your files.
+Navigating through multiple files and performing the same kind of action on each file is a task that underlies nearly everything we do with computers, and it is easily automated. Because it is straightforward, it is a good 'first program' to learn how to write, and it will make you use the concepts and skills taught in the first part of this course. You will be able to use the components of this program to write future programs for navigating and modifying your files that also combine with more advanced actions such as running algorithms.
 
 ### Designing the Program Steps
-Since we are writing a program from beginning to end, it is important to have a clear picture of each of the program's steps. Developers often write these externally for reference, especially if their programs are complex and involve many s. It is good to get into this habit early in your journey of learning to code.
+Since we are writing a program from beginning to end, it is important to have a clear picture of each of the program's steps. Good developers often write these externally for reference, especially if their programs are complex and involve many steps. It is good to get into this habit early in your journey of learning to code.
 
 For each function, we list out the actions that that  will take:
 
-<li>1. Identify and open the folder with our documents</li>
-<li>2. Identify the documents inside the folder</li>
-<li>3. Open a document</li>
-<li>4. Insert a sentence inside the document</li>
-<li>5. Save and close the document</li>
-<li>6. Repeat steps 2-5 for the next document</li>
-<li>7. Terminate when there are no more documents to open and edit</li>
+1. Identify and open the folder with our documents
+2. Identify the documents inside the folder
+3. Open a document
+4. Insert a sentence inside the document
+5. Save and close the document
+6. Repeat steps 2-5 for the next document
+7. Terminate when there are no more documents to open and edit
 
-We can break up our actions into specific functions. This will help organise the code. Actions 1-3 will be our first function, 'read_files'. Actions 4-6 will be our second function: 'write_content'.
+This set of steps in itself is essentially an algorithm. To build it, we can sort these seven actions into specific functions. Actions 1-3 will be our first function, 'read_files'. Actions 4-6 will be our second function: 'write_content'. Action 7 will not be a function, but will be an instruction to end the program.
+
 Notice how each step is specific and granular. There is nothing left unsaid in our plan. Why is it so important to be this specific? It is because of an essential principle about computers:
+
 **Computers do exactly what you tell them: no more, no less.** 
-Computers do not 'read between the lines'. The faster you embrace the concept of designing specific and granular programs, the faster you will progress because you will not try to write programs that imply invisible steps that the computer cannot follow.
-Now that we have established our objectives and thought through the steps of our program, we need to set up our filesystem.
+
+Computers do not 'read between the lines'. The faster you embrace the concept of designing specific and granular programs, the faster you will progress, because you will not try to write programs that imply steps that the computer cannot follow.
+Now that we have established our objectives and thought through the steps of our program, we need to set up our file system.
 
 ### Curating Your Files
-The first thing to do is to determine where to put the files that you want the program to modify. We will be using Jupyter Notebooks to write and run our code, and by default a Jupyter Notebook uses our Home directory as its working directory. It is simplest, then, to put our filesystem in our Home directory. Create an empty folder in your Home directory, and call it 'file-looping'. This will be the folder that our program opens in step 1 above. In this folder put two empty text (.txt) files: these will be the files that our program will open and modify by inserting a sentence. You can call them and this folder whatever you like, but there are a couple of good principles for file naming which will make your life infinitely easier:
+First you should determine where to put the files that you want the program to modify. We will be using Jupyter Notebooks to write and run our code, and by default a Jupyter Notebook uses our Home directory as its working directory. It is simplest, then, to put our filesystem in our Home directory. If you prefer another notebook system, like Google Colab, that is also appropriate for this.  Create an empty folder in your Home directory, and call it 'file-looping'. This will be the folder that our program opens in step 1 above. In this folder put two empty text (.txt) files: these will be the files that our program will open and modify by inserting a sentence. You can call them and this folder whatever you like, but there are a couple of good principles for file naming which will make your life infinitely easier:
 
-<li>1. Use descriptive and unique names</li>
-<li>2. Avoid spaces. Use capitalisation or special characters to visually separate out words.</li>
+<ul>
+<li> Use descriptive and unique names</li>
+<li>Avoid spaces. Use capitalisation or special characters to visually separate out words.</li>
+</ul>
 
-
-We use descriptive and unique names so that we and the computer always know which files we want to work with. And we avoid spaces in our names because we want Python to be able to identify the files without issues. While an empty space is a Unicode character, it's better to avoid spaces. For this example I've named the two empty text files as 'loop-tutorial-document1.txt' and 'loop-tutorial-documentt2.txt'. Notice that we will also follow these principles when naming the program itself.
+We use descriptive and unique names so that we and the computer can always identify the exact file we need. And we avoid spaces in our names because we want Python to be able to identify the files without issues. While an empty space is a Unicode character, it's better to avoid spaces. For this example I've named the two empty text files as 'loop-tutorial-document1.txt' and 'loop-tutorial-documentt2.txt'. Notice that we will also follow these principles when naming the program itself.
 
 ### Setting Up the Code Workspace
-Open up a fresh Jupyter Notebook (refer to *lesson* for instructions on navigating Jypyter Notebooks). Then, in the first cell, then, import the os module: 
+Open up a fresh Jupyter Notebook, and give it a name and save it. Unless you moved it, Jupyter Notebooks lives in your Home directory, so your script will be there. It's recommended that you save the notebook with a unique name and with no spaces, e.g., 'file-looping-script'.
+
+Then, in the first cell, then, import the os module: 
 
 ```python
 import os
 ```
-Hit 'run'. If your cursor moves to the next cell, then the code has run, and the module is imported and active in your workspace. Jupyter Notebooks lives in your Home directory, so your script will be there. It's recommended that you save the notebook with a unique name and with no spaces, e.g., 'file-looping-script'. It's common practice to begin any program by importing/installing the necessary modules. 
-Now that you've opened up a notebook and put in a line of code, save the notebook. I suggest calling it something like 'file-looping-script'. This follows the naming principles we stated earlier.
+Hit 'run', which is usually an arrow button up in the top menu of your notebook page. If your cursor moves to the next cell, then the code has run, and the module is imported and active in your workspace.  It's common practice to begin any program by importing/installing the necessary modules.
 
-Now we have:
+Since we have:
  - Established our objectives
  - Designed the abstract program
  - Set up our filesystem
  - Set up our code workspace
 
  Now we can begin writing code!
+
+ [Back to table of contents](#contents)
 
 ## Phase 2: Writing the Function
 We will now write the code for the function by moving along the steps of our program that we designed. In more complex programs we would not necessarily proceed in the same order as that listed in the program steps, but our program is very simple.
@@ -108,6 +123,8 @@ with os.scandir(targetdirectory) as currentfiles:
         print(file.name)
 ```
 Notice the first line here, with the 'with...as' statement. This is a way to create an object, which we call 'currentfiles', that is scanned by os.scandir(). Then we create the first level of the loop with our colon (':') after the end of the first line. This tells Python to open targetdirectory, scan the currentfiles, and then do a specific task. The next level of our loop, 'for file in currentfiles:' tells Python to iterate over every file in our folder, and then the final line tells Python to print the file name for us. Run this code, and if you get a list of the files we named earlier, then the program is working! Note that it will print the filesnames in a random order unless we sort them, which we won't bother with for now.
+
+[Back to table of contents](#contents)
 
 ## Writing the File Modification Loops
 Currently, our code can identify the folder that we want and can identify the names of the files within that folder. We now want to write loops that will open and read a file, insert a sentence, save the file and then close the file. These loops will perform this task on all files within the folder.  
@@ -206,6 +223,8 @@ This function is almost the same as our first; the only difference is that at th
 
 The output for this should be that we should get a list of our two documents' names and after each name, the sentence we put in. Again, check the indentation if this is not working.
 
+[Back to table of contents](#contents)
+
 ## The Entire Picture
 Now that we have our three functions, let's look at them all together:
 
@@ -271,7 +290,11 @@ print('This is the current working directory:', currentworkingdirectory)
 ```
 Run that line as the third line of this program. You will fine that your note to yourself gets printed, and then the current working directory is printed after it. You can do this for any print statement to make it clearer!
 
+[Back to table of contents](#contents)
+
 ## Conclusion
 Congratulations: you have completed your first full Python program! By importing modules and writing a few 'for' loops, you were able to enter directories and modify files without touching them yourself. You also got to see how a programmer thinks about putting together code to achieve a task. It is often by following tutorials like these, which force you to write your own program, that you learn the most about coding. If you want to learn to do even more, you are encouraged to continue to the next lessons of this course. 
+
+[Back to table of contents](#contents)
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
