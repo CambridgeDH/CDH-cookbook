@@ -7,31 +7,35 @@
 - [Should I Continue?](#should-i-continue)
 
 ## Summary of Material Covered So Far
-At this point, you have seen three lessons which cover the most fundamental concepts about coding in Python, as well as some foundational skills.  You have also been presented with the opportunity to complete exercises which teach you to navigate the language and lightly process some data. 
+At this point, you have seen three lessons covering the most fundamental concepts and foundational skills for coding in Python.  You have also had the opportunity to complete exercises which teach you to navigate the language and lightly process some data. 
+
 Here is a list of the topics we have covered so far:
 
-You have learned about the nature of 'coding':
+In lesson 1 you learned about the nature of 'coding':
 <ul>
 <li>What is coding and what is programming</li>
 <li>How most Python programs are designed into 'Packages', 'Modules','Classes', 'Functions', 'Variables' and 'Data' and how to navigate Jupyter Notebooks. </li>
 <li>What is a code repository and how to navigate repositories and find source code</li>
+<li>How to install and import packages and modules</li>
 </ul>
 
-We have discussed getting set up before writing code:
+In lesson 2 we discussed getting your coding environment set up, and some features of the Python language and data that one must know in order to code:
 
 <ul>
-<li>How to install, import, and navigate packages and modules</li>
+<li>Crucial things for anyone writing in Python to know: zero-indexing, commenting, and writing consistency</li>
+<li>Navigating code notebooks </li>
 <li>How to declare and print variables</li>
 <li>How to tell Python to read a file on your computer</li>
 <li>How Python reads your data (some common data types)</li>
 </ul>
 
-We have introduced some features of the Python language that one must know in order to code:
+In Lesson 3 we introduced the essential element of Python code, the function:
 
 <ul>
-<li>Crucial things for anyone writing in Python to know: zero-indexing, commenting, and writing consistency</li>
 <li>What are Python functions</li>
-<li>What is a 'for loop'</li>
+<li>How a function is made</li>
+<li>Different kinds of functions</li>
+<li>The most fundamental function: a loop</li>
 </ul>
 
 Coding, however, is a skill. Here is a checklist of the skills you need to confidently proceed to the next lessons:
@@ -51,22 +55,22 @@ Coding, however, is a skill. Here is a checklist of the skills you need to confi
 [Back to table of contents](#contents)
 
 ## Why Did I Learn This?
-At this stage you may be asking yourself 'So what? How does declaring a variable or knowing that functions begin with 'def' help me actually accomplish my research objectives?' At this stage many Humanities researchers often feel disconnected from their actual goals and find that they are not concerned so much with the finer points of coding; their primary aim is a research output. At this point many people find themselves tuning out from tutorials and lessons because they feel that the concepts they are learning do not directly apply to what they want to achieve. If you have found yourself giving up programming tutorials after a few lessons, this is likely the issue.
+At this stage you may be asking yourself 'So what? How does declaring a variable or knowing that functions begin with 'def' help me actually accomplish my research objectives?' At this stage many Humanities researchers often feel disconnected from their actual goals and find that they are not concerned so much with the finer points of coding; their primary aim is a research output. Many people find themselves tuning out from tutorials and lessons after learning these basics because they feel that these concepts do not directly apply to their goals. This is a common frustration for Humanities researchers who know that they need to have some coding knowledge but also simply want to begin benefitting from the power of code.
 
-The way to remedy this disconnect is to better understand what the concepts you have learned enable you to achieve right now. Since code is a tool, you have now learned enough of this tool to begin accomplishing something.
+The way to remedy this disconnect is to better understand what the concepts you have learned enable you to achieve right now. Remember, code is a tool, and to learn to code is to gain the skills needed to wield that tool.
 Let's break it down more directly:
 
 1. Understanding the boring details of how to install and load Python modules, how to click through cells in a Jupyter Notebook, or what is a variable, are absolutely fundamental concepts one must have in order to do anything with Python code. What you have learned so far are not arbitrary details but instead are the foundation necessary to achieve results.
-2. You now know that various modules exist in Python's module collection which can help you navigate data more effectively. You also know that all Humanities research involves data, even if you are working only with straightforward texts and the concepts those texts contain. But even more importantly, you have been introduced to code repositories, where researchers in Digital Humanities publish their innovative code and methods. It is highly likely that someone out there has written code that you could begin using today which directly impacts your research, and you now know how to look for it and can begin to read some of it.
+2. You now know that various modules exist in Python's module collection which can help you navigate data more effectively. You also know that all Humanities research involves data, even if you are working only with straightforward texts and the concepts those texts contain. But even more importantly, you have been introduced to code repositories, where researchers, many who work in or adjacent to the Humanities, publish their innovative code and methods. It is highly likely that someone out there has written code that you could begin using today which directly impacts your research. You are equipped with the knowledge to search for it and begin to read it. 
 
-However, nothing is as powerful as a concrete application. In fact, learning these three things:
+However, let's bring this into the realm of concrete application. In fact, learning these three things:
 - How to have Python read files on your computer
-- What a variable is
-- And how to write a 'for loop'
+- What is a variable 
+- And how to write a simple 'for loop'
 
-enables you to do something very powerful. At the heart of almost any Humanities research involving code is reading and analysing multiple files. If you were doing this manually, what is the process if you have 30 texts to study? You would open the file, perform the analysis, record your notes somewhere, and close the file. You would repeat this 30 times. It would probably take you quite a while.
+enables you to do something very powerful. At the heart of almost any Humanities research involving code is reading and analysing multiple files. Consider this question:  if you needed to open, read, and change data in some files, and you have 30 texts to study, how would you do it manually? You would open the file, read it, make changes or record your notes somewhere, and close the file. You would repeat this 30 times. It would probably take you quite a while.
 
-This, however, is actually a loop! You are iterating through your files and performing the same (or similar) things for each file. This can be translated into code, and then achieved at a much faster rate than if you were doing it by hand. For example, say you have 30 essays, and you want to find data in each essay and copy-paste that data into a spreadsheet. You have now learned the skills to write a loop of code that will do this:
+This, process however, is actually a for loop! You are iterating through your files and performing the same (or similar) things for each file. This can be translated into code, and then achieved at a much faster rate than if you were doing it by hand. For example, if your 30 texts are student-written essays, and you want to find data in each essay and copy-paste that data into a spreadsheet. You have now learned the skills to write a loop of code that will do this:
 1. Open a file.
 2. Find the specific data.
 3. Copy that data.
@@ -74,7 +78,9 @@ This, however, is actually a loop! You are iterating through your files and perf
 5. Close the file.
 6. Repeat for each of your 30 essays.
 
-This is, essentially, a computer program, from start to finish. It automates a task that would perhaps waste time if attempted manually. This convenience puts you ahead of many others who opt to do this the hard way by hand. 
+This program would automate a task that would perhaps waste time if attempted manually. This convenience puts you ahead of many others who opt to do this the hard way by hand.
+
+By extension, say you have a more advanced textual analysis technique that you want to employ to study these essays further - you will still need to be able to iterate through the texts, as well as know enough code to understand the basics of how to apply the technique itself. These skills again apply here. This should reassure you that studying these basics indeed is a step towards your goals.
 
 The homework for this lesson is to follow a tutorial which helps you put your newfound skills together to write this program. You are encouraged to engage with it because it will help you understand how impactful a few simple coding concepts can be for your research.
 
