@@ -216,7 +216,9 @@ Your homework in this case is to:
 
 1. Search online for the Textblob Python module. You are already familiar with part of it from previous lessons. Read through the quick start guide to refresh your memory. Next, go to [this page](https://textblob.readthedocs.io/en/dev/api_reference.html), which describes the different classes in the textblob module. Read the documentation for the class 'Word'. This will help you get a feel for how Classes appear in documentation in some more accessible language.
 2. Take our Class that we made above, and change the .name attribute to a list of students. Instruct the class to only print the greeting if the name specified in your code is present in the list. If the name is not present, instruct the class to print a phrase indicating 'this person is not present'.
-3. In the Greeting class example above, the greet() method prints out the name as it was given. Imagine a scenario where you are using this method to print out greetings for your list of students, but the person who made the list did not capitalise all of the names and added odd spaces here and there. Write a simple lambda function that ensures the names get printed correctly. 
+3. In the Greeting class example above, the greet() method prints out the name as it was given. Imagine a scenario where you are using this method to print out greetings for your list of students, but the person who made the list did not capitalise all of the names and added odd spaces here and there. Write a simple lambda function that ensures the names get printed correctly.
+
+[Back to table of contents](#contents)
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
