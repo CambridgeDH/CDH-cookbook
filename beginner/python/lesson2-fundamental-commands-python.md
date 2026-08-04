@@ -277,6 +277,8 @@ In this lesson we have covered the following core concepts:
 
 **Reflection**: Think about some data you recently needed to analyse. What would you need to do in order to load it into a Python workspace? Could you store some of your data as strings, lists, sets, or dictionaries? Why a given type? How does thinking about your data in the framework of a 'data type' change your perspective on your data?
 
+[Back to table of contents](#contents)
+
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
 <p class="previous-next-lesson"><a href="lesson1-introduction-python-language.html">&lt; Previous lesson</a> | <a href="lesson3-mechanics-python-language.html">Next lesson &gt;</a></p>
