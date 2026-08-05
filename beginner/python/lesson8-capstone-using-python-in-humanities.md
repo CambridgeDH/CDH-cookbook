@@ -9,7 +9,8 @@
 - [Setting Up the Code Workspace](#setting-up-the-code-workspace)
 - [Performing the Analysis](#performing-the-analysis)
 - [Saving Our Analysis](#saving-our-analysis)
-- [Conclusions](#conclusions)
+- [Conclusion](#conclusion)
+- [Homework](#homework)
 
 
 ## Overview
@@ -298,7 +299,7 @@ Here is the explanation of that code:
 
 [Back to table of contents](#contents)
 
-## Conclusions
+## Conclusion
 Congratulations! Within a few lines of code you have taken some texts and have automated an analysis of their natural language features. This is a miniature example of what a code-driven research workflow can look like.
 
 Some crucial things to remember:
@@ -317,6 +318,8 @@ Some crucial things to remember:
 This was an intensive lesson where you were encouraged to write a lot of your own code before looking at the answers. However, to get the most out of this lesson, it is worth now pondering your own research challenges and situations. What kinds of data do you have? What things would you like to know about it, or accomplish with it? What steps would you need to take to get your data ready for digital analysis of any kind? If you are looking for a particular method, can you search online to find some Python modules which perform this method? 
 
 By asking these questions with a greater awareness of what it takes to write code and run it on real data, you will be enabling yourself to do more with these powerful tools. 
+
+[Back to table of contents](#contents)
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
