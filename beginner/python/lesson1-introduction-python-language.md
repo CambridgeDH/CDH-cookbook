@@ -13,7 +13,7 @@
 - [Code Repositories](#code-repositories)
 - [Essential Resources for Learning to Code](#essential-resources-for-learning-to-code)
 - [Conclusion](#conclusion)
-- [Homework: Exploring Python Programs](#homework-exploring-python-programs)
+- [Homework](#homework)
 
 ## Overview
 Welcome to the course First Steps in Coding with Python. This is the introductory lesson to the course, and if you are new to Python or to coding, this lesson will provide you with the foundation required to begin accomplishing things with Python. This lesson covers:
@@ -205,7 +205,7 @@ In this lesson you have learned the fundamentals about how Python code is struct
 
 [Back to table of contents](#contents)
 
-## Homework: Exploring Python Programs
+## Homework:
 <ul>
 <li>Find a few examples of Python packages relevant to Digital Humanities by doing a search online.</li> 
 <li>Load up a workspace in a Notebook and install one of these packages.</li>
