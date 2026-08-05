@@ -11,7 +11,7 @@
 - [Conditionals](#conditionals)
 - [Arguments](#arguments)
 - [Conclusion](#conclusion)
-- [Homework)(#homework)
+- [Homework](#homework)
 
 ## Overview
 In previous lessons we covered the basic **for loop** and used it to build some simple iterative functions and modify some files. However, for loops just scratch the surface of Python's capabilities. In this lesson we are going to look at two other loop types. We will also introduce the concept of **conditional statements**, which enable your code to respond to different potential situations. Finally, we will take a deeper look at **arguments**, which are the variables you give to functions to instruct them to run with certain specifications. 
