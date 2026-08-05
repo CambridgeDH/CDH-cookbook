@@ -7,6 +7,7 @@
 - [The Wide World of Function Types](#the-wide-world-of-function-types)
 - [Introduction to Object-Oriented Programming (OOP)](#introduction-to-object-oriented-programming-oop)
 - [Conclusion](#conclusion)
+- [Homework](#homework)
 
 ## Overview
 In the previous Milestone lesson, you learned how to write a small program in Python that loops through some files and modifies them. This program involved writing three different functions, and creating variables that you called within those functions. These are the most basic kinds of functions that one can write in Python, and so now it is appropriate to study more kinds of functions. You will also be introduced to the concept of 'Object Oriented Programming' - which is the structure behind the organisation of Python code. Understanding it will enable you to read and use other people's code more effectively and to understand common error messages you may receive.
@@ -212,6 +213,10 @@ Finally, Python bug reports often deal with the levels of Python structure. A co
 
 ## Conclusion
 This lesson is probably the most theoretical of this course, and beginners often find these details to be challenging to grasp at first. The best way to acclimate yourself is to read code documentation.
+
+[Back to table of contents](#contents)
+
+## Homework:
 
 Your homework in this case is to:
 
