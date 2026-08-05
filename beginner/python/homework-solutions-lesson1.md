@@ -4,7 +4,7 @@
 Here we have given some suggested code and thematic solutions to the relevant homework questions for Lesson 1: Introduction to the Python Language.
 
 ## Task 1
-This task involved doing a search online for some relevant Digital Humanities Python packages. You could have used any search engine, or an AI tool, to help you find some potential packages. If you are struggling, a particular site that describes a lot of methods for Digital Humanities is [Programming Historian](https://programminghistorian.org/en/). However, the best way to become acquainted with packages you may need is to get involved in real projects and start trying to produce code. The needs of that project will force you to go looking for code that might exist which accomplishes specific goals related to your project. 
+This task involved doing a search online for some relevant Digital Humanities Python packages. You could have used any search engine to help you find some potential packages. If you are struggling, a particular site that describes a lot of methods for Digital Humanities is [Programming Historian](https://programminghistorian.org/en/). However, the best way to become acquainted with packages you may need is to get involved in real projects and start trying to produce code. The needs of that project will force you to go looking for code that might exist which accomplishes specific goals related to your project. 
 
 ## Task 2
 In this task you were asked to open your Notebook software (see the Prerequisites page for a course on coding Notebook software such as Jupyter Notebooks or Google Colab). Let's say you found a package called 'reallycoolpackage'. In a cell, you would type the following, and then hit enter or 'run':
@@ -41,9 +41,7 @@ help(module)
 ```
 
 ## Task 4
-The purpose of this task is to get you to explore what exists online about code that may do things of interest to you. Remember that **it is not cheating to search the internet for information when you are coding or learning to code!**
+The purpose of this task is to get you to explore what exists online about code that may be of interest or use to you. 
 
-## Summary
-And, that's it!  This lesson should have you comfortably installing and importing packages and modules. Once you can do this easily, you are ready to start learning how to write more substantial commands.
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
