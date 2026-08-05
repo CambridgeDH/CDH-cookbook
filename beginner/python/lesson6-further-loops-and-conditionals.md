@@ -5,7 +5,7 @@
 ## Contents
 
 - [Overview](#overview)
-- [The For Loop Review](#the-for-loop--review)
+- [The For Loop Review](#the-for-loop-review)
 - [The While Loop](#the-while-loop)
 - [Nested Loops](#nested-loops)
 - [Conditionals](#conditionals)
