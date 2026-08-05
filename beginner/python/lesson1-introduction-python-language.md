@@ -16,7 +16,7 @@
 - [*Homework*: Exploring Python Programs](#homework-exploring-python-programs)
 
 ## Overview
-Welcome to the course First Steps in Coding with Python. This is the introductory lesson to the course, and if you are new to Python or to coding, this lesson will give you some fundamental concepts to carry with you as you learn to code in this language. This lesson covers:
+Welcome to the course First Steps in Coding with Python. This is the introductory lesson to the course, and if you are new to Python or to coding, this lesson will provide you with the foundation required to begin accomplishing things with Python. This lesson covers:
 
 <ul>
 <li>Conceptual differences between 'coding' and 'programming'.</li>
@@ -37,20 +37,22 @@ In order to understand the content of this lesson and do the exercises at the en
 In this course you will learn how the Python language works and how to write Python code. Code is the building material for computer programs, which are complex sets of instructions that guide the computer in performing specific tasks. When starting out on working with code, it can be helpful to distinguish between the concepts of 'coding' and 'programming': 
 
 ### Coding
-In 'coding', the focus is on using the principles of how a language works to write specific commands that a computer can correctly interpret. In order to code you must understand these principles and how to translate them from human concepts into the right digital format, or 'syntax'. Someone who is 'coding' is writing lines of computer instructions. Essentially, learning to code is learning how to make the bricks out of the clay that is a programming language.
+In 'coding', the focus is on using the principles of how a language works to write specific commands that a computer can correctly interpret. In order to code you must understand these principles and how to translate them from human concepts into the right digital format, or 'syntax'. Someone who is 'coding' is writing lines of computer instructions. Essentially, learning to code is learning how to make the bricks out of the clay that is a programming language. 
 
 ### Programming
 'Programming' involves not only writing individual commands but putting them together into more complex components to achieve sets of tasks. It incorporates planning a computer program and putting the pieces together seamlessly, as well as ensuring they work well and that they remain useable over time. If coding is like making bricks, then programming is like creating a building out of those bricks. However, at the heart of programming is good-quality code.
 
+An important thing to know is that one does not have to become a full-fledged programmer to benefit from code. Simply having the skills to interact with code and find resources for using code is a completely valid and fruitful use of a programming language. Similarly, if one does aspire to write longer and more complex programs, they must first learn to code well. A potentially helpful metaphor is the difference between someone who owns, maintains, and uses a bicycle to travel, vs. someone who builds bicycles. Both are valid ways of using the components of a bicycle! Viewing coding and programming in this manner can help you approach the learning process with more confidence.
+
 [Back to table of contents](#contents)
 
 ## Immediate Goals and Four Fundamental Principles
-No matter whether your goal is to become a full-fledged programmer, or to simply write some code for your particular project, the aim is the same: learn to read and write sensible, legible, and functioning code, and know how to handle a code situation that has gone wrong. That is the focus of this course.
+No matter whether your goal is to become a  programmer, or to simply write some code for your particular project, the aim is the same: learn to read and write sensible, legible, and functioning code, and know how to handle a code situation that has gone wrong. 
 
 It is easy to become overwhelmed when confronted with large, complex programs that other people have written, and it is easy to feel disheartened when one's simple command doesn't work. To help, keep in mind these four fundamental principles that all Humanists who write code need:
 
 <details>
-<summary>&#x1f4a1; Fundamental Principles for Learning to Write Code (expand)</summary>
+<summary>Fundamental Principles for Learning to Write Code (expand)</summary>
 <ol>
 <li>Focus on the practical matters. When coding, keep the focus on the concrete idea of what you are trying to achieve in the moment. Aim to think as practically as possible.</li>
 
@@ -62,16 +64,33 @@ It is easy to become overwhelmed when confronted with large, complex programs th
 </ol>
 </details>
 
-### Using ChatGPT or other Generative AI Tools
-Today, as AI tools are becoming ubiquitous, it is natural that you may want to turn to these tools for assistance to help you learn to code. This is a generally good strategy, but there is the risk of over-relying on these tools and then not truly learning the material. Most programmers use AI as a **tool**, or an assistant, to help them write good code, rather than a means of producing code directly. Here are my **top three tips** for integrating AI into your learning process appropriately:
+### Using Large Language Models or Generative AI Tools when Learning to Code
+Today, the presence of commercial LLMs in our digital lives is pervasive, and it is natural to consider using them to help you learn to code or to even simply write your code for you. You may be wondering if there is a point to learning to code at all, when AI can produce workable code in a fraction of the time.
 
-<ul>
-<li>1. Ask questions for the AI to answer, don't ask it to do tasks for you. Coding is a skill: you will not learn unless you practice it yourself. But asking AI to help you understand coding concepts or to help you figure out the components of your code is very useful for learning. </li>
-<li>2. Don't blindly rely on code that the AI generates. Typically, the code it writes is twice as complex and half as effective as the solutions that you will encounter in this course. A better use of AI is to paste someone's code into the chat and ask it to explain the code for you, or to ask it to help you think through the steps of a problem.</li>
-<li>Use the AI tool to push you deeper into understanding, not to automate understanding. It feels tempting to ask it to explain something to you the moment you feel a bit frustrated, but that frustration is actually your brain making new connections. Try to think through a question or problem first, and then use the AI to see if you missed anything after.</li>
-</ul>
+The position this course takes towards AI reflects the views and experiences of many professional programmers, including myself: AI is a tool, no more, no less. Like any tool, it can be used effectively, and it can be misused. There are many programmers who use AI regularly, and there are many who do not.
 
-In summary, AI platforms like ChatGPT can be powerful tools to assist your learning, so long as you use them with discretion and always prioritise doing the activities yourself and thinking through isses and concepts first before turning to it for help.
+However, one thing most programmers agree upon is that the existence of (even sophisticated) AI programming tools does not negate the need to learn how to write your own code or to design a program. There are myriad reasons for this, but the core few are:
+
+1. LLMs generate code, but to use that code effectively and properly requires an understanding of code structures and how the pieces of the program itself fit together.
+2. LLMs often make assumptions about the logic of a program that the user does not intend; this can lead to outcomes that are undesirable. If one knows how code works, they can catch these assumptions before they get baked into a program.
+3. Writing good programs takes creativity. While LLMs can support the creative process, ultimately it is the programmer who puts the pieces together in the right way for their specific situation.
+4. Much of the code that LLMs produce is convoluted, or has redundancies, outdated elements, or bugs that can affect many important parts of a project. One must be able to understand code in order to prevent these issues. While these tools are improving daily, the need to sanity check AI-generated code is here to stay.
+5. Many research projects contain confidential or sensitive aspects that should not be given to a commercial LLM, and many publishers and funders require that the essential aspect of a contribution using code be the product of human work. In such cases knowledge of code is essential.
+
+Ultimately, the situation boils down to ownership and mastery of the project: AI can assist you, but a good project will be achieved only through you. For that, you need to know how to code.
+
+Indeed AI can be a powerful tool to help you really master coding concepts, if used well. Simultaneously if misused it can hinder your progress. Therefore, below are my **top tips** for integrating AI into your learning process appropriately:
+
+1. As a principle, when learning, ask factual questions for the AI to answer, don't ask it to do tasks for you. Seek to master a concept or technique (such as writing loops) before asking an LLM to generate it for you. After you have learned it, then you can have the model to do its for you, with the confidence that you fully understand the process.
+2. Never blindly rely on code that the AI generates. Many programmers ask AI to generate code, but then they take it and improve it or test it for issues. This is always safer, and ends up saving time in the long run.
+3. Use LLMs to explain code to you. For example, say you have come across some open-source code that you want to use for your project, but it is more advanced than your current skillset. There is immense benefit in going line-by-line through that code with an AI explaining what each line does and how the syntax works, and can be a very rich learning experience. It is perhaps the most appropriate and effective use of LLMs regarding code.
+4. Make it a habit to **struggle first, ask a question later**. Frustration during learning to code is a normal part of the process and should not be replaced by an AI solution. Taking the shortcut by using an AI rather than struggling through an issue is actually, in the long run, a delay. The struggle is your brain making new connections and truly mastering a concept. Aim to think through a question or problem first, and then use the AI to see if you missed anything after.
+
+In summary, commercial LLMs can be powerful tools to assist your learning, so long as you use them with discretion and always prioritise doing the activities yourself and thinking through things first before turning to it for help.
+
+**This course is predicated on you doing all of the exercises and learning all of the concepts without the input of an AI model**. It is strongly recommended that you do not use AI to assist with the exercises; in any case, solutions and in-depth explanations are provided for each task you are asked to do.
+
+If you can do everything that this course teaches on your own, then you can make informed decisions about using LLMs in the future. If you choose to use them, you will be equipped with a foundation that helps you use them as professionals do. If you choose not to use them, then you will have the foundation to write your own code well.
 
 [Back to table of contents](#contents)
 
@@ -88,7 +107,7 @@ When I enter the Early Modern history module, I find that it has multiple floors
 
 Suppose a particular book on Mumbai catches my eye. I open it up, and find that it has chapters and subsections. These are the **'Variables'**, or the pieces of data which the function uses to complete a task - in this case, to describe the history of Early Modern Mumbai. Not all chapters look alike: some are long, some are short. But they all have one thing in common: they deal with **'Data'** about Early Modern Mumbai. Some of these data are lists, and some are descriptions, numbers, etc. Such data types -- organisations of data into particular formats - make up the unique features of this book. 
 
-&#x1F7E9; This metaphor is of course simplified in order to help you conceptualise how most Python code is typically organised, but know that actual Python programs are not always so neatly structured, and each component can exist on its own or in combination with other components, for example a Module can exist independently of a Package, and we can use Functions by themselves. 
+This metaphor is of course simplified in order to help you conceptualise how  Python code is typically organised, and you should know that actual Python programs are not always so neatly structured. Often components can exist on their own or in combination with other components, for example a Module can exist independently of a Package, and we can use Functions by themselves. 
 
 [Back to table of contents](#contents)
 
@@ -104,9 +123,9 @@ Type the following command into a Notebook cell and hit 'run': (Note: you will n
 %pip install textblob
 # This command will tell Python to install the package 'textblob' on your computer. This package has Natural Language Processing programs.
 ```
-&#x1f4a1; Depending on the Notebook, you might need to use !pip instead of %pip; these are roughly equivalent.
+Depending on the Notebook, you might need to use !pip instead of %pip; these are roughly equivalent.
 
-&#x1f4a1; See the text following the hashtag ('#') in the code snippet above? That is known as a 'comment', and anything following the hashtag sign is a freeform language comment written by the coder. Writing comments can be a helpful way to explain your code to your future self or to others. Don't be shy about writing comments!
+See the text following the hashtag ('#') in the code snippet above? That is known as a 'comment', and anything following the hashtag sign is a freeform language comment written by the coder. Writing comments can be a helpful way to explain your code to your future self or to others. Don't be shy about writing comments!
 
 **To summarise**: the syntax (programmer-speak for 'correct format') for installing a package is:
 
@@ -123,7 +142,7 @@ import <package_name>
 ```
 If the package is installed, nothing special should happen, and the Notebook should move you down to the next cell. If it is not installed, you will get an error message. Note that to use a package which you have installed, you will always need to import it, using the above import command, each time you run your program. We typically put all import and install commands at the top of a program for convenience. 
 
-&#x1f4a1; For those interested, [this](https://python.land/virtual-environments/installing-packages-with-pip) is a more in-depth look at pip and installing packages on your computer.
+For those interested, [this](https://python.land/virtual-environments/installing-packages-with-pip) is a more in-depth look at pip and installing packages on your computer.
 
 ### Importing Python's Own Modules
 In addition, you also have access to many modules that come with Python, collectively known as the Python Standard Library. You do not need to install these separately. These modules are used in nearly every package you will encounter, so it is useful to know how to find and use them. The contents of the Python Standard Library are found in the [Python Module Index](https://docs.python.org/3/py-modindex.html). Just like packages, you can import these modules with the following syntax:
@@ -156,9 +175,9 @@ Now, look for the 'Lib' folder. Here you will find a list of all the code compon
 
 Next, let's take a look at the (much smaller) repository for the independently developed package we installed earlier: [TextBlob](https://github.com/sloria/TextBlob). 
 
-&#x1F3C1; **Challenge**: Can you find the source code? Can you find the ReadMe and license?
+**Challenge**: Can you find the source code? Can you find the ReadMe and license?
 
-&#x1f4a1; An important point to keep in mind is that GitHub repositories are for code in all programming languages, not just Python! To check if a repository which interests you uses Python, look on the right-hand side, under 'Languages'.
+An important point to keep in mind is that GitHub repositories are for code in all programming languages, not just Python! To check if a repository which interests you uses Python, look on the right-hand side, under 'Languages'.
 
 [Back to table of contents](#contents)
 
@@ -188,11 +207,13 @@ In this lesson you have learned the fundamentals about how Python code is struct
 
 ## *Homework*: Exploring Python Programs
 <ul>
-<li>1. Find a few examples of Python packages relevant to Digital Humanities by doing a search online.</li> 
-<li>2. Load up a workspace in a Notebook and install one of these packages.</li>
-<li>3. Have a look at the built-in modules listed in the Python Module Index, and explore some of what they can do.</li>
-<li>4. Look for an interesting tool/module/method on your own and investigate it.</li>
+<li>Find a few examples of Python packages relevant to Digital Humanities by doing a search online.</li> 
+<li>Load up a workspace in a Notebook and install one of these packages.</li>
+<li>Have a look at the built-in modules listed in the Python Module Index, and explore some of what they can do.</li>
+<li>Look for an interesting tool/module/method on your own and investigate it.</li>
 </ul>
+
+[Back to table of contents](#contents)
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
