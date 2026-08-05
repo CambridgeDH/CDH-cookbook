@@ -13,7 +13,7 @@
 - [Code Repositories](#code-repositories)
 - [Essential Resources for Learning to Code](#essential-resources-for-learning-to-code)
 - [Conclusion](#conclusion)
-- [*Homework*: Exploring Python Programs](#homework-exploring-python-programs)
+- [Homework: Exploring Python Programs](#homework-exploring-python-programs)
 
 ## Overview
 Welcome to the course First Steps in Coding with Python. This is the introductory lesson to the course, and if you are new to Python or to coding, this lesson will provide you with the foundation required to begin accomplishing things with Python. This lesson covers:
