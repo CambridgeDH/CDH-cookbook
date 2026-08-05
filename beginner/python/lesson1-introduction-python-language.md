@@ -88,7 +88,7 @@ Indeed AI can be a powerful tool to help you really master coding concepts, if u
 
 In summary, commercial LLMs can be powerful tools to assist your learning, so long as you use them with discretion and always prioritise doing the activities yourself and thinking through things first before turning to it for help.
 
-**This course is predicated on you doing all of the exercises and learning all of the concepts without the input of an AI model**. It is strongly recommended that you do not use AI to assist with the exercises; in any case, solutions and in-depth explanations are provided for each task you are asked to do.
+**This course is predicated on you doing all of the exercises and learning all of the concepts without the input of an AI model**. It is strongly recommended that you do not use AI to assist with the exercises; in any case, solutions and in-depth explanations are provided for each task you are asked to do. This course is designed so that AI is not needed to complete it, and using AI to help you through this course will compromise your experience. 
 
 If you can do everything that this course teaches on your own, then you can make informed decisions about using LLMs in the future. If you choose to use them, you will be equipped with a foundation that helps you use them as professionals do. If you choose not to use them, then you will have the foundation to write your own code well.
 
