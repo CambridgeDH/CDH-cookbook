@@ -12,7 +12,7 @@
 - [Getting Acquainted with Python Packages and Modules](#getting-acquainted-with-python-packages-and-modules)
 - [Code Repositories](#code-repositories)
 - [Essential Resources for Learning to Code](#essential-resources-for-learning-to-code)
-- [Lesson Summary](#lesson-summary)
+- [Conclusion](#conclusion)
 - [*Homework*: Exploring Python Programs](#homework-exploring-python-programs)
 
 ## Overview
@@ -200,7 +200,7 @@ If you're the kind of learner who likes books, [this](https://pythonbooks.org/fr
 
 [Back to table of contents](#contents)
 
-## Lesson Summary
+## Conclusion
 In this lesson you have learned the fundamentals about how Python code is structured, how to install and import packages and modules, places to find open-source code, and some essential resources to support you as you learn to code. In the next lesson we will cover loading data into our codespace, what kinds of data we might have, how to create and name variables, and important tips for navigating Python code. Before you go to the next lesson, try to solidify what you learned by doing the exercises below!
 
 [Back to table of contents](#contents)
