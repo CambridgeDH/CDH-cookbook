@@ -9,6 +9,7 @@
 - [Types of Data in Python](#types-of-data-in-python)
 - [Navigating Python](#navigating-python)
 - [Conclusion](#conclusion)
+- [Homework](#homework)
 
 ## Overview
 In this lesson we will study the following fundamental aspects of dealing with data in Python:
@@ -34,7 +35,7 @@ The first step to setting up a coding workspace is to launch Jupyter Notebooks a
 <li><strong>Switching between Code and Markdown</strong>: The cells can either be code cells (which run live code), or they can be Markdown cells (Markdown is a kind of text formatting language for visual display). To turn a code cell into Markdown, press Control + M. To turn a Markdown cell into code, press Control + Y.</li>
 </ul>
 
-&#x1f4a1; Tip: A good (but old) tutorial on Jupyter Notebook shortcuts can be [found here.](https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330) These shortcuts typically work for most Jupyter-based Notebooks (such as Google Colab), but there are some variations. These platforms do regularly update their interface so be prepared to occasionally have to check new settings or buttons.
+Tip: A good (but old) tutorial on Jupyter Notebook shortcuts can be [found here.](https://towardsdatascience.com/jypyter-notebook-shortcuts-bf0101a98330) These shortcuts typically work for most Jupyter-based Notebooks (such as Google Colab), but there are some variations. These platforms do regularly update their interface so be prepared to occasionally have to check new settings or buttons.
 
 [Back to table of contents](#contents)
 
@@ -78,7 +79,7 @@ This code creates an object called 'slither_file', which is opened and read by t
 
 Note that if your data is in an Excel spreadsheet, there are various Python modules and tutorials out there which are designed to make importing and reading spreadsheets in your Python workspace very easy. 
 
-&#x1F3C1; **Challenge**: can you find a tutorial online that tells you how to import an Excel spreadsheet into your workspace using a Python package or module?
+**Challenge**: can you find a tutorial online that tells you how to import an Excel spreadsheet into your workspace using a Python package or module?
 
 [Back to table of contents](#contents)
 
@@ -197,7 +198,7 @@ print(Breeds)
 
 ```
 
-&#x1F3C1; **Challenge**: Add in a duplicate snake name to your code in the set of snakes (snake_types). Print it. What happens differently if you print a set with a duplicate item?
+**Challenge**: Add in a duplicate snake name to your code in the set of snakes (snake_types). Print it. What happens differently if you print a set with a duplicate item?
 
 ### Dictionaries
 Dictionaries are organisations of data into 'keys' and 'values'. These terms come from database design and programming. Essentially, a key is an entry for an object in the dictionary, and the value is something which describes the key. Below I have a group of horse breeds, the keys. Each breed of horse has a name, the value:
