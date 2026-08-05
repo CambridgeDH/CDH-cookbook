@@ -69,7 +69,7 @@ then my code wouldn't work properly. The unindented line is read by Python as be
 
 Notice also that we see our familiar 'print' statement with the curved brackets. This is where we place the phrase we want to be printed. We could have any phrase we wanted here, such as 'Hi!' or 'What's up?'. 
 
-&#x1F3C1; **Challenge**: Do you know why we have 'Hello World!' in quotes? What type of data is 'Hello World!'?
+**Challenge**: Do you know why we have 'Hello World!' in quotes? What type of data is 'Hello World!'?
 
 Now, on to the third line:
 
@@ -116,7 +116,7 @@ In this case, we did three things:
 <li>When we call the function, 'farewell('Sarah')', Sarah is the input, or argument. </li>
 </ol>
 
-&#x1F3C1; **Challenge**: Change 'Sarah' to a different name. What happens?
+**Challenge**: Change 'Sarah' to a different name. What happens?
 
 Functions can handle many inputs. We can give functions multiple inputs by listing multiple parameters, like so:
 
@@ -184,6 +184,7 @@ The exercises for this lesson have three levels depending on how much of a chall
  <li>Hard: Search online for a way to find an item in a list using Python code. Write one line of code that prints the second item in your list.</li>
  </ul>
 
+[Back to table of contents](#contents)
 
 <p class="credits">Written by Estara Arrant, 2025-04-16<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
