@@ -11,6 +11,7 @@
 - [Conditionals](#conditionals)
 - [Arguments](#arguments)
 - [Conclusion](#conclusion)
+- [Homework)(#homework)
 
 ## Overview
 In previous lessons we covered the basic **for loop** and used it to build some simple iterative functions and modify some files. However, for loops just scratch the surface of Python's capabilities. In this lesson we are going to look at two other loop types. We will also introduce the concept of **conditional statements**, which enable your code to respond to different potential situations. Finally, we will take a deeper look at **arguments**, which are the variables you give to functions to instruct them to run with certain specifications. 
@@ -364,6 +365,10 @@ This is useful because you can type in anything as keywords and have them printe
 
 ## Conclusion
 In this lesson you have learned more of the variety of Python's syntax, and we covered different ways in which we can get Python to look at our data. It's best to think of these loops and conditionals as tools that you can pick as needed to accomplish a task: if you just want to analyse each element in a dataset only once, you can use a for loop. If you want to skip elements, you can use a break, etc. This is by no means all of the features that Python syntax can offer you, but these are the fundamentals.
+
+[Back to table of contents](#contents)
+
+## Homework
 
 Your homework for this lesson involves becoming further acquainted with these tools and becoming more skilled at finding out information about your code:
 
