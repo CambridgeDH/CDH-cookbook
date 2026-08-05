@@ -3,6 +3,7 @@
 
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 ## Contents
+- [Overview](#overview)
 - [The Wide World of Function Types](#the-wide-world-of-function-types)
 - [Introduction to Object-Oriented Programming (OOP)](#introduction-to-object-oriented-programming-oop)
 - [Conclusion](#conclusion)
