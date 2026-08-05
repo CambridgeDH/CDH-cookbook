@@ -10,7 +10,7 @@
 - [Copying and Reusing Content](#copying-and-reusing-content)
 - [Dealing with File Types](#dealing-with-file-types)
 - [Renaming Files](#renaming-files)
-- [Conclusions](#conclusions)
+- [Conclusion](#conclusion)
 
 
 ## Overview
@@ -124,7 +124,7 @@ There are other kinds of filetypes and actions are a bit more tricky, and involv
 
 [Back to table of contents](#contents)
 
-## Conclusions
+## Conclusion
 This brief lesson gives you a basis in the fundamentals of file handling in Python. These functions can be a bit finicky, though, especially as you do not want to accidentally destroy your data, so it's important to practice to get the hang of using them before working with your actual files.
 
 Homework for this lesson:
