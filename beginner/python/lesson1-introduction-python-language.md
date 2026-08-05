@@ -205,7 +205,7 @@ In this lesson you have learned the fundamentals about how Python code is struct
 
 [Back to table of contents](#contents)
 
-## *Homework*: Exploring Python Programs
+## Homework: Exploring Python Programs
 <ul>
 <li>Find a few examples of Python packages relevant to Digital Humanities by doing a search online.</li> 
 <li>Load up a workspace in a Notebook and install one of these packages.</li>
