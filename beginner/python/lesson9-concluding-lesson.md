@@ -14,10 +14,10 @@ This short course has covered the fundamentals of coding in Python. Here is a re
 First you learned some important meta-skills and concepts around Python programming:
 
 <ul>
-<li>What the difference is between coding and programming.</li>
-<li>What Python is, how to install and begin using it</li>
-<li>Reasons for using code in a Humanities project, what Humanities 'data' is, and how to approach data-driven research in the Humanities</li>
-<li>How to search for resources, support, and documentation</li>
+<li><a href="lesson1-introduction-python-language.html#the-difference-between-coding-and-programming">What the difference is between coding and programming</a></li>
+<li><a href="lesson1-introduction-python-language.html#the-structure-of-python-programs">What Python is, how to install and begin using it</a></li>
+<li><a href="Role-Programming-Humanities.html">Reasons for using code in a Humanities project, what Humanities 'data' is, and how to approach data-driven research in the Humanities</a></li>
+<li><a href="lesson1-introduction-python-language.html#essential-resources-for-learning-to-code">What Python is, how to install and begin using it</a></li>How to search for resources, support, and documentation</a></li>
 </ul>
 
 You have also learned the basics necessary to understand how Python works:
