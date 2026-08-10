@@ -82,7 +82,7 @@ This program would automate a task that would perhaps waste time if attempted ma
 
 By extension, say you have a more advanced textual analysis technique that you want to employ to study these essays further - you will still need to be able to iterate through the texts, as well as know enough code to understand the basics of how to apply the technique itself. These skills again apply here. This should reassure you that studying these basics indeed is a step towards your goals.
 
-The homework for this lesson is to follow a tutorial which helps you put your newfound skills together to write this program. You are encouraged to engage with it because it will help you understand how impactful a few simple coding concepts can be for your research.
+<a href="homework-solutions-lesson4.html">The homework for this lesson<a/> is to follow a tutorial which helps you put your newfound skills together to write this program. You are encouraged to engage with it because it will help you understand how impactful a few simple coding concepts can be for your research.
 
 In short, almost nothing one learns about coding is actually disconnected from real-world objectives, but it is easy to get lost in the details and lose sight of the bigger picture. Reminding yourself that there are concrete applications for everything you learn about code is the way to help keep your perspective and keep up your motivation to learn.
 
