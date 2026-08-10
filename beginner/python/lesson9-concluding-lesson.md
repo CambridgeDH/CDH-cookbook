@@ -17,34 +17,34 @@ First you learned some important meta-skills and concepts around Python programm
 <li><a href="lesson1-introduction-python-language.html#the-difference-between-coding-and-programming">What the difference is between coding and programming</a></li>
 <li><a href="lesson1-introduction-python-language.html#the-structure-of-python-programs">What Python is, how to install and begin using it</a></li>
 <li><a href="Role-Programming-Humanities.html">Reasons for using code in a Humanities project, what Humanities 'data' is, and how to approach data-driven research in the Humanities</a></li>
-<li><a href="lesson1-introduction-python-language.html#essential-resources-for-learning-to-code">What Python is, how to install and begin using it</a></li>How to search for resources, support, and documentation</a></li>
+<li><a href="lesson1-introduction-python-language.html#essential-resources-for-learning-to-code">How to search for resources, support, and documentation</a></li>
 </ul>
 
 You have also learned the basics necessary to understand how Python works:
 
 <ul>
-<li>Handling data: loading data into the workspace, declaring variables, understanding naming conventions</li>
-<li>Navigational basics: commenting, zero-indexing, print statements, various Python operators</li>
-<li>Taking actions: How to call a module function to analyse your variables</li>
+<li><a href="lesson2-fundamental-commands-python.html">Handling data: loading data into the workspace, declaring variables, understanding naming conventions</a></li>
+<li><a href="lesson2-fundamental-commands-python.html">Navigational basics: commenting, zero-indexing, print statements, various Python operators</a></li>
+<li><a href="lesson2-fundamental-commands-python.html">Taking actions: How to call a module function to analyse your variables</a></li>
 </ul>
 
 This course then covered the following fundamental programming skills:
 
 <ul>
-<li>Data types: what they are and how to declare them</li>
-<li>Functions: how they are built and how to declare them</li>
-<li>Arguments, parameters, and conditionals</li>
-<li>Loops: the for loop, while loop, and nested loops</li>
-<li>Different types of functions (built-in, user-defined)</li>
-<li>Basics of Object-Oriented Programming</li>
-<li>File management</li>
+<li><a href="lesson2-fundamental-commands-python.html#types-of-data-in-python">Data types: what they are and how to declare them</a></li>
+<li><a href="lesson3-mechanics-python-language.html">Functions: how they are built and how to declare them</a></li>
+<li><a href="lesson3-mechanics-python-language.html">Arguments, parameters, and conditionals</a></li>
+<li><a href="lesson6-further-loops-and-conditionals.html">Loops: the for loop, while loop, and nested loops</a></li>
+<li><a href="lesson5-functions-and-object-oriented-programming.html">Different types of functions (built-in, user-defined)</a></li>
+<li><a href="lesson5-functions-and-object-oriented-programming.html">Basics of Object-Oriented Programming</a></li>
+<li><a href="lesson7-file-handling-essentials.html">File management</a></li>
 </ul>
 
 Finally, you have written two small programs as part of the coursework:
 
 <ul>
-<li>A basic file-looping program to help you practice mastering loops (which are fundamental).</li>
-<li>A beginning-to-end data analysis program which saves the results in a separate file on your computer.</li>
+<li><a href="homework-solutions-lesson4.html">A basic file-looping program to help you practice mastering loops (which are fundamental).</a></li>
+<li><a href="lesson8-capstone-using-python-in-humanities.html">A beginning-to-end data analysis program which saves the results in a separate file on your computer.</a></li>
 </ul>
 
 All of these skills are transferable and extendable beyond this course. They give you a foundation both for future work in Python, and using code to support various Humanities research and teaching endeavours.
