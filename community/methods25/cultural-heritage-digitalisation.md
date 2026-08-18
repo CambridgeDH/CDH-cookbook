@@ -205,6 +205,7 @@ Both photogrammetry and laser scanning produce three-dimensional data, but they 
 <tr>
 <td>Suitable for objects, buildings, and landscapes</td>
 <td>Particularly effective for complex architecture and large sites</td>
+</tr>
 </table>
 In practice, many heritage projects combine both methods. Laser scanning provides highly accurate geometry, while photogrammetry contributes detailed colour and texture information.
 
