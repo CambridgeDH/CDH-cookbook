@@ -10,4 +10,5 @@ The [CDH Methods Fellows 2025](https://www.cdh.cam.ac.uk/about/news/methods-fell
 4. [Cultural Heritage Digitalisation: 3D Surveying and Modelling](cultural-heritage-digitalisation.html)
 5. [Practice as Research: Workshop by Diffraction Theatre](diffractive-co-creation.html)
 6. [Critical Python for Data Analysis](critical-python.html)
+7. [Improvised Images: An Introduction to Visual Programming through TouchDesigner](improvised-images.html)
 

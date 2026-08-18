@@ -16,9 +16,7 @@ The following file has multiple mini-lessons pertaining to learning data analysi
 
 The Python lessons we will go over in this file are the following:
 
-1\) Reading in and examining datasets 2) Performing data transformations 3) Performing visualisations and mapping 4) Working with categorical and text data 5) Web scraping and Application Programming Interfaces (APIs) 6) Merging and Joining Datasets (using datasets of political
-advertisements, and spotting misinformation within them) 7) Social
-Networks and Network Analysis
+1\) Reading in and examining datasets 2) Performing data transformations 3) Performing visualisations and mapping 4) Working with categorical and text data 5) Web scraping and Application Programming Interfaces (APIs) 6) Merging and Joining Datasets (using datasets of political advertisements, and spotting misinformation within them) 7) Social Networks and Network Analysis
 
 For any questions regarding this notebook and course, please contact
 <sf752@cam.ac.uk>. Many thanks and I hope you find this course engaging!
