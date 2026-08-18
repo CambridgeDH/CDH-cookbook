@@ -5,5 +5,7 @@ The [CDH Methods Fellows 2025](https://www.cdh.cam.ac.uk/about/news/methods-fell
 
 ## Lessons
 1. [The Word in the Machine: An Applied Investigation of LLMs through the Lens of Philosophy of Language](word-machine.html)
-2. [Protecting our movements: research methods against surveillance]](protecting-movements.html)
+2. [Protecting our movements: research methods against surveillance](protecting-movements.html)
+3. [Using Digitised Collections: IIIF Literacy, Methods and Tools](iiif-labyriiinth.html)
+4. [Cultural Heritage Digitalisation: 3D Surveying and Modelling](cultural-heritage-digitalisation.html)
 
