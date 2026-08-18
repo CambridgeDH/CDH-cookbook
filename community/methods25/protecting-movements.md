@@ -15,7 +15,7 @@ In the final segment, participants reflected on the specific role of universitie
 Many commented that the opportunity to slow down, incorporate embodied centring practices and connect around commitments felt unusual within the university context, yet crucial for cultivating the trust, creativity and courage needed for bolder collective action.
 
 
-## 1. Some digital repression-related resources** (most hands-on section)
+## 1. Some digital repression-related resources (most hands-on section)
 
 <https://truthout.org/audio/we-live-in-fearful-times-our-safety-comes-through-preparing-together/>
 
@@ -25,7 +25,7 @@ Digital first aid kit
 v helpful list of organisations that could support protective efforts of different kinds (across different regions)
 <https://digitalfirstaid.org/support/>
 
-### quick links to some reliable helplines:  
+### Quick links to some reliable helplines  
 
 Security helplines 
 <https://www.accessnow.org/help/>

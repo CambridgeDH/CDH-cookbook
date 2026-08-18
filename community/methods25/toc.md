@@ -1,8 +1,9 @@
 # CDH Methods Fellows 2025
 <link rel="stylesheet" href="../../cookbook.css">
 
-The [CDH Methods Fellows 2025](https://www.cdh.cam.ac.uk/about/news/methods-fellows-2025-26/) presented live workshops in the academic year 2025&ndash;6. Below you can find the fellows' write-ups of their workshops, in a modified form which should function as stand-alone lessons.
+The [CDH Methods Fellows 2025](https://www.cdh.cam.ac.uk/about/news/methods-fellows-2025-26/) presented live workshops in the academic year 2025&ndash;6. Below you can find the fellows' write-ups of their workshops, in a modified form which should function as stand-alone lessons, or as summaries of what happened in the workshop.
 
 ## Lessons
 1. [The Word in the Machine: An Applied Investigation of LLMs through the Lens of Philosophy of Language](word-machine.html)
+2. [Protecting our movements: research methods against surveillance]](protecting-movements.html)
 
