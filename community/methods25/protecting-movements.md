@@ -17,53 +17,53 @@ Many commented that the opportunity to slow down, incorporate embodied centring 
 
 ## 1. Some digital repression-related resources** (most hands-on section)
 
-https://truthout.org/audio/we-live-in-fearful-times-our-safety-comes-through-preparing-together/
+<https://truthout.org/audio/we-live-in-fearful-times-our-safety-comes-through-preparing-together/>
 
 Digital first aid kit
-https://digitalfirstaid.org/
+<https://digitalfirstaid.org/>
 
 v helpful list of organisations that could support protective efforts of different kinds (across different regions)
-https://digitalfirstaid.org/support/
+<https://digitalfirstaid.org/support/>
 
 ### quick links to some reliable helplines:  
 
 Security helplines 
-https://www.accessnow.org/help/
+<https://www.accessnow.org/help/>
 
 Incident response fund
-https://www.digitaldefenders.org/incident-response-fund/
+<https://www.digitaldefenders.org/incident-response-fund/>
 
-digital protection accompaniment: If you are thinking about your role as a researcher who accompanies a group (but is not a core part of it), then some of the suggestions in this manual on accompanying groups as they develop safer digital practices might be relevant to you: 
-https://manual.digitaldefenders.org/
+Digital protection accompaniment: If you are thinking about your role as a researcher who accompanies a group (but is not a core part of it), then some of the suggestions in this manual on accompanying groups as they develop safer digital practices might be relevant to you: 
+<https://manual.digitaldefenders.org/>
 
 Overview of digital policing harms:
 
-https://weavingliberation.org/wp-content/uploads/2025/03/Digital-policing-harms.pdf
+<https://weavingliberation.org/wp-content/uploads/2025/03/Digital-policing-harms.pdf>
 
-https://weavingliberation.org/wp-content/uploads/2025/03/Tools-of-resistance.pdf
+<https://weavingliberation.org/wp-content/uploads/2025/03/Tools-of-resistance.pdf>
 
 
 ## 2. On embodied approaches/connections between healing and liberation
 
 What it takes to heal, book by Prentis Hemphill https://prentishemphill.com/book
 
-https://shado-mag.com/articles/opinion/the-political-is-personal/
+<https://shado-mag.com/articles/opinion/the-political-is-personal/>
 
-https://healingjusticeldn.org/methodology/we-are-portals-towards-liberation/
+<https://healingjusticeldn.org/methodology/we-are-portals-towards-liberation/>
 
-https://eroticsofliberation.substack.com/
+<https://eroticsofliberation.substack.com/>
 
 ## 3. Pod maps and other transformative justice resources
 
-https://ausm.org/wp-content/uploads/2021/11/Pod-Mapping.pdf
+<https://ausm.org/wp-content/uploads/2021/11/Pod-Mapping.pdf>
 
 ## 4. Getting off US tech and digital clearing inspo
 
-https://truthout.org/articles/trumps-censorship-campaign-draws-on-decades-of-infrastructure-built-by-big-tech/
+<https://truthout.org/articles/trumps-censorship-campaign-draws-on-decades-of-infrastructure-built-by-big-tech/>
 
-https://disconnect.blog/getting-off-us-tech-a-guide/?ref=disconnect-newsletter
+<https://disconnect.blog/getting-off-us-tech-a-guide/?ref=disconnect-newsletter>
 
-https://www.shesabeast.co/the-diy-dumbphone-method/?ref=disconnect.blog
+<https://www.shesabeast.co/the-diy-dumbphone-method/?ref=disconnect.blog>
 
 
 <p class="credits">Written by Sofija Stefanović, 2026-07-15<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
