@@ -133,6 +133,6 @@ Dramaturgy is a creative practice that, through critical observation, curiosity,
 
 Surveillance capitalism is not just sensors, data, but infrastructure.
 
-<p class="credits">Written by <a href="www.diffractiontheatre.co">Jing Wang Thomas</a>, 2026-07-03<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+<p class="credits">Written by <a href="https://www.diffractiontheatre.co">Jing Wang Thomas</a>, 2026-07-03<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
 <p class="previous-next-lesson"><a href="">Methods Fellows 2025 lessons</a></p>
