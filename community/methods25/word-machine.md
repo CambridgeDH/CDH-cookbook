@@ -1,7 +1,5 @@
+# The Word in the Machine: An Applied Investigation of LLMs through the Lens of Philosophy of Language 
 <link rel="stylesheet" href="../../cookbook.css"
-
-# The Word in the Machine: An Applied Investigation of LLMs through the Lens of Philosophy of Language
-
 <p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
 
 Code Repository:
