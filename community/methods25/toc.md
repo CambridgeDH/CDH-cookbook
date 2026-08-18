@@ -8,4 +8,5 @@ The [CDH Methods Fellows 2025](https://www.cdh.cam.ac.uk/about/news/methods-fell
 2. [Protecting our movements: research methods against surveillance](protecting-movements.html)
 3. [Using Digitised Collections: IIIF Literacy, Methods and Tools](iiif-labyriiinth.html)
 4. [Cultural Heritage Digitalisation: 3D Surveying and Modelling](cultural-heritage-digitalisation.html)
+5. [Practice as Research: Workshop by Diffraction Theatre](diffractive-co-creation.html)
 
