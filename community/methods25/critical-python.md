@@ -4,12 +4,12 @@
 
 ## Contents
 - [Reading in and Examining Datasets](#reading-in-and-examining-datasets)
-- [Data Transformation and Visualization](data-transformation-and-visualization)
-- [Data Visualization and Mapping](data-visualization-and-mapping)
-- [Categorical and Text Data](categorical-and-text-data)
-- [Web Scraping and APIs](web-scraping)
-- [Political Ads and Merging Data](political-ads-and-merging-data)
-- [Social Networks](social-networks)
+- [Data Transformation and Visualization](#data-transformation-and-visualization)
+- [Data Visualization and Mapping](#data-visualization-and-mapping)
+- [Categorical and Text Data](#categorical-and-text-data)
+- [Web Scraping and APIs](#web-scraping)
+- [Political Ads and Merging Data](#political-ads-and-merging-data)
+- [Social Networks](#social-networks)
 
 Welcome to a mini-intro course to using python for data analysis. The
 aim of this lesson is to not only equip you with the technical expertise to perform foundational data analysis techniques in Python, but to also challenge you to think critically about the design decisions of *how*
