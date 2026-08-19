@@ -1,6 +1,15 @@
 # Critical Python for Data Analysis 
 <link rel="stylesheet" href="../../cookbook.css">
-<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
+<p class="previous-next-lesson"><a href="toc.html">^ Methods Fellows 2025</a></p>
+
+## Contents
+- Reading in and Examining Datasets
+- Data Transformation and Visualization
+- Data Visualization and Mapping
+- Categorical and Text Data
+- Web Scraping and APIs
+- Political Ads and Merging Data
+- Social Networks
 
 Welcome to a mini-intro course to using python for data analysis. The
 aim of this lesson is to not only equip you with the technical expertise to perform foundational data analysis techniques in Python, but to also challenge you to think critically about the design decisions of *how*
@@ -20,6 +29,8 @@ The Python lessons we will go over in this file are the following:
 
 For any questions regarding this notebook and course, please contact
 <sf752@cam.ac.uk>. Many thanks and I hope you find this course engaging!
+
+# Reading in and Examining Datasets
 
 ## Goals
 
@@ -3783,7 +3794,6 @@ As you work with network data, consider:
 6.  **Ethics**: What are the implications of analyzing people\'s social
     connections?
 
-<p class="credits">Written by Sonia Fereidooni, 2026-07-22<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+<p class="credits">Written by Sonia Fereidooni, <sf752@cam.ac.uk>, 2026-07-22<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
 <p class="previous-next-lesson"><a href="">Methods Fellows 2025 lessons</a></p>
-

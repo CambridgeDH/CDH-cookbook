@@ -1,6 +1,12 @@
 # The Word in the Machine: An Applied Investigation of LLMs through the Lens of Philosophy of Language 
 <link rel="stylesheet" href="../../cookbook.css">
-<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
+<p class="previous-next-lesson"><a href="toc.html">^ Methods Fellows 2025</a></p>
+
+## Contents
+- [introduction](#introduction)
+- [Operationalising Wittgenstein through ‘fill-mask’](operationalising-wittgenstein-through-fill-mask’)
+- [‘Cybernetic writing’ and the semantics of unidirectional LLMs](cybernetic-writing-and-the-semantics-of-unidirectional-llms)
+- [References](references)
 
 Code Repository:
 <https://github.com/alessandrocam/The-Word-in-the-Machine>.

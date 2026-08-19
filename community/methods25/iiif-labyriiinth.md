@@ -1,6 +1,6 @@
 # Lesson: The IIIF Labyriiinth
 <link rel="stylesheet" href="../../cookbook.css">
-<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
+<p class="previous-next-lesson"><a href="toc.html">^ Methods Fellows 2025</a></p>
 
 **Using Digitised Collections: IIIF Literacy, Methods and Tools**
 

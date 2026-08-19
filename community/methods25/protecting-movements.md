@@ -1,6 +1,6 @@
 # Protecting our movements: research methods against surveillance
 <link rel="stylesheet" href="../../cookbook.css">
-<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
+<p class="previous-next-lesson"><a href="toc.html">^ Methods Fellows 2025</a></p>
 
 The *Protecting our movements: research methods against surveillance* workshop brought together researchers, librarians, arts practitioners, radical publishers and organisers to explore research practices that can be carried out in solidarity with social movements facing digital surveillance and other forms of repression. The workshop’s central aim was to examine practical ways to leverage the university’s institutional location to support movements, particularly in the context of growing criminalisation of dissent and digital repression globally and locally. The design of the workshop reflected the understanding of fear as an embodied experience, and integrated practices to guide participants through fear-inducing contexts towards creative, resourceful and bolder collective actions. 
 
