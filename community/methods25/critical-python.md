@@ -3,13 +3,13 @@
 <p class="previous-next-lesson"><a href="toc.html">^ Methods Fellows 2025</a></p>
 
 ## Contents
-- Reading in and Examining Datasets
-- Data Transformation and Visualization
-- Data Visualization and Mapping
-- Categorical and Text Data
-- Web Scraping and APIs
-- Political Ads and Merging Data
-- Social Networks
+- [Reading in and Examining Datasets](#reading-in-and-examining-datasets)
+- [Data Transformation and Visualization](data-transformation-and-visualization)
+- [Data Visualization and Mapping](data-visualization-and-mapping)
+- [Categorical and Text Data](categorical-and-text-data)
+- [Web Scraping and APIs](web-scraping-and-apis)
+- [Political Ads and Merging Data](political-ads-and-merging-data)
+- [Social Networks](social-networks)
 
 Welcome to a mini-intro course to using python for data analysis. The
 aim of this lesson is to not only equip you with the technical expertise to perform foundational data analysis techniques in Python, but to also challenge you to think critically about the design decisions of *how*
@@ -49,7 +49,7 @@ The notebook automatically has access to files and directories (folders)
 in the project directory. This makes it much easier to load multiple
 data sets.
 
-## 1 Rectangular data {#1-rectangular-data}
+## 1 Rectangular data 
 
 The most common type of data we\'ll see is rectangular data, which is
 organized into a table of rows and columns. If data come to us in
@@ -84,7 +84,7 @@ answers below the questions.*
 
 *\[Your answer here\]*
 
-## 2: Setup {#2-setup}
+## 2: Setup 
 
 Python doesn\'t come with everything we need loaded by default. Before
 we do anything else, we need to import *libraries* (also called packages
@@ -118,7 +118,7 @@ import numpy as np
 print("Libraries loaded successfully!")
 ```
 
-## 3: Importing data {#3-importing-data}
+## 3: Importing data 
 
 To use data inside Python, we first have to import, or *read*, that data
 into our environment and save it to a variable.
@@ -139,7 +139,7 @@ code?**
 -   `pd.read_csv()`: *\[Your answer here\]*
 -   `"lesson_1_data/seattle_airbnb.csv"`: *\[Your answer here\]*
 
-## 4: Looking at the data {#4-looking-at-the-data}
+## 4: Looking at the data 
 
 You can display the DataFrame by typing the name of the variable. In
 Jupyter notebooks, if a variable is the last line in a cell, it will
@@ -203,7 +203,7 @@ airbnb_data.info()
 airbnb_data.describe()
 ```
 
-## 5: Hierarchical data {#5-hierarchical-data}
+## 5: Hierarchical data 
 
 Data isn\'t always a single, flat table. Sometimes it\'s nested or
 hierarchical.
@@ -244,7 +244,7 @@ need to try different indices):**
 # Your code here
 ```
 
-## 6: Saving your work {#6-saving-your-work}
+## 6: Saving your work 
 
 Jupyter notebooks automatically save periodically, but you should also
 manually save using `Ctrl+S` (or `Cmd+S` on Mac) or by clicking the save icon.
@@ -326,14 +326,14 @@ changing the 4 to other numbers to find \'red\'. Remember Python uses
 
 # Data Transformation and Visualization
 
-## Goals {#goals}
+## Goals 
 
 -   Begin exploring a data set on our own
 -   Master method chaining in pandas
 -   Learn basic data manipulation operations
 -   Produce basic visualizations
 
-## 0: Check-in {#0-check-in}
+## 0: Check-in 
 
 We\'ll continue working with the Inside Airbnb data. This time, we\'ll
 use the full data set of listings for Seattle but this time we\'ll focus
@@ -359,7 +359,7 @@ operator.
 # Your code here
 ```
 
-## 1: Exploring the Data {#1-exploring-the-data}
+## 1: Exploring the Data 
 
 This DataFrame has more variables (= columns) and observations (= rows)
 than last lab\'s data set. You can get an overview of the different
@@ -383,7 +383,7 @@ information does it give you?**
 
 *\[Your answer here\]*
 
-## 2: Data Transformation {#2-data-transformation}
+## 2: Data Transformation 
 
 ### Method Chaining
 
@@ -443,7 +443,7 @@ Hint: Use `.head(20)` on the \'name\' column
 # Your code here
 ```
 
-## 3: Data Manipulation Operations {#3-data-manipulation-operations}
+## 3: Data Manipulation Operations 
 
 Now that we understand method chaining, we can start putting together
 different operations to perform multi-step analysis. In pandas, we have
@@ -582,7 +582,7 @@ Show the listings in the UDistrict that have the most reviews:
 # Your code here
 ```
 
-## 4: Data Visualization {#4-data-visualization}
+## 4: Data Visualization 
 
 Now that we can adjust what data we\'re looking at with some operations,
 we can start making visualizations. Not only do these look cool, but
@@ -718,7 +718,7 @@ plt.show()
 # sns.set_palette("viridis")
 ```
 
-## Hints {#hints}
+## Hints 
 
 **0.1** Your code should look like:
 
@@ -769,14 +769,14 @@ plt.show()
 
 ------------------------------------------------------------------------
 
-## Goals {#goals}
+## Goals 
 
 -   Add color to our visualizations
 -   Add facets to our visualizations
 -   Make visualizations using maps
 -   Control color output using palettes
 
-## 0: Lab Check-in {#0-lab-check-in}
+## 0: Lab Check-in 
 
 For the first half of this lab, we\'ll use the `gapminder` data set.
 This example is adapted from Kieran Healy\'s book, *Data Visualization:
@@ -804,7 +804,7 @@ sns.set_style("whitegrid")
 print("Packages loaded successfully!")
 ```
 
-## 1: Visualizations with Covariation {#1-visualizations-with-covariation}
+## 1: Visualizations with Covariation 
 
 Bar charts and histograms are great at showing variation along one
 variable. However, we\'re often interested in the relationship between
@@ -958,7 +958,7 @@ expectancy plot**
 # Your code here
 ```
 
-## 2: Creating New Columns {#2-creating-new-columns}
+## 2: Creating New Columns 
 
 Creating new columns is one of the most important operations in data
 analysis. It allows you to add variables to your dataset by transforming
@@ -982,13 +982,13 @@ plt.title('Total GDP vs Population (2007)')
 plt.show()
 ```
 
-## 3: Exercise - Life Expectancy Over Time {#3-exercise---life-expectancy-over-time}
+## 3: Exercise - Life Expectancy Over Time 
 
 Instead of looking at the relationship between life expectancy and GDP,
 now we\'ll look at changes in life expectancy over time. You can use the
 code cells below for all the questions.
 
-### 3.1: Line plot of life expectancy by year {#31-line-plot-of-life-expectancy-by-year}
+### 3.1: Line plot of life expectancy by year 
 
 **Create a plot where `x = year` and `y = lifeExp`.** This time, use
 line plots (`plt.plot()`) instead of scatter plots. Initially, it won\'t
@@ -999,7 +999,7 @@ look quite right.
 # Hint: plt.plot(gapminder['year'], gapminder['lifeExp'])
 ```
 
-### 3.2: Grouping by country {#32-grouping-by-country}
+### 3.2: Grouping by country 
 
 **You need to tell the plot to draw separate lines for each country.**
 To do this, you\'ll need to plot each country separately using a loop or
@@ -1019,7 +1019,7 @@ use seaborn\'s lineplot. Does it look more reasonable now?
 #              estimator=None, alpha=0.3, linewidth=0.5)
 ```
 
-### 3.3: Facet by continent and interpret {#33-facet-by-continent-and-interpret}
+### 3.3: Facet by continent and interpret 
 
 **Finally, facet by continent.** Does life expectancy seem to have
 increased over time everywhere? Do you see any dips or decreases?
@@ -1031,7 +1031,7 @@ increased over time everywhere? Do you see any dips or decreases?
 
 *\[Your interpretation here\]*
 
-## 4: Maps {#4-maps}
+## 4: Maps 
 
 You can create interactive maps in Python using latitude and longitude
 data. We\'ll use a package called `folium`
@@ -1225,15 +1225,15 @@ right answer.**
 
 *\[Your answer here\]*
 
-## 5: Exercise - Mapping Airbnb in Seattle {#5-exercise---mapping-airbnb-in-seattle}
+## 5: Exercise - Mapping Airbnb in Seattle 
 
-### 5.1: Choose a variable {#51-choose-a-variable}
+### 5.1: Choose a variable 
 
 **Think about what variable you\'d like to display in your map.**
 
 *\[Write your variable name here\]*
 
-### 5.2: Plot the distribution {#52-plot-the-distribution}
+### 5.2: Plot the distribution 
 
 **Create a bar plot or histogram as appropriate to look at the
 distribution of your variable**
@@ -1242,7 +1242,7 @@ distribution of your variable**
 # Your code here
 ```
 
-### 5.3: Are there values that seem like outliers? {#53-are-there-values-that-seem-like-outliers}
+### 5.3: Are there values that seem like outliers? 
 
 Outliers are data points that seem very different from the rest of the
 data. For instance, if one listing costs 10x the average price, then a
@@ -1264,7 +1264,7 @@ A couple reasons to think about data in this way:
 -   It makes you articulate your **choices and goals** when you present
     your data
 
-### 5.4: Including outliers {#54-including-outliers}
+### 5.4: Including outliers 
 
 **If there are outliers, do you think you should include them in your
 graph? Justify your answer.**
@@ -1273,16 +1273,16 @@ graph? Justify your answer.**
 
 All of the subsequent code can be written in the code cell below.
 
-### 5.5: Create a DataFrame {#55-create-a-dataframe}
+### 5.5: Create a DataFrame 
 
 **Create a new DataFrame for the rest of the exercise, filtering as
 necessary**
 
-### 5.6: Create a color palette {#56-create-a-color-palette}
+### 5.6: Create a color palette 
 
 **Use that DataFrame to create a color palette for your variable**
 
-### 5.7: Create a folium map {#57-create-a-folium-map}
+### 5.7: Create a folium map 
 
 **Create a folium map using your new data set**
 
@@ -1290,7 +1290,7 @@ necessary**
 # Your code here for 5.5, 5.6, and 5.7
 ```
 
-## Hints {#hints}
+## Hints 
 
 **1.2** Continuous variables are numeric columns (like `lifeExp`, `pop`,
 `gdpPercap`). Categorical variables are text/factor columns (like
@@ -1343,14 +1343,14 @@ example_data['price_bin'] = pd.qcut(example_data['price'], q=5, labels=['Very Lo
 
 ------------------------------------------------------------------------
 
-## Goals {#goals}
+## Goals 
 
 -   Understand different data types in Python
 -   Move between categorical and other types of data
 -   Locate keywords in texts
 -   Use regular expressions to manipulate text data
 
-## 1: Data in Python {#1-data-in-python}
+## 1: Data in Python 
 
 We\'ve already done a lot with data in Python. But it\'s time to pause
 briefly to talk about the different kinds of data Python can hold and
@@ -1546,7 +1546,7 @@ feet each tree has grown per year**
 # Hint: tree_data['growth_per_year'] = ...
 ```
 
-## 2: Categorical Data {#2-categorical-data}
+## 2: Categorical Data 
 
 Let\'s think about the kinds of variables we encounter during analysis.
 Continuous variables can be represented with numeric types.
@@ -1727,7 +1727,7 @@ example, you can:
 Check out the pandas documentation for more:
 <https://pandas.pydata.org/docs/user_guide/categorical.html>
 
-## 3: Text Data (Strings) {#3-text-data-strings}
+## 3: Text Data (Strings) 
 
 String data is more than just categories---it can contain rich, messy,
 unstructured data that we might use to produce categories or quantities.
@@ -1906,7 +1906,7 @@ check out:
 -   **spaCy**: <https://spacy.io/>
 -   **TextBlob**: <https://textblob.readthedocs.io/>
 
-## Hints {#hints}
+## Hints 
 
 **1.3** Scalars don\'t have a length - they\'re single values. You\'ll
 get an error if you try `len()` on a number.
@@ -1968,7 +1968,7 @@ Web APIs are structured ways of making web requests. This is how
 websites communicate with databases and with each other; most data is
 transmitted over the Internet in this way.
 
-## Setup {#setup}
+## Setup 
 
 To collect Internet data, we\'ll use several Python packages:
 
@@ -2478,7 +2478,7 @@ print("Always be respectful when scraping!")
 
 ## Additional Resources
 
-### Web Scraping {#web-scraping}
+### Web Scraping 
 
 -   **Beautiful Soup Documentation**:
     <https://www.crummy.com/software/BeautifulSoup/bs4/doc/>
@@ -2501,11 +2501,11 @@ print("Always be respectful when scraping!")
 -   Be mindful of copyright and data privacy laws
 -   Think about the ethical implications of your data collection
 
-# Political Ads & Merging Data {#political-ads--merging-data}
+# Political Ads & Merging Data 
 
 ------------------------------------------------------------------------
 
-## Goals {#goals}
+## Goals 
 
 -   To familiarize you with audits of political advertising online
 -   To teach you how to combine and join data sets
@@ -2598,7 +2598,7 @@ print(f"ads3 shape: {ads3.shape}")
     ads2 shape: (149999, 11)
     ads3 shape: (148016, 11)
 
-## Combining More of the Same Data: `pd.concat()` {#combining-more-of-the-same-data-pdconcat}
+## Combining More of the Same Data: `pd.concat()` 
 
 We\'ll start by looking at the ads data.
 
@@ -2665,7 +2665,7 @@ ads_all.head()
 Notice that the number of unique IDs is less than the total number of
 rows. This means there are duplicate entries!
 
-## Merge Two Different Data Sets: `pd.merge()` {#merge-two-different-data-sets-pdmerge}
+## Merge Two Different Data Sets: `pd.merge()` 
 
 Now we\'ll introduce multiple tables with different units of
 observation. This is called **relational data**. You *join* these
@@ -2996,7 +2996,7 @@ result = df1.merge(df2,
 -   **Outer join**: When you want to keep all records from both
     datasets, even if they don\'t match
 
-## Additional Resources {#additional-resources}
+## Additional Resources 
 
 ### Pandas Documentation
 
@@ -3045,7 +3045,7 @@ Hanna, Pablo Barberá, and Dan Cervone:
 
 Adapted for Python using NetworkX.
 
-## 0: Setup {#0-setup}
+## 0: Setup 
 
 We\'ll use the **NetworkX** package to manipulate and visualize
 networks. NetworkX is the standard network analysis library in Python.
@@ -3099,7 +3099,7 @@ drive.mount('/content/drive')
 
     Mounted at /content/drive
 
-## 1: Star Wars {#1-star-wars}
+## 1: Star Wars 
 
 Our first example is a small network of character interactions in Star
 Wars: Episode IV, described further here:
@@ -3350,7 +3350,7 @@ main groups here? (If you haven\'t, ask a friend.)**
 
 *\[Your answer here\]*
 
-## 2: US Congress Members on Twitter {#2-us-congress-members-on-twitter}
+## 2: US Congress Members on Twitter 
 
 Our second network is US Congress members on Twitter, from 2016:
 <https://cdn.rawgit.com/pablobarbera/data-science-workshop/master/sna/03_challenge_1_solutions.html>
@@ -3749,7 +3749,7 @@ Here\'s a quick reference for network analysis operations:
   `closeness()`             `nx.closeness_centrality()`                  Closeness centrality
   -------------------------------------------------------------------------------------------------------------
 
-## Additional Resources {#additional-resources}
+## Additional Resources 
 
 ### NetworkX Documentation
 
@@ -3792,6 +3792,6 @@ As you work with network data, consider:
 6.  **Ethics**: What are the implications of analyzing people\'s social
     connections?
 
-<p class="credits">Written by Sonia Fereidooni, <sf752@cam.ac.uk>, 2026-07-22<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+<p class="credits">Written by Sonia Fereidooni, <a href="mailto:sf752@cam.ac.uk">sf752@cam.ac.uk></a>, 2026-07-22, 2026-07-22<br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
 <p class="previous-next-lesson"><a href="">Methods Fellows 2025 lessons</a></p>

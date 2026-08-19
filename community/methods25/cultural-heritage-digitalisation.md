@@ -586,7 +586,7 @@ For guidance on publishing to Sketchfab, see:
 
 [Back to table of contents](#contents)
 
-<p class="credits">Written by Jiayao Jiang jj596@cam.ac.uk, 2026-08-18
+<p class="credits">Written by Jiayao Jiang, <a href="mailto:jj596@cam.ac.uk@>jj596@cam.ac.uk</a>, 2026-08-18
 <br />Licence: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
 
 <p class="previous-next-lesson"><a href="toc.html">Methods Fellows 2025 lessons</a></p>

@@ -4,8 +4,8 @@
 
 ## Contents
 - [Introduction](#introduction)
-- [Operationalising Wittgenstein through ‘fill-mask’](operationalising-wittgenstein-through-fill-mask)
-- [‘Cybernetic writing’ and the semantics of unidirectional LLMs](#cybernetic-writing-and-the-semantics-of-unidirectional-llms
+- [Operationalising Wittgenstein through ‘fill-mask’](#operationalising-wittgenstein-through-fill-mask)
+- [‘Cybernetic writing’ and the semantics of unidirectional LLMs](#cybernetic-writing-and-the-semantics-of-unidirectional-llms)
 - [References](#references)
 
 Code Repository:
