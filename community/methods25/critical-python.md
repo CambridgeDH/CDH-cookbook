@@ -39,7 +39,7 @@ For any questions regarding this notebook and course, please contact
 -   Describe the sources of datasets
 -   Perform basic data exploration
 
-This is a Markdown file that can be converted to a Jupyter or Google
+As linked above, there is a copy of this lesson as a zipped Markdown file that can be unzipped and converted to a Jupyter or Google
 Colab notebook (`.ipynb` file). Jupyter notebooks allow you to combine
 code, output, and text in one document. You can run code cells by
 selecting them and pressing `Shift + Enter`, `Ctrl/Cmd + Enter` on
