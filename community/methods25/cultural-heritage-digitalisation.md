@@ -1,6 +1,6 @@
 # Cultural Heritage Digitalisation: 3D Surveying and Modelling
 <link rel="stylesheet" href="../../cookbook.css">
-<p class="previous-next-lesson"><a href="toc.html">^ Main contents</a></p>
+<p class="previous-next-lesson"><a href="toc.html">^ Methods Fellow 2025</a></p>
 
 
 ## Contents

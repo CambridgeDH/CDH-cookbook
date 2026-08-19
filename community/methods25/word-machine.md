@@ -3,10 +3,10 @@
 <p class="previous-next-lesson"><a href="toc.html">^ Methods Fellows 2025</a></p>
 
 ## Contents
-- [introduction](#introduction)
-- [Operationalising Wittgenstein through ‘fill-mask’](operationalising-wittgenstein-through-fill-mask’)
-- [‘Cybernetic writing’ and the semantics of unidirectional LLMs](cybernetic-writing-and-the-semantics-of-unidirectional-llms)
-- [References](references)
+- [Introduction](#introduction)
+- [Operationalising Wittgenstein through ‘fill-mask’](operationalising-wittgenstein-through-fill-mask)
+- [‘Cybernetic writing’ and the semantics of unidirectional LLMs](#cybernetic-writing-and-the-semantics-of-unidirectional-llms
+- [References](#references)
 
 Code Repository:
 <https://github.com/alessandrocam/The-Word-in-the-Machine>.

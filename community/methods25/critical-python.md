@@ -20,7 +20,7 @@ see that the way that we produce and present our data tells a different
 narrative based on the analyzer\'s own positionality and the hidden (or
 unhidden) biases that may come with it.
 
-The following file has multiple mini-lessons pertaining to learning data analysis with a critical lens. To work through these lessons, please download this file as a Markdown (.md) file, and convert it to a Jupyter or Google Colab Python Notebook (you can simply use a .md to .ipynb converter online, such as the following: <https://www.vertopal.com/en/convert/md-to-ipynb>).
+The following file has multiple mini-lessons pertaining to learning data analysis with a critical lens. To work through these lessons, please download and unzip <a href="critical-python-downloadable.md.zip">a version of this file as a Markdown</a> (.md) file, and convert it to a Jupyter or Google Colab Python Notebook (you can simply use a .md to .ipynb converter online, such as the following: <https://www.vertopal.com/en/convert/md-to-ipynb>).
 
 
 The Python lessons we will go over in this file are the following:
@@ -30,7 +30,7 @@ The Python lessons we will go over in this file are the following:
 For any questions regarding this notebook and course, please contact
 <sf752@cam.ac.uk>. Many thanks and I hope you find this course engaging!
 
-# Reading in and Examining Datasets
+## Reading in and Examining Datasets
 
 ## Goals
 
@@ -325,8 +325,6 @@ changing the 4 to other numbers to find \'red\'. Remember Python uses
 0-based indexing (starts counting at 0).
 
 # Data Transformation and Visualization
-
-------------------------------------------------------------------------
 
 ## Goals {#goals}
 
