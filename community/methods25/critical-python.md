@@ -7,7 +7,7 @@
 - [Data Transformation and Visualization](data-transformation-and-visualization)
 - [Data Visualization and Mapping](data-visualization-and-mapping)
 - [Categorical and Text Data](categorical-and-text-data)
-- [Web Scraping and APIs](web-scraping-and-apis)
+- [Web Scraping and APIs](web-scraping)
 - [Political Ads and Merging Data](political-ads-and-merging-data)
 - [Social Networks](social-networks)
 
@@ -324,16 +324,16 @@ If you have extra time, check out the PIL/Pillow library:
 changing the 4 to other numbers to find \'red\'. Remember Python uses
 0-based indexing (starts counting at 0).
 
-# Data Transformation and Visualization
+## Data Transformation and Visualization
 
-## Goals 
+### Goals 
 
 -   Begin exploring a data set on our own
 -   Master method chaining in pandas
 -   Learn basic data manipulation operations
 -   Produce basic visualizations
 
-## 0: Check-in 
+### 0: Check-in 
 
 We\'ll continue working with the Inside Airbnb data. This time, we\'ll
 use the full data set of listings for Seattle but this time we\'ll focus
@@ -765,11 +765,11 @@ plt.show()
 **4.2** Copy the code from the neighborhood group bar chart and change
 \'neighbourhood_group\' to \'room_type\'.
 
-# Data Visualization and Mapping
+## Data Visualization and Mapping
 
 ------------------------------------------------------------------------
 
-## Goals 
+### Goals 
 
 -   Add color to our visualizations
 -   Add facets to our visualizations
@@ -1339,11 +1339,11 @@ example_data['price_bin'] = pd.qcut(example_data['price'], q=5, labels=['Very Lo
 # Then create a color dictionary mapping each label to a color
 ```
 
-# Categorical and Text Data
+## Categorical and Text Data
 
 ------------------------------------------------------------------------
 
-## Goals 
+### Goals 
 
 -   Understand different data types in Python
 -   Move between categorical and other types of data
@@ -2501,16 +2501,16 @@ print("Always be respectful when scraping!")
 -   Be mindful of copyright and data privacy laws
 -   Think about the ethical implications of your data collection
 
-# Political Ads & Merging Data 
+## Political Ads and Merging Data 
 
 ------------------------------------------------------------------------
 
-## Goals 
+### Goals 
 
 -   To familiarize you with audits of political advertising online
 -   To teach you how to combine and join data sets
 
-## Background on Facebook Ads
+### Background on Facebook Ads
 
 There are two different databases of advertisements with political
 content on Facebook.
@@ -3035,7 +3035,7 @@ As you work with this political advertising data, consider:
 5.  **Ethics**: What are the ethical considerations in collecting,
     analyzing, and publicizing this data?
 
-# Social Networks
+## Social Networks
 
 ------------------------------------------------------------------------
 
